@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Wine Spectator — Sips &amp; Tips</title>
+  <!--[if mso]>
+  <style>table,td,th{font-family:Arial,Helvetica,sans-serif!important}</style>
+  <![endif]-->
+  <style>
+    /* ===== RESET ===== */
+    body, table, td, a { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+    table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
+    img { -ms-interpolation-mode: bicubic; border: 0; outline: none; text-decoration: none; }
+    body { margin: 0; padding: 0; width: 100% !important; background-color: #f4f1ec; }
+
+    /* ===== BASE TYPOGRAPHY ===== */
+    * { box-sizing: border-box; }
+    body, td, th {
+      font-family: 'Georgia', 'Times New Roman', serif;
+      color: #2c2c2c;
+    }
+
+    /* ===== WRAPPER ===== */
+    .email-wrapper { width: 100%; background-color: #f4f1ec; padding: 24px 0; }
+    .email-container {
+      max-width: 640px;
+      margin: 0 auto;
+      background-color: #ffffff;
+      border-radius: 4px;
+      overflow: hidden;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+    }
+
+    /* ===== HEADER ===== */
+    .header {
+      background: linear-gradient(135deg, #722f37 0%, #5a1a22 100%);
+      padding: 36px 32px 28px;
+      text-align: center;
+    }
+    .header-badge {
+      display: inline-block;
+      background: rgba(255,255,255,0.15);
+      border: 1px solid rgba(255,255,255,0.3);
+      border-radius: 4px;
+      padding: 6px 14px;
+      font-family: 'Trebuchet MS', Arial, sans-serif;
+      font-size: 11px;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color: #e8d5b5;
+      margin-bottom: 14px;
+    }
+    .header h1 {
+      margin: 0 0 4px;
+      font-family: 'Georgia', serif;
+      font-size: 34px;
+      font-weight: 400;
+      color: #ffffff;
+      letter-spacing: 0.5px;
+      line-height: 1.2;
+    }
+    .header h1 .amp {
+      font-style: italic;
+      color: #d4a853;
+    }
+    .header .tagline {
+      margin: 8px 0 0;
+      font-family: 'Trebuchet MS', Arial, sans-serif;
+      font-size: 12px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: #c9a96e;
+    }
+    .header-date {
+      margin-top: 16px;
+      font-family: 'Trebuchet MS', Arial, sans-serif;
+      font-size: 12px;
+      color: rgba(255,255,255,0.55);
+    }
+
+    /* ===== NAV BAR ===== */
+    .nav-bar {
+      background-color: #3d1519;
+      text-align: center;
+      padding: 12px 16px;
+    }
+    .nav-bar a {
+      display: inline-block;
+      font-family: 'Trebuchet MS', Arial, sans-serif;
+      font-size: 11px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: #c9a96e;
+      text-decoration: none;
+      padding: 0 12px;
+    }
+    .nav-bar a:hover { color: #ffffff; }
+
+    /* ===== SECTIONS ===== */
+    .section { padding: 32px 32px 28px; }
+    .section + .section { border-top: 1px solid #ebe6de; }
+
+    .section-label {
+      display: inline-block;
+      font-family: 'Trebuchet MS', Arial, sans-serif;
+      font-size: 10px;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color: #ffffff;
+      background-color: #722f37;
+      border-radius: 3px;
+      padding: 4px 10px;
+      margin-bottom: 16px;
+    }
+
+    .section h2 {
+      margin: 0 0 10px;
+      font-size: 26px;
+      font-weight: 400;
+      line-height: 1.3;
+      color: #1a1a1a;
+    }
+    .section h2 a { color: #1a1a1a; text-decoration: none; }
+    .section h2 a:hover { color: #722f37; }
+
+    .section h3 {
+      margin: 0 0 8px;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 1.35;
+      color: #1a1a1a;
+    }
+
+    .section p, .section li {
+      font-size: 15px;
+      line-height: 1.65;
+      color: #4a4a4a;
+      margin: 0 0 12px;
+    }
+
+    .read-more {
+      display: inline-block;
+      font-family: 'Trebuchet MS', Arial, sans-serif;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      color: #722f37;
+      text-decoration: none;
+      border-bottom: 1.5px solid #d4a853;
+      padding-bottom: 2px;
+    }
+    .read-more:hover { color: #5a1a22; }
+
+    /* ===== HERO IMAGE ===== */
+    .hero-img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    /* ===== CARD GRID (2-col) ===== */
+    .card-grid {
+      padding: 28px 32px;
+      border-top: 1px solid #ebe6de;
+    }
+    .card-grid table { width: 100%; border-spacing: 0; }
+    .card {
+      width: 48%;
+      vertical-align: top;
+      background: #faf8f5;
+      border-radius: 6px;
+      overflow: hidden;
+    }
+    .card-gutter { width: 4%; }
+    .card-body { padding: 16px; }
+    .card-body h3 {
+      margin: 0 0 6px;
+      font-size: 17px;
+      font-weight: 400;
+      line-height: 1.35;
+      color: #1a1a1a;
+    }
+    .card-body p {
+      font-size: 13px;
+      line-height: 1.55;
+      color: #666;
+      margin: 0 0 10px;
+    }
+    .card-img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    /* ===== WINE OF THE WEEK ===== */
+    .wotw {
+      padding: 36px 32px;
+      border-top: 1px solid #ebe6de;
+      background: linear-gradient(180deg, #faf8f5 0%, #ffffff 100%);
+    }
+    .wotw-inner {
+      border: 1px solid #ebe6de;
+      border-radius: 6px;
+      overflow: hidden;
+      background: #ffffff;
+    }
+    .wotw-header {
+      background: #722f37;
+      padding: 12px 20px;
+      text-align: center;
+    }
+    .wotw-header span {
+      font-family: 'Trebuchet MS', Arial, sans-serif;
+      font-size: 11px;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color: #d4a853;
+    }
+    .wotw-body { padding: 24px; }
+    .wotw-body table { width: 100%; border-spacing: 0; }
+    .wotw-score {
+      width: 80px;
+      vertical-align: top;
+      text-align: center;
+      padding-right: 20px;
+    }
+    .score-circle {
+      display: inline-block;
+      width: 64px;
+      height: 64px;
+      line-height: 64px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #722f37 0%, #5a1a22 100%);
+      color: #ffffff;
+      font-size: 24px;
+      font-weight: 700;
+      font-family: 'Trebuchet MS', Arial, sans-serif;
+      text-align: center;
+    }
+    .wotw-details { vertical-align: top; }
+    .wotw-details h3 {
+      margin: 0 0 6px;
+      font-size: 19px;
+      font-weight: 400;
+      line-height: 1.3;
+      color: #1a1a1a;
+    }
+    .wotw-meta {
+      font-family: 'Trebuchet MS', Arial, sans-serif;
+      font-size: 12px;
+      color: #888;
+      margin: 0 0 10px;
+    }
+    .wotw-meta strong { color: #722f37; }
+    .wotw-details p {
+      font-size: 14px;
+      line-height: 1.6;
+      color: #4a4a4a;
+      margin: 0 0 14px;
+    }
+    .wotw-reviewer {
+      font-size: 12px;
+      font-style: italic;
+      color: #999;
+    }
+
+    /* ===== MORE STORIES ===== */
+    .more-stories { padding: 28px 32px; border-top: 1px solid #ebe6de; }
+    .story-item {
+      padding: 14px 0;
+      border-bottom: 1px solid #ebe6de;
+    }
+    .story-item:last-child { border-bottom: none; }
+    .story-item a {
+      font-size: 15px;
+      line-height: 1.4;
+      color: #1a1a1a;
+      text-decoration: none;
+      font-weight: 400;
+    }
+    .story-item a:hover { color: #722f37; }
+    .story-item p {
+      font-size: 13px;
+      line-height: 1.5;
+      color: #888;
+      margin: 4px 0 0;
+    }
+    .story-dot {
+      display: inline-block;
+      width: 6px;
+      height: 6px;
+      background: #d4a853;
+      border-radius: 50%;
+      margin-right: 8px;
+      vertical-align: middle;
+    }
+
+    /* ===== CTA BANNER ===== */
+    .cta-banner {
+      padding: 36px 32px;
+      background: linear-gradient(135deg, #722f37 0%, #5a1a22 100%);
+      text-align: center;
+      border-top: 1px solid #ebe6de;
+    }
+    .cta-banner h3 {
+      margin: 0 0 8px;
+      font-size: 22px;
+      color: #ffffff;
+      font-weight: 400;
+    }
+    .cta-banner p {
+      font-size: 14px;
+      color: rgba(255,255,255,0.7);
+      margin: 0 0 20px;
+    }
+    .cta-btn {
+      display: inline-block;
+      font-family: 'Trebuchet MS', Arial, sans-serif;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: #722f37;
+      background-color: #d4a853;
+      padding: 12px 32px;
+      border-radius: 4px;
+      text-decoration: none;
+    }
+    .cta-btn:hover { background-color: #c99a45; }
+
+    /* ===== FOOTER ===== */
+    .footer {
+      padding: 32px;
+      text-align: center;
+      background-color: #faf8f5;
+      border-top: 1px solid #ebe6de;
+    }
+    .footer-social a {
+      display: inline-block;
+      margin: 0 6px;
+      text-decoration: none;
+    }
+    .footer-social img {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+    }
+    .footer p {
+      font-family: 'Trebuchet MS', Arial, sans-serif;
+      font-size: 11px;
+      line-height: 1.6;
+      color: #999;
+      margin: 8px 0 0;
+    }
+    .footer a { color: #722f37; text-decoration: underline; }
+
+    /* ===== DIVIDER ===== */
+    .divider {
+      border: none;
+      border-top: 1px solid #ebe6de;
+      margin: 0;
+    }
+    .gold-divider {
+      width: 60px;
+      border: none;
+      border-top: 2px solid #d4a853;
+      margin: 0 auto 16px;
+    }
+
+    /* ===== SPONSORED TAG ===== */
+    .sponsored-label {
+      display: inline-block;
+      font-family: 'Trebuchet MS', Arial, sans-serif;
+      font-size: 9px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #999;
+      border: 1px solid #ddd;
+      border-radius: 3px;
+      padding: 3px 8px;
+      margin-bottom: 14px;
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media screen and (max-width: 640px) {
+      .email-container { width: 100% !important; border-radius: 0 !important; }
+      .section, .card-grid, .wotw, .more-stories, .footer { padding-left: 20px !important; padding-right: 20px !important; }
+      .header { padding: 28px 20px 22px !important; }
+      .header h1 { font-size: 26px !important; }
+      .card { display: block !important; width: 100% !important; margin-bottom: 16px; }
+      .card-gutter { display: none !important; }
+      .nav-bar a { padding: 0 8px !important; font-size: 10px !important; }
+    }
+  </style>
+</head>
+<body>
+  <div class="email-wrapper">
+    <table role="presentation" cellpadding="0" cellspacing="0" width="100%">
+      <tr>
+        <td align="center">
+          <div class="email-container">
+
+            <!-- ============ HEADER ============ -->
+            <div class="header">
+              <div class="header-badge">Wine Spectator</div>
+              <h1>Sips <span class="amp">&amp;</span> Tips</h1>
+              <div class="tagline">Learn More, Drink Better</div>
+              <div class="header-date">March 10, 2026</div>
+            </div>
+
+            <!-- ============ NAV BAR ============ -->
+            <div class="nav-bar">
+              <a href="#">Tasting</a>
+              <a href="#">Recipes</a>
+              <a href="#">Wine of the Week</a>
+              <a href="#">More Stories</a>
+            </div>
+
+            <!-- ============ LEAD STORY: TASTING HIGHLIGHTS ============ -->
+            <div class="section">
+              <span class="section-label">Tasting Highlights</span>
+              <h2><a href="#">Ch&acirc;teauneuf and Then Some&mdash;Spicy Southern Rh&ocirc;ne Reds</a></h2>
+              <p>
+                Don't miss senior editor Kristen Bieler's new reviews of top Grenache-based reds
+                from Ch&acirc;teauneuf, Gigondas, Lirac, and C&ocirc;tes du Rh&ocirc;ne, up to 93 points
+                and as low as $20.
+              </p>
+              <a href="#" class="read-more">Get Her Picks &rarr;</a>
+            </div>
+
+            <!-- ============ HERO IMAGE ============ -->
+            <img
+              src="https://placehold.co/640x320/f4f1ec/722f37?text=Southern+Rh%C3%B4ne+Vineyards"
+              alt="Vineyards in the Southern Rhône Valley"
+              class="hero-img"
+            >
+
+            <!-- ============ TWO-COLUMN CARDS ============ -->
+            <div class="card-grid">
+              <table role="presentation">
+                <tr>
+                  <td class="card">
+                    <img
+                      src="https://placehold.co/300x180/e8e0d4/722f37?text=Coffee+%26+Tea"
+                      alt="A cup of coffee"
+                      class="card-img"
+                    >
+                    <div class="card-body">
+                      <h3>Can Coffee or Tea Prevent Dementia?</h3>
+                      <p>An extensive study tracking more than 130,000 people found a strong link between two to three cups a day and better brain health.</p>
+                      <a href="#" class="read-more">What does the research say? &rarr;</a>
+                    </div>
+                  </td>
+                  <td class="card-gutter"></td>
+                  <td class="card">
+                    <img
+                      src="https://placehold.co/300x180/e8e0d4/722f37?text=Roast+Chicken"
+                      alt="Roast chicken dinner"
+                      class="card-img"
+                    >
+                    <div class="card-body">
+                      <h3>6 Best Roast Chicken Recipes &amp; Wine Pairings</h3>
+                      <p>Upgrade your dinner party with chef-approved recipes and top-notch wine pairings to match.</p>
+                      <a href="#" class="read-more">See what's for dinner &rarr;</a>
+                    </div>
+                  </td>
+                </tr>
+              </table>
+            </div>
+
+            <!-- ============ SPONSORED CONTENT ============ -->
+            <div class="section">
+              <span class="sponsored-label">Sponsored Content</span>
+              <img
+                src="https://placehold.co/576x280/e8e0d4/722f37?text=Cline+Cellars"
+                alt="Cline Cellars - The Next Generation"
+                style="width:100%;height:auto;border-radius:6px;margin-bottom:16px;"
+              >
+              <h3>The Next Generation at Cline</h3>
+              <p>
+                At Cline Cellars, sisters Megan Cline and Hilary Cline are shaping the winery's next chapter.
+                As second-generation leaders, they balance family tradition with a modern focus on sustainability,
+                grower partnerships, and wines that reflect the land and community that have long defined Cline.
+              </p>
+              <a href="#" class="read-more">Meet the Women of Cline &rarr;</a>
+            </div>
+
+            <!-- ============ WINE OF THE WEEK ============ -->
+            <div class="wotw">
+              <div class="wotw-inner">
+                <div class="wotw-header">
+                  <span>Wine of the Week</span>
+                </div>
+                <div class="wotw-body">
+                  <table role="presentation">
+                    <tr>
+                      <td class="wotw-score">
+                        <div class="score-circle">91</div>
+                      </td>
+                      <td class="wotw-details">
+                        <h3>Quinta do Regueiro Alvarinho Vinho Verde Mon&ccedil;&atilde;o e Melga&ccedil;o Foral de Melga&ccedil;o Old Vines 2024</h3>
+                        <p class="wotw-meta">
+                          <strong>$20</strong> &middot; 12,000 cases made &middot; 7,000 cases imported
+                        </p>
+                        <p>
+                          A mouthwatering white, showing an expressive mix of ruby red grapefruit, lime zest,
+                          nectarine and green almond notes. This is lightly fleshy, with pleasing plumpness to
+                          the juicy fruit flavors, while a tang of salinity refreshes the finish. Drink now.
+                          From Portugal.
+                        </p>
+                        <span class="wotw-reviewer">&mdash; Alison Napjus</span>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+            <!-- ============ MORE STORIES ============ -->
+            <div class="more-stories">
+              <span class="section-label">More to Explore</span>
+
+              <div class="story-item">
+                <span class="story-dot"></span>
+                <a href="#">From Filo to Masa: Dalida Owners Debut Maria Isabel, an Elevated Mexican Dining Destination, in San Francisco</a>
+                <p>Chefs Laura and Sayat Ozyilmaz showcase bold flavors and refined techniques, plus a wine list that celebrates Latin culture.</p>
+              </div>
+
+              <div class="story-item">
+                <span class="story-dot"></span>
+                <a href="#">New Documentary Highlights the People and Land Behind Chile's Wine Culture</a>
+                <p>Somm-turned-filmmaker Jack Kauffman explores Chile's vibrant wine scene through winemaker interviews, vineyard tours and delicious meals.</p>
+              </div>
+
+              <div class="story-item">
+                <span class="story-dot"></span>
+                <a href="#">Premiere Napa Valley Auction Raises $3 Million with 2024 Vintage Preview</a>
+                <p>In its 20th year, the annual trade auction offered a sneak peek of Napa's 2024 wines and raised money for Napa Valley Vintners' efforts.</p>
+              </div>
+            </div>
+
+            <!-- ============ CTA BANNER ============ -->
+            <div class="cta-banner">
+              <h3>Explore Our Free Newsletters</h3>
+              <p>Wine reviews, recipes, dining tips, health tips, collecting, news and more.</p>
+              <a href="#" class="cta-btn">Sign Up Here</a>
+            </div>
+
+            <!-- ============ FOOTER ============ -->
+            <div class="footer">
+              <div class="footer-social">
+                <a href="#"><img src="https://placehold.co/28/722f37/ffffff?text=f" alt="Facebook"></a>
+                <a href="#"><img src="https://placehold.co/28/722f37/ffffff?text=ig" alt="Instagram"></a>
+                <a href="#"><img src="https://placehold.co/28/722f37/ffffff?text=in" alt="LinkedIn"></a>
+                <a href="#"><img src="https://placehold.co/28/722f37/ffffff?text=yt" alt="YouTube"></a>
+                <a href="#"><img src="https://placehold.co/28/722f37/ffffff?text=x" alt="X"></a>
+              </div>
+              <p>
+                Learn how we choose our <a href="#">newsletter content</a><br>
+                For newsletter-specific questions, please send a message to our <a href="#">newsletter editors</a><br>
+                For other questions about Wine Spectator, visit <a href="#">FAQ</a> or <a href="#">winespectator.com</a>
+              </p>
+              <p>
+                For advertising information, contact <a href="#">newsletteradvertising@mshanken.com</a>
+              </p>
+              <p>
+                To unsubscribe from Wine Spectator newsletters, <a href="#">click here</a>.<br>
+                <a href="#">Privacy Policy</a>
+              </p>
+              <p style="margin-top:14px;font-size:10px;color:#bbb;">
+                M. Shanken Communications Inc.<br>
+                825 Eighth Avenue, 33rd Floor<br>
+                New York, NY 10019
+              </p>
+            </div>
+
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+</body>
+</html>
