@@ -41,7 +41,7 @@
       bottom: 0;
       left: 0;
     }
-    .header-logo { max-width: 220px; height: auto; margin-bottom: 24px; filter: brightness(0) invert(1); }
+    .header-logo { max-width: 220px; height: auto; margin-bottom: 24px; -webkit-filter: brightness(0) invert(1); filter: brightness(0) invert(1); }
     .header h1 {
       margin: 0 0 8px;
       font-family: 'Oswald', Arial, sans-serif;
@@ -120,13 +120,19 @@
       left: 0;
       border-radius: 4px 4px 0 0;
     }
-    .product-img {
+    .product-img-wrap {
       width: 100%;
-      max-width: 110px;
-      height: 140px;
-      object-fit: contain;
-      display: block;
+      height: 150px;
+      overflow: hidden;
+      text-align: center;
       margin: 0 auto 16px;
+    }
+    .product-img {
+      max-width: 110px;
+      max-height: 150px;
+      width: auto;
+      height: auto;
+      display: inline-block;
     }
     .product-name {
       font-family: 'Oswald', Arial, sans-serif;
@@ -263,7 +269,9 @@
                 <tr>
                   <td class="product-cell">
                     <div class="product-card">
-                      <img src="https://braze-images.com/appboy/communication/assets/image_assets/images/69bc54e49ce95e005fdc6c91/original.?1773950179" alt="Redemption Rye" class="product-img">
+                      <div class="product-img-wrap">
+                        <img src="https://braze-images.com/appboy/communication/assets/image_assets/images/69bc54e49ce95e005fdc6c91/original.?1773950179" alt="Redemption Rye" class="product-img">
+                      </div>
                       <p class="product-name">Straight Rye</p>
                       <p class="product-desc">95% rye mash. Spice-forward and unapologetic. The one that started the revival.</p>
                       <a href="https://store.whiskyadvocate.com/collections/redemption" class="product-btn">Shop</a>
@@ -272,9 +280,11 @@
                   <td class="product-gutter"></td>
                   <td class="product-cell">
                     <div class="product-card">
-                      <img src="https://braze-images.com/appboy/communication/assets/image_assets/images/69bc54e655428b005fa47550/original.?1773950181" alt="Redemption Bourbon" class="product-img">
+                      <div class="product-img-wrap">
+                        <img src="https://braze-images.com/appboy/communication/assets/image_assets/images/69bc54e655428b005fa47550/original.?1773950181" alt="Redemption Bourbon" class="product-img">
+                      </div>
                       <p class="product-name">Bourbon</p>
-                      <p class="product-desc">Smooth meets bold. A high-rye bourbon with backbone.</p>
+                      <p class="product-desc">Smooth meets bold. A high-rye bourbon with serious backbone.</p>
                       <a href="https://store.whiskyadvocate.com/collections/redemption" class="product-btn">Shop</a>
                     </div>
                   </td>
@@ -287,7 +297,9 @@
                 <tr>
                   <td class="product-cell">
                     <div class="product-card">
-                      <img src="https://braze-images.com/appboy/communication/assets/image_assets/images/69bc54e7b0d38b0062f15cf1/original.?1773950183" alt="Redemption High Rye Bourbon" class="product-img">
+                      <div class="product-img-wrap">
+                        <img src="https://braze-images.com/appboy/communication/assets/image_assets/images/69bc54e7b0d38b0062f15cf1/original.?1773950183" alt="Redemption High Rye Bourbon" class="product-img">
+                      </div>
                       <p class="product-name">High Rye Bourbon</p>
                       <p class="product-desc">High-rye mash bill. Bourbon richness with rye attitude. Built for the Manhattan.</p>
                       <a href="https://store.whiskyadvocate.com/collections/redemption" class="product-btn">Shop</a>
@@ -296,9 +308,11 @@
                   <td class="product-gutter"></td>
                   <td class="product-cell">
                     <div class="product-card">
-                      <img src="https://braze-images.com/appboy/communication/assets/image_assets/images/69bc54ea22a0d7005f72dd8a/original.?1773950185" alt="Redemption Wheated Bourbon" class="product-img">
+                      <div class="product-img-wrap">
+                        <img src="https://braze-images.com/appboy/communication/assets/image_assets/images/69bc54ea22a0d7005f72dd8a/original.?1773950185" alt="Redemption Wheated Bourbon" class="product-img">
+                      </div>
                       <p class="product-name">Wheated Bourbon</p>
-                      <p class="product-desc">Soft. Round. Layered with honey, vanilla, and warmth.</p>
+                      <p class="product-desc">Soft and round. Layered with honey, vanilla, and lasting warmth.</p>
                       <a href="https://store.whiskyadvocate.com/collections/redemption" class="product-btn">Shop</a>
                     </div>
                   </td>
