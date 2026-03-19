@@ -41,7 +41,8 @@
     }
 
     /* ===== TEXTURE HERO ===== */
-    .texture-hero img { width: 100%; height: auto; display: block; }
+    .texture-hero { text-align: center; background: #fffdf8; }
+    .texture-hero img { width: 100%; max-width: 640px; height: auto; display: block; margin: 0 auto; }
 
     /* ===== STORY ===== */
     .story {
@@ -94,7 +95,7 @@
     /* ===== VALUES ===== */
     .values {
       padding: 44px 32px;
-      background: linear-gradient(160deg, #2e2318 0%, #1a120b 100%);
+      background: linear-gradient(160deg, #3d3028 0%, #2e2318 100%);
       position: relative;
     }
     .values::before {
@@ -123,8 +124,9 @@
       vertical-align: top;
       text-align: center;
       padding: 20px 12px;
-      border: 1px solid rgba(212,168,83,0.15);
+      border: 1px solid rgba(212,168,83,0.25);
       border-radius: 4px;
+      background: rgba(255,255,255,0.04);
     }
     .value-gutter { width: 5%; }
     .value-number {
