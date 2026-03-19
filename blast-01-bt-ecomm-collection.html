@@ -8,6 +8,11 @@
   <!--[if mso]>
   <style>table,td,th{font-family:Arial,Helvetica,sans-serif!important}</style>
   <![endif]-->
+  <!--preheader-->
+  <div style="display:none;font-size:1px;color:#1c1710;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;">
+    Three bourbons. 92 Proof. Tennessee craft at its finest — shop the full Bib &amp; Tucker collection.
+    &zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;
+  </div>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     /* ===== RESET ===== */
@@ -259,6 +264,17 @@
     }
     .cta-btn:hover { background: #e0b96a; }
 
+    /* ===== ANIMATED ACCENT ===== */
+    @keyframes shimmer {
+      0% { background-position: -200% center; }
+      100% { background-position: 200% center; }
+    }
+    .header::before {
+      background: linear-gradient(90deg, transparent 0%, rgba(212,168,83,0.1) 25%, rgba(212,168,83,0.5) 50%, rgba(212,168,83,0.1) 75%, transparent 100%);
+      background-size: 200% 100%;
+      animation: shimmer 4s ease-in-out infinite;
+    }
+
     /* ===== FOOTER ===== */
     .footer {
       padding: 36px 32px;
@@ -307,19 +323,19 @@
               <img src="https://braze-images.com/appboy/communication/assets/image_assets/images/69bc5675439b710060149528/original.png?1773950581" alt="Bib & Tucker" class="header-logo">
               <hr class="header-rule">
               <h1>Meet the <em>Collection</em></h1>
-              <p class="tagline">Three Bourbons &bull; One Standard &bull; No Compromise</p>
+              <p class="tagline">Where Bold Meets Refined &bull; 92 Proof &bull; Tennessee Small Batch</p>
             </div>
 
             <!-- ============ INTRO STRIP ============ -->
             <div class="intro-strip">
-              <p>&ldquo;We don&rsquo;t make bourbon for everyone. We make it for the ones who notice the difference.&rdquo;</p>
+              <p>&ldquo;Six years in American white oak, filtered through sugar maple charcoal &mdash; the Lincoln County Process that defines our house style.&rdquo;</p>
             </div>
 
             <!-- ============ 3-SKU PRODUCT GRID ============ -->
             <div class="product-grid">
               <span class="grid-label">The Lineup</span>
               <h2>Choose Your Pour</h2>
-              <p class="subtitle">Small batch. Hand-selected. Tennessee to the bone.</p>
+              <p class="subtitle">Small batch. Hand-selected barrels. Tennessee to the bone.</p>
 
               <table role="presentation">
                 <tr>
@@ -328,8 +344,8 @@
                     <div class="product-card">
                       <!-- REPLACE: 6-Year (No. 24) bottle pack shot — same style/BG as siblings -->
                       <img src="https://braze-images.com/appboy/communication/assets/image_assets/images/69bc56069ce95e005fdc6f7d/original.png?1773950468" alt="Bib & Tucker 6-Year Small Batch Bourbon" class="product-img">
-                      <p class="product-name">6-Year Small Batch</p>
-                      <p class="product-desc">Rich caramel, toasted oak, and a finish that lingers.</p>
+                      <p class="product-name">Classic Six &bull; 92 Proof</p>
+                      <p class="product-desc">Rich caramel, toasted vanilla, warm baking spice. The one that started it all.</p>
                       <a href="https://store.whiskyadvocate.com/collections/bib-tucker" class="product-btn">Shop Now</a>
                     </div>
                   </td>
@@ -341,8 +357,8 @@
                     <div class="product-card">
                       <!-- REPLACE: Double Char bottle pack shot -->
                       <img src="https://braze-images.com/appboy/communication/assets/image_assets/images/69bc54f56c576e0060f0aa91/original.?1773950196" alt="Bib & Tucker Double Char Bourbon" class="product-img">
-                      <p class="product-name">Double Char</p>
-                      <p class="product-desc">Twice the char, twice the depth. Smoke meets sweet.</p>
+                      <p class="product-name">Double Char &bull; 88 Proof</p>
+                      <p class="product-desc">Twice the char, twice the depth. Deep smoke meets dark honey.</p>
                       <a href="https://store.whiskyadvocate.com/collections/bib-tucker" class="product-btn">Shop Now</a>
                     </div>
                   </td>
@@ -354,8 +370,8 @@
                     <div class="product-card">
                       <!-- REPLACE: Gold Roast bottle pack shot -->
                       <img src="https://braze-images.com/appboy/communication/assets/image_assets/images/69bc54cf20ebb8005f4ccb94/original.?1773950158" alt="Bib & Tucker Gold Roast Bourbon" class="product-img">
-                      <p class="product-name">Gold Roast</p>
-                      <p class="product-desc">Coffee-kissed. Warm vanilla. A morning pour, any hour.</p>
+                      <p class="product-name">Gold Roast &bull; 92 Proof</p>
+                      <p class="product-desc">Coffee-kissed. Warm vanilla. The perfect after-dinner bourbon.</p>
                       <a href="https://store.whiskyadvocate.com/collections/bib-tucker" class="product-btn">Shop Now</a>
                     </div>
                   </td>
@@ -368,8 +384,8 @@
               <table role="presentation">
                 <tr>
                   <td class="heritage-cell">
-                    <p class="heritage-stat">6</p>
-                    <p class="heritage-label">Years Aged</p>
+                    <p class="heritage-stat">92</p>
+                    <p class="heritage-label">Proof</p>
                   </td>
                   <td class="heritage-gutter"></td>
                   <td class="heritage-cell">

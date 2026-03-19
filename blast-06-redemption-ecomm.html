@@ -8,6 +8,10 @@
   <!--[if mso]>
   <style>table,td,th{font-family:Arial,Helvetica,sans-serif!important}</style>
   <![endif]-->
+  <div style="display:none;font-size:1px;color:#0d0d0d;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;">
+    America's Original Spirit. Four expressions. From 95% rye mash to wheated bourbon — pick your weapon.
+    &zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;
+  </div>
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     body, table, td, a { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
@@ -153,6 +157,18 @@
     }
     .product-btn:hover { background: #c49b44; color: #0d0d0d; }
 
+    /* ===== ANIMATED ACCENT ===== */
+    @keyframes gradient-shift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    .header::after {
+      background: linear-gradient(90deg, #0d0d0d, #8b2332, #c49b44, #8b2332, #0d0d0d);
+      background-size: 200% 200%;
+      animation: gradient-shift 6s ease infinite;
+    }
+
     /* ===== CTA BANNER ===== */
     .cta-banner {
       padding: 48px 40px;
@@ -231,13 +247,13 @@
               <!-- REPLACE: Redemption logo PNG -->
               <img src="https://braze-images.com/appboy/communication/assets/image_assets/images/69bc55916c576e0060f0ab5a/original.png?1773950352" alt="Redemption Whiskey" class="header-logo">
               <h1>Shop the <span>Lineup</span></h1>
-              <p class="tagline">Bold whiskey. No apologies. Pick your weapon.</p>
+              <p class="tagline">America&rsquo;s Original Spirit. Pre-Prohibition rye revival. Pick your weapon.</p>
             </div>
 
             <div class="product-grid">
               <p class="grid-eyebrow">The Collection</p>
               <h2>Find Your Expression</h2>
-              <p class="subtitle">Four bottles. Four personalities. All rye-driven.</p>
+              <p class="subtitle">Four expressions. Four personalities. The character that made American whiskey legendary.</p>
 
               <table role="presentation">
                 <tr>
@@ -245,7 +261,7 @@
                     <div class="product-card">
                       <img src="https://braze-images.com/appboy/communication/assets/image_assets/images/69bc54e49ce95e005fdc6c91/original.?1773950179" alt="Redemption Rye" class="product-img">
                       <p class="product-name">Straight Rye</p>
-                      <p class="product-desc">Spice-forward. No-nonsense. The one that started it all.</p>
+                      <p class="product-desc">95% rye mash. Spice-forward and unapologetic. The one that started the revival.</p>
                       <a href="https://store.whiskyadvocate.com/collections/redemption" class="product-btn">Shop</a>
                     </div>
                   </td>
@@ -269,7 +285,7 @@
                     <div class="product-card">
                       <img src="https://braze-images.com/appboy/communication/assets/image_assets/images/69bc54e7b0d38b0062f15cf1/original.?1773950183" alt="Redemption High Rye Bourbon" class="product-img">
                       <p class="product-name">High Rye Bourbon</p>
-                      <p class="product-desc">Bourbon richness. Rye attitude. The best of both worlds.</p>
+                      <p class="product-desc">High-rye mash bill. Bourbon richness with rye attitude. Built for the Manhattan.</p>
                       <a href="https://store.whiskyadvocate.com/collections/redemption" class="product-btn">Shop</a>
                     </div>
                   </td>
