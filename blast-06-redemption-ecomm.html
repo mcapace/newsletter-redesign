@@ -41,7 +41,7 @@
       bottom: 0;
       left: 0;
     }
-    .header-logo { max-width: 220px; height: auto; margin-bottom: 24px; }
+    .header-logo { max-width: 220px; height: auto; margin-bottom: 24px; filter: brightness(0) invert(1); }
     .header h1 {
       margin: 0 0 8px;
       font-family: 'Oswald', Arial, sans-serif;
@@ -97,6 +97,7 @@
       width: 48%;
       vertical-align: top;
       text-align: center;
+      height: 1%;
     }
     .product-gutter { width: 4%; }
     .product-spacer { height: 20px; }
@@ -106,6 +107,7 @@
       border-radius: 4px;
       padding: 24px 16px 20px;
       position: relative;
+      height: 100%;
     }
     .product-card::before {
       content: '';
@@ -121,7 +123,8 @@
     .product-img {
       width: 100%;
       max-width: 110px;
-      height: auto;
+      height: 140px;
+      object-fit: contain;
       display: block;
       margin: 0 auto 16px;
     }
@@ -141,6 +144,7 @@
       color: #888;
       margin: 0 0 14px;
       line-height: 1.4;
+      min-height: 54px;
     }
     .product-btn {
       display: inline-block;
