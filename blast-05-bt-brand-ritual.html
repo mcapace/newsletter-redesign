@@ -8,176 +8,190 @@
   <!--[if mso]>
   <style>table,td,th{font-family:Arial,Helvetica,sans-serif!important}</style>
   <![endif]-->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
-    /* ===== RESET ===== */
     body, table, td, a { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
     table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
     img { -ms-interpolation-mode: bicubic; border: 0; outline: none; text-decoration: none; }
-    body { margin: 0; padding: 0; width: 100% !important; background-color: #f5f0e8; }
-
+    body { margin: 0; padding: 0; width: 100% !important; background-color: #1c1710; }
     * { box-sizing: border-box; }
-    body, td, th {
-      font-family: 'Georgia', 'Times New Roman', serif;
-      color: #2c2c2c;
-    }
+    body, td, th { font-family: 'Cormorant Garamond', Georgia, serif; color: #2c2c2c; }
 
-    .email-wrapper { width: 100%; background-color: #f5f0e8; padding: 24px 0; }
-    .email-container {
-      max-width: 640px;
-      margin: 0 auto;
-      background-color: #ffffff;
-      border-radius: 4px;
-      overflow: hidden;
-      box-shadow: 0 1px 4px rgba(0,0,0,0.08);
-    }
+    .email-wrapper { width: 100%; background-color: #1c1710; padding: 32px 0; }
+    .email-container { max-width: 640px; margin: 0 auto; background-color: #fffdf8; overflow: hidden; }
 
     /* ===== HEADER ===== */
     .header {
-      background: linear-gradient(135deg, #2a1f14 0%, #1a1209 100%);
-      padding: 32px;
+      background: linear-gradient(160deg, #2e2318 0%, #1a120b 100%);
+      padding: 36px 32px;
       text-align: center;
     }
-    .header-logo {
-      max-width: 150px;
-      height: auto;
-    }
+    .header-logo { max-width: 150px; height: auto; }
 
     /* ===== LIFESTYLE HERO ===== */
-    .lifestyle-hero {
-      position: relative;
+    .lifestyle-hero { position: relative; }
+    .lifestyle-hero img { width: 100%; height: auto; display: block; }
+    .hero-overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 40px 32px 24px;
+      background: linear-gradient(0deg, rgba(15,12,8,0.85) 0%, transparent 100%);
+      text-align: center;
     }
-    .lifestyle-hero img {
-      width: 100%;
-      height: auto;
-      display: block;
+    .hero-overlay h1 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 34px;
+      font-weight: 400;
+      color: #ffffff;
+      margin: 0;
+      line-height: 1.2;
     }
+    .hero-overlay h1 em { font-style: italic; color: #d4a853; }
 
     /* ===== MOOD COPY ===== */
     .mood-copy {
-      padding: 44px 40px;
+      padding: 48px 48px;
       text-align: center;
+      background: #fffdf8;
     }
-    .gold-divider {
-      width: 60px;
+    .gold-rule {
+      width: 48px;
       border: none;
-      border-top: 2px solid #d4a853;
-      margin: 0 auto 24px;
+      border-top: 1.5px solid #d4a853;
+      margin: 0 auto 28px;
     }
-    .mood-copy h1 {
-      margin: 0 0 16px;
-      font-size: 30px;
-      font-weight: 400;
-      color: #1a1a1a;
-      line-height: 1.25;
-    }
-    .mood-copy h1 .gold {
+    .mood-copy .eyebrow {
+      font-family: 'Montserrat', Arial, sans-serif;
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 4px;
+      text-transform: uppercase;
       color: #d4a853;
-      font-style: italic;
+      margin: 0 0 12px;
     }
-    .mood-copy p {
-      font-size: 15px;
-      line-height: 1.7;
-      color: #4a4a4a;
-      margin: 0 0 16px;
-      max-width: 480px;
-      margin-left: auto;
-      margin-right: auto;
+    .mood-copy h2 {
+      margin: 0 0 24px;
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 26px;
+      font-weight: 400;
+      color: #1a120b;
     }
     .mood-copy p.ritual-quote {
+      font-family: 'Playfair Display', Georgia, serif;
       font-size: 20px;
       font-style: italic;
-      color: #2a1f14;
-      line-height: 1.4;
-      margin: 28px auto;
-      padding: 20px 24px;
+      color: #2e2318;
+      line-height: 1.45;
+      margin: 0 0 28px;
+      padding: 24px;
+      background: linear-gradient(135deg, #f7f2ea 0%, #ece4d8 100%);
+      border-radius: 4px;
       border-left: 3px solid #d4a853;
       text-align: left;
-      max-width: 440px;
+    }
+    .mood-copy p {
+      font-size: 17px;
+      line-height: 1.7;
+      color: #6a5d50;
+      margin: 0 0 18px;
     }
 
     /* ===== MOMENT CARDS ===== */
     .moments {
-      padding: 0 32px 36px;
+      padding: 0 32px 44px;
+      background: #fffdf8;
     }
     .moments table { width: 100%; border-spacing: 0; }
     .moment-cell {
       width: 48%;
       vertical-align: top;
-      background: #faf8f5;
-      border-radius: 6px;
-      overflow: hidden;
       text-align: center;
-      padding: 24px 16px;
+      padding: 28px 20px;
+      background: linear-gradient(160deg, #2e2318 0%, #1a120b 100%);
+      border-radius: 4px;
     }
     .moment-gutter { width: 4%; }
+    .moment-icon {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 28px;
+      color: #d4a853;
+      margin: 0 0 10px;
+    }
     .moment-title {
-      font-family: 'Trebuchet MS', Arial, sans-serif;
-      font-size: 11px;
+      font-family: 'Montserrat', Arial, sans-serif;
+      font-size: 10px;
       font-weight: 700;
-      letter-spacing: 2px;
+      letter-spacing: 2.5px;
       text-transform: uppercase;
       color: #d4a853;
-      margin: 0 0 8px;
+      margin: 0 0 10px;
     }
     .moment-desc {
-      font-size: 14px;
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 15px;
+      font-style: italic;
       line-height: 1.5;
-      color: #666;
+      color: rgba(255,255,255,0.55);
       margin: 0;
     }
 
-    /* ===== FOOTER SHOP LINK ===== */
+    /* ===== FOOTER SHOP ===== */
     .footer-shop {
-      padding: 28px 32px;
+      padding: 36px 32px;
       text-align: center;
-      background: linear-gradient(135deg, #2a1f14 0%, #1a1209 100%);
+      background: linear-gradient(160deg, #2e2318 0%, #1a120b 100%);
+      position: relative;
+    }
+    .footer-shop::before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(212,168,83,0.3), transparent);
+      position: absolute;
+      top: 0;
+      left: 0;
     }
     .footer-shop p {
-      font-size: 14px;
-      color: rgba(255,255,255,0.5);
-      margin: 0 0 12px;
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 17px;
+      font-style: italic;
+      color: rgba(255,255,255,0.45);
+      margin: 0 0 16px;
     }
-    .footer-shop-link {
+    .footer-shop-cta {
       display: inline-block;
-      font-family: 'Trebuchet MS', Arial, sans-serif;
+      font-family: 'Montserrat', Arial, sans-serif;
       font-size: 12px;
       font-weight: 700;
-      letter-spacing: 0.5px;
-      color: #d4a853;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color: #1a120b;
+      background: linear-gradient(135deg, #d4a853 0%, #c99a45 100%);
+      padding: 16px 44px;
+      border-radius: 2px;
       text-decoration: none;
-      border-bottom: 1.5px solid rgba(212,168,83,0.4);
-      padding-bottom: 2px;
     }
-    .footer-shop-link:hover { color: #ffffff; }
 
     /* ===== FOOTER ===== */
     .footer {
-      padding: 32px;
+      padding: 36px 32px;
       text-align: center;
-      background-color: #faf8f5;
-      border-top: 1px solid #ebe6de;
+      background-color: #f7f2ea;
+      border-top: 1px solid #e0d6c6;
     }
-    .footer-logo {
-      max-width: 120px;
-      height: auto;
-      margin-bottom: 16px;
-    }
-    .footer p {
-      font-family: 'Trebuchet MS', Arial, sans-serif;
-      font-size: 11px;
-      line-height: 1.6;
-      color: #999;
-      margin: 8px 0 0;
-    }
-    .footer a { color: #2a1f14; text-decoration: underline; }
+    .footer-logo { max-width: 110px; height: auto; margin-bottom: 16px; opacity: 0.6; }
+    .footer p { font-family: 'Montserrat', Arial, sans-serif; font-size: 10px; line-height: 1.7; color: #a09080; margin: 8px 0 0; }
+    .footer a { color: #2e2318; text-decoration: underline; }
 
-    /* ===== RESPONSIVE ===== */
     @media screen and (max-width: 640px) {
-      .email-container { width: 100% !important; border-radius: 0 !important; }
-      .mood-copy { padding: 32px 20px !important; }
-      .mood-copy h1 { font-size: 26px !important; }
+      .email-container { width: 100% !important; }
+      .mood-copy { padding: 36px 24px !important; }
+      .hero-overlay h1 { font-size: 26px !important; }
       .moments, .footer-shop, .footer { padding-left: 20px !important; padding-right: 20px !important; }
-      .moment-cell { display: block !important; width: 100% !important; margin-bottom: 16px !important; }
+      .moment-cell { display: block !important; width: 100% !important; margin-bottom: 12px !important; }
       .moment-gutter { display: none !important; }
     }
   </style>
@@ -189,83 +203,70 @@
         <td align="center">
           <div class="email-container">
 
-            <!-- ============ HEADER ============ -->
             <div class="header">
-              <!-- REPLACE: Bib & Tucker logo PNG -->
-              <img src="https://placehold.co/150x42/2a1f14/d4a853?text=BIB+%26+TUCKER" alt="Bib & Tucker" class="header-logo">
+              <img src="https://placehold.co/150x42/1a120b/d4a853?text=BIB+%26+TUCKER" alt="Bib & Tucker" class="header-logo">
             </div>
 
-            <!-- ============ LIFESTYLE HERO ============ -->
             <div class="lifestyle-hero">
-              <!-- REPLACE: Lifestyle image — fireside, table setting, gift scene. Warm color grade. Bottle in scene OK. Rights cleared. -->
-              <img src="https://placehold.co/640x400/3d2e1e/d4a853?text=Fireside+%E2%80%94+Lifestyle+Scene" alt="A quiet moment with Bib & Tucker bourbon">
+              <!-- REPLACE: Lifestyle — fireside, table, gift scene. Warm color grade. Bottle in scene OK. -->
+              <img src="https://placehold.co/640x420/3d2e1e/d4a853?text=Fireside+%E2%80%94+Lifestyle" alt="A quiet moment with Bib & Tucker">
+              <div class="hero-overlay">
+                <h1>Some Moments Deserve<br><em>Something Better</em></h1>
+              </div>
             </div>
 
-            <!-- ============ MOOD COPY ============ -->
             <div class="mood-copy">
-              <hr class="gold-divider">
-              <h1>Some Moments Ask for<br><span class="gold">Something Better</span></h1>
-
+              <hr class="gold-rule">
+              <p class="eyebrow">The Ritual</p>
+              <h2>Slow Down. Pour Well. Stay a While.</h2>
               <p class="ritual-quote">
-                The fire's low. The conversation's easy. The glass is full.
-                This is what Bib &amp; Tucker was made for.
-              </p>
-
-              <p>
-                There's a reason certain bottles come out only for the moments
-                that matter. Bib &amp; Tucker is bourbon for the pause &mdash;
-                the space between the busy, when you slow down long enough
-                to actually taste what you're drinking.
+                The fire&rsquo;s low. The conversation&rsquo;s honest.
+                The glass is heavy in your hand. This is what Bib &amp; Tucker was made for.
               </p>
               <p>
-                Rich caramel. Warm oak. A finish that stays with you.
-                This is ritual-worthy whiskey.
+                There are bottles you open because they&rsquo;re there.
+                And there are bottles you reach for because the moment
+                calls for something with weight &mdash; something crafted
+                with enough care that you actually slow down to taste it.
+              </p>
+              <p>
+                Rich caramel. Warm oak. A finish that stays with you
+                long after the glass is empty. This is ritual-worthy whiskey.
               </p>
             </div>
 
-            <!-- ============ MOMENT CARDS ============ -->
             <div class="moments">
               <table role="presentation">
                 <tr>
                   <td class="moment-cell">
+                    <p class="moment-icon">&diams;</p>
                     <p class="moment-title">Hosting</p>
-                    <p class="moment-desc">A bottle on the bar says something. Bib &amp; Tucker says you've got taste.</p>
+                    <p class="moment-desc">The bottle on the bar that tells your guests you&rsquo;ve got impeccable taste.</p>
                   </td>
                   <td class="moment-gutter"></td>
                   <td class="moment-cell">
+                    <p class="moment-icon">&diams;</p>
                     <p class="moment-title">Gifting</p>
-                    <p class="moment-desc">The flask-shaped bottle makes every gift feel considered and elevated.</p>
+                    <p class="moment-desc">A flask-shaped bottle that makes every gift feel considered and unforgettable.</p>
                   </td>
                 </tr>
               </table>
             </div>
 
-            <!-- ============ FOOTER SHOP LINK ============ -->
             <div class="footer-shop">
-              <p>Ready to make it yours?</p>
-              <a href="#" class="footer-shop-link">Shop Bib &amp; Tucker &rarr;</a>
+              <p>Ready to elevate the evening?</p>
+              <a href="#" class="footer-shop-cta">Shop Bib &amp; Tucker</a>
             </div>
 
-            <!-- ============ FOOTER ============ -->
             <div class="footer">
-              <!-- REPLACE: Whisky Advocate logo PNG -->
-              <img src="https://placehold.co/120x30/faf8f5/999999?text=Whisky+Advocate" alt="Whisky Advocate" class="footer-logo">
+              <img src="https://placehold.co/110x28/f7f2ea/a09080?text=Whisky+Advocate" alt="Whisky Advocate" class="footer-logo">
               <p>
                 You're receiving this email because you opted in via our website.<br>
                 <a href="{{ ${set_user_field} }}">Update preferences</a> &middot; <a href="{{${email_url}}}">View in browser</a>
               </p>
-              <p>
-                &copy; {{current_year}} Deutsch Spirits. All rights reserved.<br>
-                Must be 21 years or older to purchase. Please drink responsibly.
-              </p>
-              <p>
-                <a href="{% abort_message('unsubscribed') %}">Unsubscribe</a> &middot; <a href="#">Privacy Policy</a>
-              </p>
-              <p style="margin-top:14px;font-size:10px;color:#bbb;">
-                M. Shanken Communications Inc.<br>
-                825 Eighth Avenue, 33rd Floor<br>
-                New York, NY 10019
-              </p>
+              <p>&copy; {{current_year}} Deutsch Spirits. All rights reserved. Must be 21+. Please drink responsibly.</p>
+              <p><a href="{% abort_message('unsubscribed') %}">Unsubscribe</a> &middot; <a href="#">Privacy Policy</a></p>
+              <p style="margin-top:14px;font-size:9px;color:#c0b0a0;">M. Shanken Communications Inc. &middot; 825 Eighth Avenue, 33rd Floor &middot; New York, NY 10019</p>
             </div>
 
           </div>

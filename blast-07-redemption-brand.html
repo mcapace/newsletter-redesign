@@ -4,189 +4,221 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Redemption Whiskey — Rye Revival</title>
+  <title>Redemption Whiskey — The Rye Revival</title>
   <!--[if mso]>
   <style>table,td,th{font-family:Arial,Helvetica,sans-serif!important}</style>
   <![endif]-->
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
-    /* ===== RESET ===== */
     body, table, td, a { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
     table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
     img { -ms-interpolation-mode: bicubic; border: 0; outline: none; text-decoration: none; }
     body { margin: 0; padding: 0; width: 100% !important; background-color: #0d0d0d; }
-
     * { box-sizing: border-box; }
-    body, td, th {
-      font-family: 'Georgia', 'Times New Roman', serif;
-      color: #2c2c2c;
-    }
+    body, td, th { font-family: 'Source Serif 4', Georgia, serif; color: #ffffff; }
 
-    .email-wrapper { width: 100%; background-color: #0d0d0d; padding: 24px 0; }
-    .email-container {
-      max-width: 640px;
-      margin: 0 auto;
-      background-color: #0d0d0d;
-      border-radius: 4px;
-      overflow: hidden;
-    }
+    .email-wrapper { width: 100%; background-color: #0d0d0d; padding: 32px 0; }
+    .email-container { max-width: 640px; margin: 0 auto; background-color: #0d0d0d; overflow: hidden; }
 
     /* ===== HEADER ===== */
-    .header {
-      padding: 40px 32px 20px;
-      text-align: center;
-    }
-    .header-logo {
-      max-width: 180px;
-      height: auto;
-    }
+    .header { padding: 48px 32px 24px; text-align: center; }
+    .header-logo { max-width: 170px; height: auto; }
 
     /* ===== DRAMATIC HERO ===== */
     .dramatic-hero {
-      position: relative;
-      text-align: center;
       padding: 0 32px;
+      text-align: center;
+      position: relative;
+    }
+    .dramatic-hero::before {
+      content: '';
+      display: block;
+      width: 3px;
+      height: 48px;
+      background: linear-gradient(180deg, transparent, #8b2332, #c49b44);
+      margin: 0 auto 28px;
     }
     .dramatic-hero img {
       width: 100%;
-      max-width: 500px;
+      max-width: 480px;
       height: auto;
       display: block;
       margin: 0 auto;
-      border-radius: 6px;
+      border-radius: 4px;
+      border: 1px solid rgba(196,155,68,0.15);
     }
 
     /* ===== BRAND STORY ===== */
     .brand-story {
-      padding: 44px 48px;
+      padding: 52px 48px;
       text-align: center;
     }
-    .red-divider {
-      width: 60px;
+    .red-rule {
+      width: 48px;
       border: none;
       border-top: 3px solid #8b2332;
-      margin: 0 auto 24px;
+      margin: 0 auto 28px;
     }
-    .gold-divider {
-      width: 60px;
-      border: none;
-      border-top: 2px solid #c49b44;
-      margin: 0 auto 24px;
+    .brand-story .eyebrow {
+      font-family: 'Inter', Arial, sans-serif;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: #8b2332;
+      margin: 0 0 12px;
     }
     .brand-story h1 {
-      margin: 0 0 16px;
-      font-size: 32px;
-      font-weight: 400;
+      margin: 0 0 24px;
+      font-family: 'Oswald', Arial, sans-serif;
+      font-size: 40px;
+      font-weight: 600;
       color: #ffffff;
-      line-height: 1.2;
+      line-height: 1.1;
+      letter-spacing: 2px;
+      text-transform: uppercase;
     }
-    .brand-story h1 .red { color: #8b2332; }
-    .brand-story h1 .gold { color: #c49b44; font-style: italic; }
+    .brand-story h1 span { color: #c49b44; font-style: normal; }
     .brand-story p {
-      font-size: 15px;
+      font-size: 16px;
       line-height: 1.7;
-      color: rgba(255,255,255,0.6);
-      margin: 0 0 16px;
+      color: rgba(255,255,255,0.55);
+      margin: 0 0 18px;
     }
     .brand-story p.manifesto {
-      font-size: 18px;
+      font-family: 'Source Serif 4', Georgia, serif;
+      font-size: 20px;
       font-style: italic;
       color: #c49b44;
       line-height: 1.5;
-      margin: 28px 0;
-      padding: 20px 0;
-      border-top: 1px solid rgba(196,155,68,0.2);
-      border-bottom: 1px solid rgba(196,155,68,0.2);
+      margin: 32px 0;
+      padding: 28px 24px;
+      border: 1px solid rgba(196,155,68,0.2);
+      border-radius: 4px;
+      background: rgba(196,155,68,0.05);
     }
 
-    /* ===== COCKTAIL MOMENT ===== */
+    /* ===== STATS BAR ===== */
+    .stats-bar {
+      padding: 28px 32px;
+      border-top: 1px solid rgba(139,35,50,0.3);
+      border-bottom: 1px solid rgba(139,35,50,0.3);
+    }
+    .stats-bar table { width: 100%; border-spacing: 0; }
+    .stat-cell {
+      width: 30%;
+      text-align: center;
+      padding: 0 8px;
+    }
+    .stat-gutter { width: 5%; }
+    .stat-number {
+      font-family: 'Oswald', Arial, sans-serif;
+      font-size: 28px;
+      font-weight: 600;
+      color: #c49b44;
+      margin: 0 0 2px;
+      letter-spacing: 1px;
+    }
+    .stat-label {
+      font-family: 'Inter', Arial, sans-serif;
+      font-size: 9px;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.35);
+      margin: 0;
+    }
+
+    /* ===== COCKTAIL ===== */
     .cocktail {
-      padding: 0 32px 36px;
+      padding: 48px 32px 40px;
       text-align: center;
     }
     .cocktail img {
       width: 100%;
-      max-width: 500px;
+      max-width: 480px;
       height: auto;
       display: block;
-      margin: 0 auto 20px;
-      border-radius: 6px;
+      margin: 0 auto 24px;
+      border-radius: 4px;
+      border: 1px solid rgba(196,155,68,0.15);
     }
-    .cocktail-label {
-      display: inline-block;
-      font-family: 'Trebuchet MS', Arial, sans-serif;
+    .cocktail-eyebrow {
+      font-family: 'Inter', Arial, sans-serif;
       font-size: 10px;
-      letter-spacing: 2.5px;
+      font-weight: 700;
+      letter-spacing: 3px;
       text-transform: uppercase;
-      color: #c49b44;
-      border: 1px solid rgba(196,155,68,0.3);
-      border-radius: 3px;
-      padding: 4px 10px;
-      margin-bottom: 12px;
+      color: #8b2332;
+      margin: 0 0 8px;
     }
     .cocktail h3 {
-      margin: 0 0 8px;
-      font-size: 20px;
-      font-weight: 400;
+      margin: 0 0 10px;
+      font-family: 'Oswald', Arial, sans-serif;
+      font-size: 22px;
+      font-weight: 500;
       color: #ffffff;
+      letter-spacing: 1px;
+      text-transform: uppercase;
     }
     .cocktail p {
-      font-size: 14px;
+      font-size: 15px;
+      font-style: italic;
       line-height: 1.6;
-      color: rgba(255,255,255,0.5);
+      color: rgba(255,255,255,0.45);
       margin: 0;
-      max-width: 400px;
+      max-width: 420px;
       margin-left: auto;
       margin-right: auto;
     }
 
-    /* ===== SHOP LINK ===== */
-    .shop-link-section {
-      padding: 28px 32px;
+    /* ===== CTA ===== */
+    .shop-cta {
+      padding: 36px 32px;
       text-align: center;
-      border-top: 1px solid rgba(255,255,255,0.08);
+      position: relative;
     }
-    .shop-link {
+    .shop-cta::before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 3px;
+      background: linear-gradient(90deg, #0d0d0d, #8b2332, #c49b44, #8b2332, #0d0d0d);
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    .shop-btn {
       display: inline-block;
-      font-family: 'Trebuchet MS', Arial, sans-serif;
-      font-size: 13px;
+      font-family: 'Inter', Arial, sans-serif;
+      font-size: 12px;
       font-weight: 700;
-      letter-spacing: 1.5px;
+      letter-spacing: 2.5px;
       text-transform: uppercase;
       color: #0d0d0d;
-      background-color: #c49b44;
-      padding: 14px 36px;
-      border-radius: 4px;
+      background: linear-gradient(135deg, #c49b44 0%, #b38c3a 100%);
+      padding: 16px 48px;
+      border-radius: 2px;
       text-decoration: none;
     }
-    .shop-link:hover { background-color: #b38c3a; }
 
     /* ===== FOOTER ===== */
     .footer {
-      padding: 32px;
+      padding: 36px 32px;
       text-align: center;
-      border-top: 1px solid rgba(255,255,255,0.08);
+      border-top: 1px solid rgba(255,255,255,0.06);
     }
-    .footer-logo {
-      max-width: 100px;
-      height: auto;
-      margin-bottom: 16px;
-      opacity: 0.5;
-    }
-    .footer p {
-      font-family: 'Trebuchet MS', Arial, sans-serif;
-      font-size: 11px;
-      line-height: 1.6;
-      color: rgba(255,255,255,0.35);
-      margin: 8px 0 0;
-    }
+    .footer-logo { max-width: 90px; height: auto; margin-bottom: 16px; opacity: 0.3; }
+    .footer p { font-family: 'Inter', Arial, sans-serif; font-size: 10px; line-height: 1.7; color: rgba(255,255,255,0.25); margin: 8px 0 0; }
     .footer a { color: #c49b44; text-decoration: underline; }
 
-    /* ===== RESPONSIVE ===== */
     @media screen and (max-width: 640px) {
-      .email-container { width: 100% !important; border-radius: 0 !important; }
-      .brand-story { padding: 32px 20px !important; }
-      .brand-story h1 { font-size: 26px !important; }
-      .dramatic-hero, .cocktail, .shop-link-section, .footer { padding-left: 20px !important; padding-right: 20px !important; }
+      .email-container { width: 100% !important; }
+      .brand-story { padding: 36px 24px !important; }
+      .brand-story h1 { font-size: 32px !important; }
+      .dramatic-hero, .cocktail, .shop-cta, .footer { padding-left: 20px !important; padding-right: 20px !important; }
+      .stat-cell { display: block !important; width: 100% !important; margin-bottom: 16px !important; }
+      .stat-gutter { display: none !important; }
     }
   </style>
 </head>
@@ -197,77 +229,82 @@
         <td align="center">
           <div class="email-container">
 
-            <!-- ============ HEADER ============ -->
             <div class="header">
-              <!-- REPLACE: Redemption logo (light/gold variant for dark bg) PNG -->
-              <img src="https://placehold.co/180x45/0d0d0d/c49b44?text=REDEMPTION" alt="Redemption Whiskey" class="header-logo">
+              <img src="https://placehold.co/170x42/0d0d0d/c49b44?text=REDEMPTION" alt="Redemption Whiskey" class="header-logo">
             </div>
 
-            <!-- ============ DRAMATIC HERO ============ -->
             <div class="dramatic-hero">
-              <!-- REPLACE: 1 dramatic bottle shot OR 1 cocktail-forward hero (Manhattan/Sazerac mood). Dark mood BG. -->
-              <img src="https://placehold.co/500x600/1a1a1a/c49b44?text=Dramatic+Bottle+%E2%80%94+Dark+Mood" alt="Redemption Whiskey — bold rye character">
+              <!-- REPLACE: Dramatic bottle OR cocktail-forward hero (Manhattan/Sazerac). Dark mood BG. -->
+              <img src="https://placehold.co/480x580/1a1a1a/c49b44?text=Dramatic+Bottle+%E2%80%94+Dark" alt="Redemption Whiskey — bold rye character">
             </div>
 
-            <!-- ============ BRAND STORY ============ -->
             <div class="brand-story">
-              <hr class="red-divider">
-              <h1>The Rye <span class="gold">Revival</span></h1>
-
+              <hr class="red-rule">
+              <p class="eyebrow">Our Manifesto</p>
+              <h1>The Rye<br><span>Revival</span></h1>
               <p class="manifesto">
-                Rye whiskey built America's cocktail culture. Then it nearly disappeared.
-                Redemption brought it back &mdash; bold, unapologetic, and built to mix.
-              </p>
-
-              <p>
-                Before bourbon dominated every back bar, rye was the backbone of the
-                American whiskey tradition. The Manhattan. The Sazerac. The Old Fashioned.
-                All born from rye's distinctive spice and complexity.
+                Rye whiskey built America&rsquo;s cocktail culture. Then it nearly disappeared.
+                We brought it back &mdash; bold, unapologetic, and built to mix.
               </p>
               <p>
-                Redemption was founded on a simple belief: that rye deserves its place
-                at the table again. Our high-rye mash bills deliver the character, the bite,
-                and the depth that made American whiskey legendary in the first place.
+                Before bourbon took over every back bar in America, rye was the
+                backbone of the whiskey tradition. The Manhattan. The Sazerac.
+                The Old Fashioned. All born from rye&rsquo;s distinctive bite,
+                its spice, its complexity.
+              </p>
+              <p>
+                Redemption was built on a single conviction: that rye deserves
+                its seat at the table again. Our high-rye mash bills deliver
+                the character, the edge, and the depth that made American
+                whiskey legendary in the first place.
               </p>
             </div>
 
-            <!-- ============ COCKTAIL MOMENT ============ -->
+            <div class="stats-bar">
+              <table role="presentation">
+                <tr>
+                  <td class="stat-cell">
+                    <p class="stat-number">95%</p>
+                    <p class="stat-label">Rye Mash Bill</p>
+                  </td>
+                  <td class="stat-gutter"></td>
+                  <td class="stat-cell">
+                    <p class="stat-number">4+</p>
+                    <p class="stat-label">Expressions</p>
+                  </td>
+                  <td class="stat-gutter"></td>
+                  <td class="stat-cell">
+                    <p class="stat-number">100%</p>
+                    <p class="stat-label">Unapologetic</p>
+                  </td>
+                </tr>
+              </table>
+            </div>
+
             <div class="cocktail">
-              <!-- REPLACE: Cocktail-forward image (Manhattan or Sazerac mood, dark/moody) — optional secondary image -->
-              <img src="https://placehold.co/500x350/1a1a1a/c49b44?text=Manhattan+Cocktail+Mood" alt="A Manhattan made with Redemption Rye">
-              <span class="cocktail-label">The Perfect Pour</span>
+              <!-- REPLACE: Cocktail image — Manhattan or Sazerac mood, dark/moody -->
+              <img src="https://placehold.co/480x320/1a1a1a/c49b44?text=Manhattan+%E2%80%94+Dark+Mood" alt="A Manhattan made with Redemption Rye">
+              <p class="cocktail-eyebrow">The Perfect Pour</p>
               <h3>Built for the Manhattan</h3>
               <p>
-                Redemption Rye's spice and structure make it the ideal backbone
-                for classic cocktails. No sugar needed &mdash; just confidence.
+                Redemption Rye&rsquo;s spice and structure make it the ideal backbone
+                for classics. No sugar required &mdash; just conviction.
               </p>
             </div>
 
-            <!-- ============ SHOP LINK ============ -->
-            <div class="shop-link-section">
-              <a href="#" class="shop-link">Shop Redemption</a>
+            <div class="shop-cta">
+              <a href="#" class="shop-btn">Shop Redemption</a>
             </div>
 
-            <!-- ============ FOOTER ============ -->
             <div class="footer">
-              <!-- REPLACE: Whisky Advocate logo (light variant) PNG -->
-              <img src="https://placehold.co/100x25/0d0d0d/666666?text=Whisky+Advocate" alt="Whisky Advocate" class="footer-logo">
+              <img src="https://placehold.co/90x23/0d0d0d/666666?text=Whisky+Advocate" alt="Whisky Advocate" class="footer-logo">
               <p>
                 You're receiving this email because you opted in via our website.<br>
                 <a href="{{ ${set_user_field} }}">Update preferences</a> &middot; <a href="{{${email_url}}}">View in browser</a>
               </p>
-              <p>
-                &copy; {{current_year}} Deutsch Spirits. All rights reserved.<br>
-                Must be 21 years or older to purchase. Please drink responsibly.
-              </p>
-              <p>
-                <a href="{% abort_message('unsubscribed') %}">Unsubscribe</a> &middot; <a href="#">Privacy Policy</a>
-              </p>
-              <p style="margin-top:14px;font-size:10px;color:rgba(255,255,255,0.2);">
-                M. Shanken Communications Inc.<br>
-                825 Eighth Avenue, 33rd Floor<br>
-                New York, NY 10019
-              </p>
+              <p>&copy; {{current_year}} Deutsch Spirits. All rights reserved. Must be 21+. Please drink responsibly.</p>
+              <p><a href="{% abort_message('unsubscribed') %}">Unsubscribe</a> &middot; <a href="#">Privacy Policy</a></p>
+              <p style="margin-top:14px;font-size:9px;color:rgba(255,255,255,0.15);">M. Shanken Communications Inc. &middot; 825 Eighth Avenue, 33rd Floor &middot; New York, NY 10019</p>
             </div>
 
           </div>

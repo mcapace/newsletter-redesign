@@ -4,116 +4,162 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Deutsch Spirits — Email Blast Previews</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      background: #1a1a1a;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: #0a0806;
       color: #ffffff;
-      padding: 40px 20px;
+      padding: 60px 24px;
+    }
+    .page-header { text-align: center; margin-bottom: 56px; }
+    .page-header .eyebrow {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: #d4a853;
+      margin-bottom: 12px;
     }
     h1 {
-      text-align: center;
-      font-size: 28px;
-      font-weight: 300;
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 36px;
+      font-weight: 400;
       margin-bottom: 8px;
     }
     .subtitle {
-      text-align: center;
-      color: #888;
+      color: rgba(255,255,255,0.4);
       font-size: 14px;
-      margin-bottom: 40px;
     }
     .brand-section {
       max-width: 1200px;
-      margin: 0 auto 48px;
+      margin: 0 auto 60px;
     }
     .brand-label {
       display: inline-block;
-      font-size: 11px;
+      font-size: 10px;
       font-weight: 700;
-      letter-spacing: 2px;
+      letter-spacing: 3px;
       text-transform: uppercase;
-      padding: 5px 12px;
-      border-radius: 3px;
-      margin-bottom: 20px;
+      padding: 6px 16px;
+      margin-bottom: 24px;
     }
-    .brand-label.bt { background: #2a1f14; color: #d4a853; }
-    .brand-label.redemption { background: #1a1a1a; color: #c49b44; border: 1px solid #c49b44; }
+    .brand-label.bt {
+      background: linear-gradient(135deg, #2e2318, #1a120b);
+      color: #d4a853;
+      border: 1px solid rgba(212,168,83,0.2);
+    }
+    .brand-label.redemption {
+      background: linear-gradient(135deg, #8b2332, #6a1a28);
+      color: #c49b44;
+    }
     .grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
-      gap: 24px;
+      gap: 28px;
     }
     .card {
-      background: #2a2a2a;
-      border-radius: 8px;
+      background: #151210;
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 6px;
       overflow: hidden;
-      transition: transform 0.2s, box-shadow 0.2s;
+      transition: transform 0.2s, border-color 0.3s;
       cursor: pointer;
       text-decoration: none;
       color: inherit;
       display: block;
     }
     .card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+      transform: translateY(-6px);
+      border-color: rgba(212,168,83,0.3);
+    }
+    .card-preview-wrapper {
+      width: 100%;
+      height: 280px;
+      overflow: hidden;
+      position: relative;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
     }
     .card-preview {
-      width: 100%;
-      height: 420px;
+      width: 640px;
+      height: 800px;
       border: none;
       pointer-events: none;
       transform-origin: top left;
     }
-    .card-preview-wrapper {
-      width: 100%;
-      height: 260px;
-      overflow: hidden;
-      position: relative;
-    }
-    .card-info {
-      padding: 16px 20px;
-      border-top: 1px solid #333;
-    }
+    .card-info { padding: 20px 24px; }
     .card-info .number {
-      font-size: 11px;
+      font-size: 10px;
       font-weight: 700;
-      letter-spacing: 2px;
+      letter-spacing: 3px;
       text-transform: uppercase;
-      color: #666;
-      margin-bottom: 4px;
+      color: rgba(255,255,255,0.25);
+      margin-bottom: 6px;
     }
     .card-info h3 {
-      font-size: 16px;
-      font-weight: 500;
-      margin-bottom: 4px;
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 18px;
+      font-weight: 400;
+      margin-bottom: 6px;
     }
     .card-info .type {
       font-size: 12px;
-      color: #888;
+      color: rgba(255,255,255,0.35);
     }
     .type-tag {
       display: inline-block;
-      font-size: 10px;
+      font-family: 'Inter', sans-serif;
+      font-size: 9px;
       font-weight: 700;
-      letter-spacing: 1px;
+      letter-spacing: 1.5px;
       text-transform: uppercase;
-      padding: 2px 8px;
-      border-radius: 3px;
-      margin-left: 8px;
+      padding: 3px 10px;
+      border-radius: 2px;
+      margin-left: 10px;
       vertical-align: middle;
     }
-    .type-tag.ecomm { background: #1a3a1a; color: #6abf69; }
-    .type-tag.brand { background: #3a2a1a; color: #d4a853; }
+    .type-tag.ecomm { background: rgba(196,155,68,0.15); color: #c49b44; }
+    .type-tag.brand { background: rgba(139,35,50,0.2); color: #c46b78; }
+    .instructions {
+      max-width: 640px;
+      margin: 0 auto 60px;
+      text-align: center;
+      padding: 32px;
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 6px;
+    }
+    .instructions p {
+      font-size: 13px;
+      color: rgba(255,255,255,0.4);
+      line-height: 1.7;
+    }
+    .instructions code {
+      background: rgba(212,168,83,0.1);
+      color: #d4a853;
+      padding: 2px 6px;
+      border-radius: 3px;
+      font-size: 12px;
+    }
   </style>
 </head>
 <body>
-  <h1>Deutsch Spirits — Email Blasts</h1>
-  <p class="subtitle">Click any card to open the full email preview</p>
+  <div class="page-header">
+    <p class="eyebrow">Deutsch Spirits &bull; Braze Email Program</p>
+    <h1>Email Blast Previews</h1>
+    <p class="subtitle">Click any card to open the full email mock</p>
+  </div>
+
+  <div class="instructions">
+    <p>
+      All images are placeholders marked with <code>&lt;!-- REPLACE --&gt;</code> comments.<br>
+      Swap in assets from the Google Drive folders and update <code>href="#"</code> links before uploading to Braze.
+    </p>
+  </div>
 
   <div class="brand-section">
-    <span class="brand-label bt">Bib & Tucker</span>
+    <span class="brand-label bt">Bib & Tucker &mdash; 5 Sends</span>
     <div class="grid">
       <a class="card" href="blast-01-bt-ecomm-collection.html" target="_blank">
         <div class="card-preview-wrapper">
@@ -121,8 +167,8 @@
         </div>
         <div class="card-info">
           <div class="number">Blast 01</div>
-          <h3>Shop the Collection <span class="type-tag ecomm">Ecomm</span></h3>
-          <p class="type">3-SKU grid — Gold Roast, Double Char, 6-Year</p>
+          <h3>Meet the Collection <span class="type-tag ecomm">Ecomm</span></h3>
+          <p class="type">3-SKU grid &mdash; 6-Year, Double Char, Gold Roast</p>
         </div>
       </a>
 
@@ -132,8 +178,8 @@
         </div>
         <div class="card-info">
           <div class="number">Blast 02</div>
-          <h3>Hero SKU + Occasion <span class="type-tag ecomm">Ecomm</span></h3>
-          <p class="type">Featured bottle with sibling bottles below</p>
+          <h3>The One Worth Reaching For <span class="type-tag ecomm">Ecomm</span></h3>
+          <p class="type">Hero bottle + occasion positioning</p>
         </div>
       </a>
 
@@ -143,8 +189,8 @@
         </div>
         <div class="card-info">
           <div class="number">Blast 03</div>
-          <h3>Tennessee Craft / Trust <span class="type-tag brand">Branding</span></h3>
-          <p class="type">Texture hero + craft values pillars</p>
+          <h3>Rooted in Tennessee <span class="type-tag brand">Branding</span></h3>
+          <p class="type">Craft story + heritage values</p>
         </div>
       </a>
 
@@ -155,7 +201,7 @@
         <div class="card-info">
           <div class="number">Blast 04</div>
           <h3>Dressed to Impress <span class="type-tag brand">Branding</span></h3>
-          <p class="type">Bottle as design object — dark, minimal</p>
+          <p class="type">Dark editorial &mdash; bottle as design object</p>
         </div>
       </a>
 
@@ -165,15 +211,15 @@
         </div>
         <div class="card-info">
           <div class="number">Blast 05</div>
-          <h3>The Moment — Ritual / Mood <span class="type-tag brand">Branding</span></h3>
-          <p class="type">Lifestyle scene + hosting/gifting cards</p>
+          <h3>Some Moments Deserve Something Better <span class="type-tag brand">Branding</span></h3>
+          <p class="type">Lifestyle mood + hosting/gifting</p>
         </div>
       </a>
     </div>
   </div>
 
   <div class="brand-section">
-    <span class="brand-label redemption">Redemption</span>
+    <span class="brand-label redemption">Redemption &mdash; 2 Sends</span>
     <div class="grid">
       <a class="card" href="blast-06-redemption-ecomm.html" target="_blank">
         <div class="card-preview-wrapper">
@@ -182,7 +228,7 @@
         <div class="card-info">
           <div class="number">Blast 06</div>
           <h3>Shop the Lineup <span class="type-tag ecomm">Ecomm</span></h3>
-          <p class="type">2x2 SKU grid — Rye, Bourbon, High Rye, Wheated</p>
+          <p class="type">2x2 grid &mdash; Rye, Bourbon, High Rye, Wheated</p>
         </div>
       </a>
 
@@ -192,15 +238,14 @@
         </div>
         <div class="card-info">
           <div class="number">Blast 07</div>
-          <h3>Rye Revival / Bold Character <span class="type-tag brand">Branding</span></h3>
-          <p class="type">Dark dramatic hero + cocktail moment</p>
+          <h3>The Rye Revival <span class="type-tag brand">Branding</span></h3>
+          <p class="type">Dark manifesto + cocktail moment</p>
         </div>
       </a>
     </div>
   </div>
 
   <script>
-    // Scale iframes to fit the preview cards
     function scaleIframes() {
       document.querySelectorAll('.card-preview-wrapper').forEach(wrapper => {
         const iframe = wrapper.querySelector('iframe');

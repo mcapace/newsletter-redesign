@@ -4,185 +4,192 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Bib & Tucker — Tennessee Craft</title>
+  <title>Bib & Tucker — Rooted in Tennessee</title>
   <!--[if mso]>
   <style>table,td,th{font-family:Arial,Helvetica,sans-serif!important}</style>
   <![endif]-->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
-    /* ===== RESET ===== */
     body, table, td, a { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
     table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
     img { -ms-interpolation-mode: bicubic; border: 0; outline: none; text-decoration: none; }
-    body { margin: 0; padding: 0; width: 100% !important; background-color: #f5f0e8; }
-
+    body { margin: 0; padding: 0; width: 100% !important; background-color: #1c1710; }
     * { box-sizing: border-box; }
-    body, td, th {
-      font-family: 'Georgia', 'Times New Roman', serif;
-      color: #2c2c2c;
-    }
+    body, td, th { font-family: 'Cormorant Garamond', Georgia, serif; color: #2c2c2c; }
 
-    .email-wrapper { width: 100%; background-color: #f5f0e8; padding: 24px 0; }
-    .email-container {
-      max-width: 640px;
-      margin: 0 auto;
-      background-color: #ffffff;
-      border-radius: 4px;
-      overflow: hidden;
-      box-shadow: 0 1px 4px rgba(0,0,0,0.08);
-    }
+    .email-wrapper { width: 100%; background-color: #1c1710; padding: 32px 0; }
+    .email-container { max-width: 640px; margin: 0 auto; background-color: #fffdf8; overflow: hidden; }
 
     /* ===== HEADER ===== */
     .header {
-      background: linear-gradient(135deg, #2a1f14 0%, #1a1209 100%);
-      padding: 36px 32px;
+      background: linear-gradient(160deg, #2e2318 0%, #1a120b 100%);
+      padding: 40px 32px;
       text-align: center;
     }
-    .header-logo {
-      max-width: 160px;
-      height: auto;
-      margin-bottom: 12px;
-    }
+    .header-logo { max-width: 160px; height: auto; margin-bottom: 10px; }
     .header-sub {
-      font-family: 'Trebuchet MS', Arial, sans-serif;
-      font-size: 11px;
-      letter-spacing: 2.5px;
+      font-family: 'Montserrat', Arial, sans-serif;
+      font-size: 10px;
+      letter-spacing: 3px;
       text-transform: uppercase;
-      color: #d4a853;
+      color: rgba(212,168,83,0.7);
       margin: 0;
     }
 
     /* ===== TEXTURE HERO ===== */
-    .texture-hero {
-      position: relative;
-      text-align: center;
-    }
-    .texture-hero img {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
+    .texture-hero img { width: 100%; height: auto; display: block; }
 
-    /* ===== STORY SECTION ===== */
+    /* ===== STORY ===== */
     .story {
-      padding: 44px 40px;
+      padding: 52px 48px;
       text-align: center;
+      background: #fffdf8;
     }
-    .gold-divider {
-      width: 60px;
+    .gold-rule {
+      width: 48px;
       border: none;
-      border-top: 2px solid #d4a853;
-      margin: 0 auto 24px;
+      border-top: 1.5px solid #d4a853;
+      margin: 0 auto 28px;
+    }
+    .story-eyebrow {
+      font-family: 'Montserrat', Arial, sans-serif;
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: #d4a853;
+      margin: 0 0 12px;
     }
     .story h1 {
-      margin: 0 0 16px;
-      font-size: 28px;
+      margin: 0 0 20px;
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 32px;
       font-weight: 400;
-      color: #1a1a1a;
-      line-height: 1.3;
+      color: #1a120b;
+      line-height: 1.2;
     }
+    .story h1 em { font-style: italic; color: #d4a853; }
     .story p {
-      font-size: 15px;
+      font-size: 17px;
       line-height: 1.7;
-      color: #4a4a4a;
-      margin: 0 0 16px;
-      max-width: 500px;
-      margin-left: auto;
-      margin-right: auto;
+      color: #6a5d50;
+      margin: 0 0 18px;
     }
     .story p.lead {
-      font-size: 17px;
+      font-size: 20px;
       font-style: italic;
-      color: #2a1f14;
-      margin-bottom: 24px;
+      color: #2e2318;
+      margin-bottom: 28px;
+      padding: 24px 16px;
+      background: linear-gradient(135deg, #f7f2ea 0%, #ece4d8 100%);
+      border-radius: 4px;
+      border-left: 3px solid #d4a853;
+      text-align: left;
     }
 
-    /* ===== CRAFT VALUES ===== */
+    /* ===== VALUES ===== */
     .values {
-      padding: 36px 32px;
-      background-color: #faf8f5;
-      border-top: 1px solid #ebe6de;
-      border-bottom: 1px solid #ebe6de;
+      padding: 44px 32px;
+      background: linear-gradient(160deg, #2e2318 0%, #1a120b 100%);
+      position: relative;
+    }
+    .values::before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(212,168,83,0.3), transparent);
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    .values-title {
+      text-align: center;
+      font-family: 'Montserrat', Arial, sans-serif;
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: #d4a853;
+      margin: 0 0 28px;
     }
     .values table { width: 100%; border-spacing: 0; }
     .value-cell {
       width: 30%;
       vertical-align: top;
       text-align: center;
-      padding: 0 12px;
+      padding: 20px 12px;
+      border: 1px solid rgba(212,168,83,0.15);
+      border-radius: 4px;
     }
     .value-gutter { width: 5%; }
-    .value-icon {
-      font-size: 28px;
-      margin-bottom: 12px;
+    .value-number {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 32px;
       color: #d4a853;
+      margin: 0 0 6px;
     }
     .value-title {
-      font-family: 'Trebuchet MS', Arial, sans-serif;
-      font-size: 11px;
+      font-family: 'Montserrat', Arial, sans-serif;
+      font-size: 10px;
       font-weight: 700;
       letter-spacing: 2px;
       text-transform: uppercase;
-      color: #2a1f14;
-      margin: 0 0 6px;
+      color: #ffffff;
+      margin: 0 0 8px;
     }
     .value-desc {
-      font-size: 13px;
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 14px;
+      font-style: italic;
       line-height: 1.5;
-      color: #666;
+      color: rgba(255,255,255,0.5);
       margin: 0;
     }
 
     /* ===== SOFT CTA ===== */
     .soft-cta {
-      padding: 36px 32px;
+      padding: 40px 32px;
       text-align: center;
+      background: #fffdf8;
+      border-top: 1px solid #ece4d8;
     }
     .soft-cta p {
-      font-size: 14px;
-      color: #888;
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 17px;
+      font-style: italic;
+      color: #8a7a6a;
       margin: 0 0 16px;
     }
     .explore-link {
       display: inline-block;
-      font-family: 'Trebuchet MS', Arial, sans-serif;
-      font-size: 12px;
+      font-family: 'Montserrat', Arial, sans-serif;
+      font-size: 11px;
       font-weight: 700;
-      letter-spacing: 0.5px;
-      color: #2a1f14;
+      letter-spacing: 1px;
+      color: #2e2318;
       text-decoration: none;
-      border-bottom: 1.5px solid #d4a853;
-      padding-bottom: 2px;
+      border-bottom: 2px solid #d4a853;
+      padding-bottom: 3px;
     }
-    .explore-link:hover { color: #d4a853; }
 
     /* ===== FOOTER ===== */
     .footer {
-      padding: 32px;
+      padding: 36px 32px;
       text-align: center;
-      background-color: #faf8f5;
-      border-top: 1px solid #ebe6de;
+      background-color: #f7f2ea;
+      border-top: 1px solid #e0d6c6;
     }
-    .footer-logo {
-      max-width: 120px;
-      height: auto;
-      margin-bottom: 16px;
-    }
-    .footer p {
-      font-family: 'Trebuchet MS', Arial, sans-serif;
-      font-size: 11px;
-      line-height: 1.6;
-      color: #999;
-      margin: 8px 0 0;
-    }
-    .footer a { color: #2a1f14; text-decoration: underline; }
+    .footer-logo { max-width: 110px; height: auto; margin-bottom: 16px; opacity: 0.6; }
+    .footer p { font-family: 'Montserrat', Arial, sans-serif; font-size: 10px; line-height: 1.7; color: #a09080; margin: 8px 0 0; }
+    .footer a { color: #2e2318; text-decoration: underline; }
 
-    /* ===== RESPONSIVE ===== */
     @media screen and (max-width: 640px) {
-      .email-container { width: 100% !important; border-radius: 0 !important; }
-      .story { padding: 32px 20px !important; }
-      .story h1 { font-size: 24px !important; }
+      .email-container { width: 100% !important; }
+      .story { padding: 36px 24px !important; }
+      .story h1 { font-size: 26px !important; }
       .values, .soft-cta, .footer { padding-left: 20px !important; padding-right: 20px !important; }
-      .value-cell { display: block !important; width: 100% !important; margin-bottom: 24px !important; padding: 0 !important; }
+      .value-cell { display: block !important; width: 100% !important; margin-bottom: 16px !important; }
       .value-gutter { display: none !important; }
     }
   </style>
@@ -194,89 +201,76 @@
         <td align="center">
           <div class="email-container">
 
-            <!-- ============ HEADER ============ -->
             <div class="header">
-              <!-- REPLACE: Bib & Tucker logo (small) PNG -->
-              <img src="https://placehold.co/160x45/2a1f14/d4a853?text=BIB+%26+TUCKER" alt="Bib & Tucker" class="header-logo">
+              <img src="https://placehold.co/160x45/1a120b/d4a853?text=BIB+%26+TUCKER" alt="Bib & Tucker" class="header-logo">
               <p class="header-sub">Tennessee Small Batch Bourbon</p>
             </div>
 
-            <!-- ============ TEXTURE HERO IMAGE ============ -->
+            <!-- REPLACE: Texture/abstract — oak grain, amber liquid, barrel char, or atmospheric craft image -->
             <div class="texture-hero">
-              <!-- REPLACE: Texture/abstract imagery — oak grain, amber liquid, barrel char, or atmospheric craft photo -->
-              <img src="https://placehold.co/640x360/3d2e1e/d4a853?text=Oak+%26+Grain+Texture" alt="Tennessee craft bourbon — oak and grain">
+              <img src="https://placehold.co/640x340/3d2e1e/d4a853?text=Oak+Grain+%7C+Barrel+Texture" alt="Tennessee craft — oak and grain">
             </div>
 
-            <!-- ============ BRAND STORY ============ -->
             <div class="story">
-              <hr class="gold-divider">
-              <h1>Rooted in Tennessee.<br>Refined by Time.</h1>
+              <hr class="gold-rule">
+              <p class="story-eyebrow">Our Story</p>
+              <h1>Rooted in Tennessee.<br>Refined by <em>Time.</em></h1>
               <p class="lead">
-                &ldquo;We don't rush whiskey. We let Tennessee do what Tennessee does best.&rdquo;
+                &ldquo;We don&rsquo;t rush whiskey. We let Tennessee do
+                what Tennessee does best &mdash; make something worth waiting for.&rdquo;
               </p>
               <p>
-                Every bottle of Bib &amp; Tucker starts with a promise: source the finest grains,
-                trust the process, and let the barrel do the talking. Our small-batch bourbon is
-                aged in hand-selected American white oak, deep in the hills of Tennessee, where
-                the climate and the craft come together in every sip.
+                Every bottle of Bib &amp; Tucker begins with a conviction: that great bourbon
+                can&rsquo;t be manufactured, only earned. We source the finest grains,
+                char our barrels by hand, and let time do the rest &mdash; deep in the hills
+                where the humidity, the oak, and the seasons conspire to create something
+                no distiller could achieve alone.
               </p>
               <p>
-                From grain to glass, we believe great bourbon isn't made &mdash; it's earned.
-                That's the kind of patience you can taste.
+                From grain to glass, patience is our most important ingredient.
+                And after six years, you can taste every day of it.
               </p>
             </div>
 
-            <!-- ============ CRAFT VALUES ============ -->
             <div class="values">
+              <p class="values-title">What Sets Us Apart</p>
               <table role="presentation">
                 <tr>
                   <td class="value-cell">
-                    <div class="value-icon">&bull;</div>
+                    <p class="value-number">01</p>
                     <p class="value-title">Small Batch</p>
-                    <p class="value-desc">Hand-selected barrels, never mass-produced. Quality over quantity, always.</p>
+                    <p class="value-desc">Hand-selected barrels, never mass-produced</p>
                   </td>
                   <td class="value-gutter"></td>
                   <td class="value-cell">
-                    <div class="value-icon">&bull;</div>
+                    <p class="value-number">02</p>
                     <p class="value-title">Tennessee Oak</p>
-                    <p class="value-desc">Aged in American white oak barrels, charred to unlock deep flavor.</p>
+                    <p class="value-desc">American white oak, charred to unlock depth</p>
                   </td>
                   <td class="value-gutter"></td>
                   <td class="value-cell">
-                    <div class="value-icon">&bull;</div>
+                    <p class="value-number">03</p>
                     <p class="value-title">Time-Honored</p>
-                    <p class="value-desc">Six years of patience in every bottle. No shortcuts, no compromises.</p>
+                    <p class="value-desc">Six years of patience — no shortcuts, ever</p>
                   </td>
                 </tr>
               </table>
             </div>
 
-            <!-- ============ SOFT CTA ============ -->
             <div class="soft-cta">
-              <p>Curious? Get to know the full collection.</p>
-              <a href="#" class="explore-link">Explore Bib &amp; Tucker &rarr;</a>
+              <p>Curious what six years of patience tastes like?</p>
+              <a href="#" class="explore-link">Explore the Collection &rarr;</a>
             </div>
 
-            <!-- ============ FOOTER ============ -->
             <div class="footer">
-              <!-- REPLACE: Whisky Advocate logo PNG -->
-              <img src="https://placehold.co/120x30/faf8f5/999999?text=Whisky+Advocate" alt="Whisky Advocate" class="footer-logo">
+              <img src="https://placehold.co/110x28/f7f2ea/a09080?text=Whisky+Advocate" alt="Whisky Advocate" class="footer-logo">
               <p>
                 You're receiving this email because you opted in via our website.<br>
                 <a href="{{ ${set_user_field} }}">Update preferences</a> &middot; <a href="{{${email_url}}}">View in browser</a>
               </p>
-              <p>
-                &copy; {{current_year}} Deutsch Spirits. All rights reserved.<br>
-                Must be 21 years or older to purchase. Please drink responsibly.
-              </p>
-              <p>
-                <a href="{% abort_message('unsubscribed') %}">Unsubscribe</a> &middot; <a href="#">Privacy Policy</a>
-              </p>
-              <p style="margin-top:14px;font-size:10px;color:#bbb;">
-                M. Shanken Communications Inc.<br>
-                825 Eighth Avenue, 33rd Floor<br>
-                New York, NY 10019
-              </p>
+              <p>&copy; {{current_year}} Deutsch Spirits. All rights reserved. Must be 21+. Please drink responsibly.</p>
+              <p><a href="{% abort_message('unsubscribed') %}">Unsubscribe</a> &middot; <a href="#">Privacy Policy</a></p>
+              <p style="margin-top:14px;font-size:9px;color:#c0b0a0;">M. Shanken Communications Inc. &middot; 825 Eighth Avenue, 33rd Floor &middot; New York, NY 10019</p>
             </div>
 
           </div>

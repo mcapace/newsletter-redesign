@@ -8,203 +8,289 @@
   <!--[if mso]>
   <style>table,td,th{font-family:Arial,Helvetica,sans-serif!important}</style>
   <![endif]-->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     /* ===== RESET ===== */
     body, table, td, a { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
     table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
     img { -ms-interpolation-mode: bicubic; border: 0; outline: none; text-decoration: none; }
-    body { margin: 0; padding: 0; width: 100% !important; background-color: #f5f0e8; }
+    body { margin: 0; padding: 0; width: 100% !important; background-color: #1c1710; }
 
-    /* ===== BASE TYPOGRAPHY ===== */
     * { box-sizing: border-box; }
     body, td, th {
-      font-family: 'Georgia', 'Times New Roman', serif;
+      font-family: 'Cormorant Garamond', 'Georgia', serif;
       color: #2c2c2c;
     }
 
-    /* ===== WRAPPER ===== */
-    .email-wrapper { width: 100%; background-color: #f5f0e8; padding: 24px 0; }
+    .email-wrapper { width: 100%; background-color: #1c1710; padding: 32px 0; }
     .email-container {
       max-width: 640px;
       margin: 0 auto;
-      background-color: #ffffff;
-      border-radius: 4px;
+      background-color: #fffdf8;
+      border-radius: 0;
       overflow: hidden;
-      box-shadow: 0 1px 4px rgba(0,0,0,0.08);
     }
 
     /* ===== HEADER ===== */
     .header {
-      background: linear-gradient(135deg, #2a1f14 0%, #1a1209 100%);
-      padding: 40px 32px 32px;
+      background: linear-gradient(160deg, #2e2318 0%, #1a120b 50%, #0f0a06 100%);
+      padding: 52px 40px 44px;
       text-align: center;
+      position: relative;
+    }
+    .header::before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(212,168,83,0.4), transparent);
+      position: absolute;
+      bottom: 0;
+      left: 0;
     }
     .header-logo {
-      max-width: 200px;
+      max-width: 220px;
       height: auto;
-      margin-bottom: 20px;
+      margin-bottom: 28px;
     }
-    .header-badge {
-      display: inline-block;
-      background: rgba(212,168,83,0.15);
-      border: 1px solid rgba(212,168,83,0.4);
-      border-radius: 4px;
-      padding: 6px 14px;
-      font-family: 'Trebuchet MS', Arial, sans-serif;
-      font-size: 11px;
-      letter-spacing: 2.5px;
-      text-transform: uppercase;
-      color: #d4a853;
-      margin-bottom: 16px;
+    .header-rule {
+      width: 48px;
+      border: none;
+      border-top: 1.5px solid #d4a853;
+      margin: 0 auto 20px;
     }
     .header h1 {
-      margin: 0 0 8px;
-      font-family: 'Georgia', serif;
-      font-size: 30px;
+      margin: 0 0 12px;
+      font-family: 'Playfair Display', 'Georgia', serif;
+      font-size: 36px;
       font-weight: 400;
       color: #ffffff;
-      letter-spacing: 0.5px;
-      line-height: 1.2;
+      letter-spacing: 1px;
+      line-height: 1.15;
     }
+    .header h1 em { font-style: italic; color: #d4a853; }
     .header .tagline {
       margin: 0;
-      font-family: 'Trebuchet MS', Arial, sans-serif;
-      font-size: 14px;
-      color: rgba(255,255,255,0.65);
-      line-height: 1.5;
+      font-family: 'Montserrat', Arial, sans-serif;
+      font-size: 12px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.45);
+      line-height: 1.8;
     }
 
-    /* ===== GOLD DIVIDER ===== */
-    .gold-divider {
-      width: 60px;
-      border: none;
-      border-top: 2px solid #d4a853;
-      margin: 0 auto 20px;
+    /* ===== INTRO STRIP ===== */
+    .intro-strip {
+      background: #2e2318;
+      padding: 20px 40px;
+      text-align: center;
+      border-bottom: 1px solid rgba(212,168,83,0.15);
+    }
+    .intro-strip p {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 17px;
+      font-style: italic;
+      color: rgba(255,255,255,0.7);
+      margin: 0;
+      line-height: 1.5;
     }
 
     /* ===== PRODUCT GRID ===== */
     .product-grid {
-      padding: 36px 32px;
+      padding: 48px 32px 40px;
       text-align: center;
+      background: #fffdf8;
+    }
+    .grid-label {
+      display: inline-block;
+      font-family: 'Montserrat', Arial, sans-serif;
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: #d4a853;
+      margin-bottom: 10px;
     }
     .product-grid h2 {
-      margin: 0 0 6px;
-      font-size: 24px;
+      margin: 0 0 8px;
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 28px;
       font-weight: 400;
-      color: #1a1a1a;
+      color: #1a120b;
+      letter-spacing: 0.5px;
     }
     .product-grid .subtitle {
-      font-family: 'Trebuchet MS', Arial, sans-serif;
-      font-size: 13px;
-      color: #888;
-      margin: 0 0 28px;
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 16px;
+      font-style: italic;
+      color: #8a7a6a;
+      margin: 0 0 36px;
     }
     .product-grid table { width: 100%; border-spacing: 0; }
     .product-cell {
       width: 30%;
       vertical-align: top;
       text-align: center;
-      padding: 0 8px;
+      padding: 0 6px;
     }
     .product-cell-gutter { width: 5%; }
+    .product-card {
+      background: #ffffff;
+      border: 1px solid #ece4d8;
+      border-radius: 4px;
+      padding: 24px 12px 20px;
+      transition: box-shadow 0.2s;
+    }
     .product-img {
       width: 100%;
-      max-width: 160px;
+      max-width: 140px;
       height: auto;
       display: block;
-      margin: 0 auto 16px;
+      margin: 0 auto 20px;
     }
     .product-name {
-      font-family: 'Trebuchet MS', Arial, sans-serif;
-      font-size: 13px;
+      font-family: 'Montserrat', Arial, sans-serif;
+      font-size: 11px;
       font-weight: 700;
-      letter-spacing: 0.5px;
+      letter-spacing: 1.5px;
       text-transform: uppercase;
-      color: #2a1f14;
-      margin: 0 0 4px;
+      color: #2e2318;
+      margin: 0 0 6px;
     }
     .product-desc {
-      font-size: 13px;
-      color: #888;
-      margin: 0 0 12px;
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 14px;
+      font-style: italic;
+      color: #8a7a6a;
+      margin: 0 0 16px;
       line-height: 1.4;
     }
     .product-btn {
       display: inline-block;
-      font-family: 'Trebuchet MS', Arial, sans-serif;
-      font-size: 11px;
+      font-family: 'Montserrat', Arial, sans-serif;
+      font-size: 10px;
       font-weight: 700;
-      letter-spacing: 1.5px;
+      letter-spacing: 2px;
       text-transform: uppercase;
-      color: #2a1f14;
-      border: 1.5px solid #d4a853;
-      padding: 8px 18px;
-      border-radius: 3px;
+      color: #fffdf8;
+      background: linear-gradient(135deg, #2e2318 0%, #1a120b 100%);
+      padding: 10px 20px;
+      border-radius: 2px;
       text-decoration: none;
     }
-    .product-btn:hover { background-color: #d4a853; color: #ffffff; }
+    .product-btn:hover { background: #d4a853; color: #1a120b; }
+
+    /* ===== HERITAGE STRIP ===== */
+    .heritage {
+      padding: 36px 48px;
+      background: linear-gradient(135deg, #f7f2ea 0%, #ece4d8 100%);
+      text-align: center;
+      border-top: 1px solid #e0d6c6;
+      border-bottom: 1px solid #e0d6c6;
+    }
+    .heritage table { width: 100%; border-spacing: 0; }
+    .heritage-cell {
+      width: 30%;
+      vertical-align: top;
+      text-align: center;
+      padding: 0 8px;
+    }
+    .heritage-gutter { width: 5%; }
+    .heritage-stat {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 28px;
+      color: #d4a853;
+      margin: 0 0 4px;
+      font-weight: 400;
+    }
+    .heritage-label {
+      font-family: 'Montserrat', Arial, sans-serif;
+      font-size: 9px;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #8a7a6a;
+      margin: 0;
+    }
 
     /* ===== CTA BANNER ===== */
     .cta-banner {
-      padding: 40px 32px;
-      background: linear-gradient(135deg, #2a1f14 0%, #1a1209 100%);
+      padding: 52px 40px;
+      background: linear-gradient(160deg, #2e2318 0%, #1a120b 50%, #0f0a06 100%);
       text-align: center;
+      position: relative;
+    }
+    .cta-banner::before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(212,168,83,0.3), transparent);
+      position: absolute;
+      top: 0;
+      left: 0;
     }
     .cta-banner h3 {
       margin: 0 0 8px;
-      font-size: 22px;
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 26px;
       color: #ffffff;
       font-weight: 400;
     }
     .cta-banner p {
-      font-size: 14px;
-      color: rgba(255,255,255,0.6);
-      margin: 0 0 24px;
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 16px;
+      font-style: italic;
+      color: rgba(255,255,255,0.5);
+      margin: 0 0 28px;
     }
     .cta-btn {
       display: inline-block;
-      font-family: 'Trebuchet MS', Arial, sans-serif;
-      font-size: 13px;
+      font-family: 'Montserrat', Arial, sans-serif;
+      font-size: 12px;
       font-weight: 700;
-      letter-spacing: 1.5px;
+      letter-spacing: 2.5px;
       text-transform: uppercase;
-      color: #2a1f14;
-      background-color: #d4a853;
-      padding: 14px 36px;
-      border-radius: 4px;
+      color: #1a120b;
+      background: linear-gradient(135deg, #d4a853 0%, #c99a45 100%);
+      padding: 16px 44px;
+      border-radius: 2px;
       text-decoration: none;
     }
-    .cta-btn:hover { background-color: #c99a45; }
+    .cta-btn:hover { background: #e0b96a; }
 
     /* ===== FOOTER ===== */
     .footer {
-      padding: 32px;
+      padding: 36px 32px;
       text-align: center;
-      background-color: #faf8f5;
-      border-top: 1px solid #ebe6de;
+      background-color: #f7f2ea;
+      border-top: 1px solid #e0d6c6;
     }
     .footer-logo {
-      max-width: 120px;
+      max-width: 110px;
       height: auto;
       margin-bottom: 16px;
+      opacity: 0.6;
     }
     .footer p {
-      font-family: 'Trebuchet MS', Arial, sans-serif;
-      font-size: 11px;
-      line-height: 1.6;
-      color: #999;
+      font-family: 'Montserrat', Arial, sans-serif;
+      font-size: 10px;
+      line-height: 1.7;
+      color: #a09080;
       margin: 8px 0 0;
     }
-    .footer a { color: #2a1f14; text-decoration: underline; }
+    .footer a { color: #2e2318; text-decoration: underline; }
 
     /* ===== RESPONSIVE ===== */
     @media screen and (max-width: 640px) {
-      .email-container { width: 100% !important; border-radius: 0 !important; }
-      .header, .product-grid, .cta-banner, .footer { padding-left: 20px !important; padding-right: 20px !important; }
-      .header { padding-top: 28px !important; padding-bottom: 24px !important; }
-      .header h1 { font-size: 24px !important; }
-      .product-cell { display: block !important; width: 100% !important; margin-bottom: 28px !important; padding: 0 !important; }
+      .email-container { width: 100% !important; }
+      .header, .intro-strip, .cta-banner { padding-left: 24px !important; padding-right: 24px !important; }
+      .header h1 { font-size: 28px !important; }
+      .product-grid, .heritage, .footer { padding-left: 20px !important; padding-right: 20px !important; }
+      .product-cell { display: block !important; width: 100% !important; margin-bottom: 24px !important; padding: 0 !important; }
       .product-cell-gutter { display: none !important; }
+      .heritage-cell { display: block !important; width: 100% !important; margin-bottom: 20px !important; }
+      .heritage-gutter { display: none !important; }
     }
   </style>
 </head>
@@ -218,48 +304,82 @@
             <!-- ============ HEADER ============ -->
             <div class="header">
               <!-- REPLACE: Bib & Tucker logo PNG from assets folder -->
-              <img src="https://placehold.co/200x60/2a1f14/d4a853?text=BIB+%26+TUCKER" alt="Bib & Tucker" class="header-logo">
-              <hr class="gold-divider">
-              <h1>Shop the Collection</h1>
-              <p class="tagline">Three distinctive small-batch bourbons, each crafted<br>with Tennessee character and aged to perfection.</p>
+              <img src="https://placehold.co/220x65/1a120b/d4a853?text=BIB+%26+TUCKER" alt="Bib & Tucker" class="header-logo">
+              <hr class="header-rule">
+              <h1>Meet the <em>Collection</em></h1>
+              <p class="tagline">Three Bourbons &bull; One Standard &bull; No Compromise</p>
+            </div>
+
+            <!-- ============ INTRO STRIP ============ -->
+            <div class="intro-strip">
+              <p>&ldquo;We don&rsquo;t make bourbon for everyone. We make it for the ones who notice the difference.&rdquo;</p>
             </div>
 
             <!-- ============ 3-SKU PRODUCT GRID ============ -->
             <div class="product-grid">
-              <h2>The Bib &amp; Tucker Lineup</h2>
-              <p class="subtitle">Small batch. Big character. Tennessee through and through.</p>
+              <span class="grid-label">The Lineup</span>
+              <h2>Choose Your Pour</h2>
+              <p class="subtitle">Small batch. Hand-selected. Tennessee to the bone.</p>
 
               <table role="presentation">
                 <tr>
                   <!-- SKU 1: 6-Year -->
                   <td class="product-cell">
-                    <!-- REPLACE: 6-Year (No. 24) bottle pack shot -->
-                    <img src="https://placehold.co/160x400/f5f0e8/2a1f14?text=6-Year" alt="Bib & Tucker 6-Year Small Batch Bourbon" class="product-img">
-                    <p class="product-name">6-Year Small Batch</p>
-                    <p class="product-desc">Our flagship bourbon &mdash; rich caramel and toasted oak.</p>
-                    <a href="#" class="product-btn">Shop Now</a>
+                    <div class="product-card">
+                      <!-- REPLACE: 6-Year (No. 24) bottle pack shot — same style/BG as siblings -->
+                      <img src="https://placehold.co/140x360/fffdf8/2e2318?text=6-Year" alt="Bib & Tucker 6-Year Small Batch Bourbon" class="product-img">
+                      <p class="product-name">6-Year Small Batch</p>
+                      <p class="product-desc">Rich caramel, toasted oak, and a finish that lingers.</p>
+                      <a href="#" class="product-btn">Shop Now</a>
+                    </div>
                   </td>
 
                   <td class="product-cell-gutter"></td>
 
                   <!-- SKU 2: Double Char -->
                   <td class="product-cell">
-                    <!-- REPLACE: Double Char bottle pack shot -->
-                    <img src="https://placehold.co/160x400/f5f0e8/2a1f14?text=Double+Char" alt="Bib & Tucker Double Char Bourbon" class="product-img">
-                    <p class="product-name">Double Char</p>
-                    <p class="product-desc">Twice charred for deep smoky sweetness and complexity.</p>
-                    <a href="#" class="product-btn">Shop Now</a>
+                    <div class="product-card">
+                      <!-- REPLACE: Double Char bottle pack shot -->
+                      <img src="https://placehold.co/140x360/fffdf8/2e2318?text=Double+Char" alt="Bib & Tucker Double Char Bourbon" class="product-img">
+                      <p class="product-name">Double Char</p>
+                      <p class="product-desc">Twice the char, twice the depth. Smoke meets sweet.</p>
+                      <a href="#" class="product-btn">Shop Now</a>
+                    </div>
                   </td>
 
                   <td class="product-cell-gutter"></td>
 
                   <!-- SKU 3: Gold Roast -->
                   <td class="product-cell">
-                    <!-- REPLACE: Gold Roast bottle pack shot -->
-                    <img src="https://placehold.co/160x400/f5f0e8/2a1f14?text=Gold+Roast" alt="Bib & Tucker Gold Roast Bourbon" class="product-img">
-                    <p class="product-name">Gold Roast</p>
-                    <p class="product-desc">Coffee-kissed bourbon with warm vanilla and spice.</p>
-                    <a href="#" class="product-btn">Shop Now</a>
+                    <div class="product-card">
+                      <!-- REPLACE: Gold Roast bottle pack shot -->
+                      <img src="https://placehold.co/140x360/fffdf8/2e2318?text=Gold+Roast" alt="Bib & Tucker Gold Roast Bourbon" class="product-img">
+                      <p class="product-name">Gold Roast</p>
+                      <p class="product-desc">Coffee-kissed. Warm vanilla. A morning pour, any hour.</p>
+                      <a href="#" class="product-btn">Shop Now</a>
+                    </div>
+                  </td>
+                </tr>
+              </table>
+            </div>
+
+            <!-- ============ HERITAGE STATS ============ -->
+            <div class="heritage">
+              <table role="presentation">
+                <tr>
+                  <td class="heritage-cell">
+                    <p class="heritage-stat">6</p>
+                    <p class="heritage-label">Years Aged</p>
+                  </td>
+                  <td class="heritage-gutter"></td>
+                  <td class="heritage-cell">
+                    <p class="heritage-stat">100%</p>
+                    <p class="heritage-label">American Oak</p>
+                  </td>
+                  <td class="heritage-gutter"></td>
+                  <td class="heritage-cell">
+                    <p class="heritage-stat">Small</p>
+                    <p class="heritage-label">Batch Always</p>
                   </td>
                 </tr>
               </table>
@@ -267,15 +387,15 @@
 
             <!-- ============ CTA BANNER ============ -->
             <div class="cta-banner">
-              <h3>Discover Your Favorite</h3>
-              <p>Free shipping on orders over $75. Must be 21+ to purchase.</p>
+              <h3>Your Collection Starts Here</h3>
+              <p>Free shipping on orders over $75. Must be 21+.</p>
               <a href="#" class="cta-btn">Shop Bib &amp; Tucker</a>
             </div>
 
             <!-- ============ FOOTER ============ -->
             <div class="footer">
               <!-- REPLACE: Whisky Advocate logo PNG -->
-              <img src="https://placehold.co/120x30/faf8f5/999999?text=Whisky+Advocate" alt="Whisky Advocate" class="footer-logo">
+              <img src="https://placehold.co/110x28/f7f2ea/a09080?text=Whisky+Advocate" alt="Whisky Advocate" class="footer-logo">
               <p>
                 You're receiving this email because you opted in via our website.<br>
                 <a href="{{ ${set_user_field} }}">Update preferences</a> &middot; <a href="{{${email_url}}}">View in browser</a>
@@ -287,10 +407,8 @@
               <p>
                 <a href="{% abort_message('unsubscribed') %}">Unsubscribe</a> &middot; <a href="#">Privacy Policy</a>
               </p>
-              <p style="margin-top:14px;font-size:10px;color:#bbb;">
-                M. Shanken Communications Inc.<br>
-                825 Eighth Avenue, 33rd Floor<br>
-                New York, NY 10019
+              <p style="margin-top:14px;font-size:9px;color:#c0b0a0;">
+                M. Shanken Communications Inc. &middot; 825 Eighth Avenue, 33rd Floor &middot; New York, NY 10019
               </p>
             </div>
 
