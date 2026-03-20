@@ -73,11 +73,11 @@
     .texture-hero img {
       max-width: 600px;
       max-height: 336px;
-      width: auto;
-      height: auto;
+      width: auto !important;
+      height: auto !important;
       display: block;
       margin: 8px auto 0;
-      object-fit: contain;
+      object-fit: contain !important;
       -o-object-fit: contain;
       border: 1px solid rgba(130, 126, 120, 0.45);
       box-shadow: 0 24px 56px rgba(0, 0, 0, 0.4);
@@ -233,7 +233,7 @@
       .values, .soft-cta, .footer { padding-left: 20px !important; padding-right: 20px !important; }
       .value-cell { display: block !important; width: 100% !important; margin-bottom: 16px !important; }
       .value-gutter { display: none !important; }
-      .texture-hero img { max-width: 100% !important; }
+      .texture-hero img { max-width: 100% !important; width: auto !important; height: auto !important; }
     }
   </style>
 </head>

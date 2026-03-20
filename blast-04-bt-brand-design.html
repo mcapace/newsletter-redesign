@@ -65,11 +65,11 @@
     .hero-bottle {
       max-width: 560px;
       max-height: 314px;
-      width: auto;
-      height: auto;
+      width: auto !important;
+      height: auto !important;
       display: block;
       margin: 0 auto;
-      object-fit: contain;
+      object-fit: contain !important;
       -o-object-fit: contain;
       filter: drop-shadow(0 24px 48px rgba(0, 0, 0, 0.5));
     }
@@ -82,12 +82,12 @@
     .label-img {
       max-width: 560px;
       max-height: 314px;
-      width: auto;
-      height: auto;
+      width: auto !important;
+      height: auto !important;
       border: 1px solid #d5cdc2;
       display: block;
       margin: 10px auto 0;
-      object-fit: contain;
+      object-fit: contain !important;
       -o-object-fit: contain;
       box-shadow: 0 16px 44px rgba(10, 8, 6, 0.14);
     }
@@ -218,6 +218,8 @@
       .design-gutter { display: none !important; }
       .hero-bottle, .label-img {
         max-width: 100% !important;
+        width: auto !important;
+        height: auto !important;
         max-height: 320px !important;
       }
     }
