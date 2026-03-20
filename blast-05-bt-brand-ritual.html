@@ -16,17 +16,23 @@
   <style>
     body, table, td, a { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
     table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
-    img { -ms-interpolation-mode: bicubic; border: 0; outline: none; text-decoration: none; }
-    body { margin: 0; padding: 0; width: 100% !important; background-color: #e4ddd4; }
+    img { -ms-interpolation-mode: bicubic; border: 0; outline: none; text-decoration: none; display: block; }
+    body { margin: 0; padding: 0; width: 100% !important; background-color: #d5cbc0; }
     * { box-sizing: border-box; }
-    body, td, th { font-family: 'EB Garamond', Georgia, serif; color: #2c2c2c; }
+    body, td, th { font-family: 'EB Garamond', Georgia, serif; color: #252220; }
 
-    .email-wrapper { width: 100%; background-color: #e4ddd4; padding: 40px 16px; }
-    .email-container { max-width: 640px; margin: 0 auto; background-color: #faf8f3; overflow: hidden; border: 1px solid #cfc3b2; box-shadow: 0 10px 44px rgba(18, 14, 10, 0.14), 0 2px 10px rgba(18, 14, 10, 0.05); }
+    .email-wrapper { width: 100%; background-color: #d5cbc0; padding: 48px 20px; }
+    .mast-accent {
+      height: 4px;
+      font-size: 0;
+      line-height: 0;
+      background: linear-gradient(90deg, #100e0b 0%, #2c261e 14%, #8a7028 40%, #d8c992 50%, #8a7028 60%, #2c261e 86%, #100e0b 100%);
+    }
+    .email-container { max-width: 640px; margin: 0 auto; background-color: #f8f6f1; overflow: hidden; border: 1px solid #b9a892; border-radius: 2px; box-shadow: 0 0 0 1px rgba(255,255,255,0.42) inset, 0 26px 64px rgba(8, 6, 5, 0.16), 0 8px 20px rgba(8, 6, 5, 0.07); }
 
     /* ===== HEADER ===== */
     .header {
-      background: #faf8f3;
+      background: #f8f6f1;
       padding: 40px 32px 36px;
       text-align: center;
       position: relative;
@@ -69,7 +75,7 @@
     .mood-copy {
       padding: 48px 48px;
       text-align: center;
-      background: #faf8f3;
+      background: #f8f6f1;
     }
     .gold-rule {
       width: 56px;
@@ -102,7 +108,7 @@
       line-height: 1.48;
       margin: 0 0 32px;
       padding: 28px 24px;
-      background: linear-gradient(135deg, #f1ebe3 0%, #e6ded4 100%);
+      background: linear-gradient(135deg, #ebe5da 0%, #e6ded4 100%);
       border-radius: 10px;
       border-left: 4px solid #c6a349;
       text-align: left;
@@ -118,7 +124,7 @@
     /* ===== MOMENT CARDS ===== */
     .moments {
       padding: 0 32px 44px;
-      background: #faf8f3;
+      background: #f8f6f1;
     }
     .moments table { width: 100%; border-spacing: 0; }
     .moment-cell {
@@ -126,8 +132,8 @@
       vertical-align: top;
       text-align: center;
       padding: 32px 22px;
-      background: linear-gradient(165deg, #faf8f3 0%, #f1ebe3 100%);
-      border: 1px solid #d3c9bd;
+      background: linear-gradient(165deg, #f8f6f1 0%, #ebe5da 100%);
+      border: 1px solid #c4b8a6;
       border-radius: 12px;
       box-shadow: 0 4px 18px rgba(22, 18, 14, 0.07);
     }
@@ -160,9 +166,9 @@
     .footer-shop {
       padding: 44px 36px 40px;
       text-align: center;
-      background: linear-gradient(180deg, #ebe4da 0%, #e6ded4 100%);
+      background: linear-gradient(180deg, #e0d6ca 0%, #e6ded4 100%);
       position: relative;
-      border-top: 1px solid #d3c9bd;
+      border-top: 1px solid #c4b8a6;
     }
     .footer-shop::before {
       content: '';
@@ -188,7 +194,7 @@
       font-weight: 700;
       letter-spacing: 3px;
       text-transform: uppercase;
-      color: #faf8f3;
+      color: #f8f6f1;
       background: linear-gradient(180deg, #c6a349 0%, #a67c28 100%);
       padding: 17px 48px;
       border-radius: 999px;
@@ -200,8 +206,8 @@
     .footer {
       padding: 44px 36px 42px;
       text-align: center;
-      background: linear-gradient(180deg, #e8e0d6 0%, #e4ddd4 100%);
-      border-top: 1px solid #c9bfb2;
+      background: linear-gradient(180deg, #ddd3c8 0%, #d5cbc0 100%);
+      border-top: 1px solid #b0a090;
     }
     .footer-logo { max-width: 112px; height: auto; margin-bottom: 22px; opacity: 0.72; }
     .footer p { font-family: 'Montserrat', Arial, sans-serif; font-size: 10px; line-height: 1.85; color: #8f8275; margin: 10px 0 0; }
@@ -223,6 +229,7 @@
       <tr>
         <td align="center">
           <div class="email-container">
+            <div class="mast-accent" role="presentation"></div>
 
             <div class="header">
               <img src="https://braze-images.com/appboy/communication/assets/image_assets/images/69bc5675439b710060149528/original.png?1773950581" alt="Bib & Tucker" class="header-logo">

@@ -16,25 +16,31 @@
   <style>
     body, table, td, a { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
     table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
-    img { -ms-interpolation-mode: bicubic; border: 0; outline: none; text-decoration: none; }
-    body { margin: 0; padding: 0; width: 100% !important; background-color: #e4ddd4; }
+    img { -ms-interpolation-mode: bicubic; border: 0; outline: none; text-decoration: none; display: block; }
+    body { margin: 0; padding: 0; width: 100% !important; background-color: #d5cbc0; }
     * { box-sizing: border-box; }
-    body, td, th { font-family: 'EB Garamond', 'Georgia', serif; color: #2c2c2c; }
+    body, td, th { font-family: 'EB Garamond', 'Georgia', serif; color: #252220; }
 
-    .email-wrapper { width: 100%; background-color: #e4ddd4; padding: 40px 16px; }
+    .email-wrapper { width: 100%; background-color: #d5cbc0; padding: 48px 20px; }
+    .mast-accent {
+      height: 4px;
+      font-size: 0;
+      line-height: 0;
+      background: linear-gradient(90deg, #100e0b 0%, #2c261e 14%, #8a7028 40%, #d8c992 50%, #8a7028 60%, #2c261e 86%, #100e0b 100%);
+    }
     .email-container {
       max-width: 640px;
       margin: 0 auto;
-      background-color: #faf8f3;
+      background-color: #f8f6f1;
       overflow: hidden;
-      border-radius: 3px;
-      border: 1px solid #cfc3b2;
-      box-shadow: 0 10px 44px rgba(18, 14, 10, 0.14), 0 2px 10px rgba(18, 14, 10, 0.05);
+      border-radius: 2px;
+      border: 1px solid #b9a892;
+      box-shadow: 0 0 0 1px rgba(255,255,255,0.42) inset, 0 26px 64px rgba(8, 6, 5, 0.16), 0 8px 20px rgba(8, 6, 5, 0.07);
     }
 
     /* ===== HERO ===== */
     .hero {
-      background: linear-gradient(180deg, #f4ede4 0%, #e8dfd4 38%, #e2dbd2 100%);
+      background: linear-gradient(180deg, #f0e9df 0%, #e8dfd4 38%, #e2dbd2 100%);
       padding: 56px 40px 0;
       text-align: center;
       position: relative;
@@ -56,10 +62,11 @@
     .hero h1 {
       margin: 0 0 12px;
       font-family: 'Playfair Display', Georgia, serif;
-      font-size: 38px;
+      font-size: 40px;
       font-weight: 400;
-      color: #2c2218;
-      line-height: 1.15;
+      color: #1a1612;
+      letter-spacing: -0.02em;
+      line-height: 1.1;
     }
     .hero h1 em { font-style: italic; color: #a67c28; }
     .hero .subtitle {
@@ -85,14 +92,14 @@
     /* ===== GRADIENT TRANSITION ===== */
     .gradient-bridge {
       height: 80px;
-      background: linear-gradient(180deg, #e2dbd2 0%, #faf8f3 100%);
+      background: linear-gradient(180deg, #e2dbd2 0%, #f8f6f1 100%);
     }
 
     /* ===== OCCASION ===== */
     .occasion {
       padding: 20px 48px 48px;
       text-align: center;
-      background: #faf8f3;
+      background: #f8f6f1;
     }
     .gold-rule {
       width: 56px;
@@ -132,7 +139,7 @@
       font-weight: 700;
       letter-spacing: 3px;
       text-transform: uppercase;
-      color: #faf8f3;
+      color: #f8f6f1;
       background: linear-gradient(180deg, #c6a349 0%, #a67c28 100%);
       padding: 17px 48px;
       border-radius: 999px;
@@ -145,9 +152,9 @@
     /* ===== SIBLINGS ===== */
     .siblings {
       padding: 48px 32px 44px;
-      background: linear-gradient(175deg, #f4ede4 0%, #ebe3d8 55%, #e6ded4 100%);
+      background: linear-gradient(175deg, #f0e9df 0%, #ebe3d8 55%, #e6ded4 100%);
       text-align: center;
-      border-top: 1px solid #d3c9bd;
+      border-top: 1px solid #c4b8a6;
     }
     .siblings-label {
       display: inline-block;
@@ -165,8 +172,8 @@
       vertical-align: top;
       text-align: center;
       padding: 28px 18px;
-      background: #faf8f3;
-      border: 1px solid #d3c9bd;
+      background: #f8f6f1;
+      border: 1px solid #c4b8a6;
       border-radius: 8px;
       box-shadow: 0 2px 14px rgba(22, 18, 14, 0.05);
     }
@@ -206,14 +213,14 @@
       border-radius: 999px;
       text-decoration: none;
     }
-    .sibling-btn:hover { background: #c6a349; color: #faf8f3; }
+    .sibling-btn:hover { background: #c6a349; color: #f8f6f1; }
 
     /* ===== FOOTER ===== */
     .footer {
       padding: 44px 36px 42px;
       text-align: center;
-      background: linear-gradient(180deg, #ebe4da 0%, #e4ddd4 100%);
-      border-top: 1px solid #c9bfb2;
+      background: linear-gradient(180deg, #e0d6ca 0%, #d5cbc0 100%);
+      border-top: 1px solid #b0a090;
     }
     .footer-logo { max-width: 112px; height: auto; margin-bottom: 22px; opacity: 0.72; }
     .footer p {
@@ -242,6 +249,7 @@
       <tr>
         <td align="center">
           <div class="email-container">
+            <div class="mast-accent" role="presentation"></div>
 
             <!-- ============ HERO ============ -->
             <div class="hero">

@@ -18,29 +18,35 @@
     /* ===== RESET ===== */
     body, table, td, a { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
     table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
-    img { -ms-interpolation-mode: bicubic; border: 0; outline: none; text-decoration: none; }
-    body { margin: 0; padding: 0; width: 100% !important; background-color: #e4ddd4; }
+    img { -ms-interpolation-mode: bicubic; border: 0; outline: none; text-decoration: none; display: block; }
+    body { margin: 0; padding: 0; width: 100% !important; background-color: #d5cbc0; }
 
     * { box-sizing: border-box; }
     body, td, th {
       font-family: 'EB Garamond', 'Georgia', serif;
-      color: #2c2c2c;
+      color: #252220;
     }
 
-    .email-wrapper { width: 100%; background-color: #e4ddd4; padding: 40px 16px; }
+    .email-wrapper { width: 100%; background-color: #d5cbc0; padding: 48px 20px; }
+    .mast-accent {
+      height: 4px;
+      font-size: 0;
+      line-height: 0;
+      background: linear-gradient(90deg, #100e0b 0%, #2c261e 14%, #8a7028 40%, #d8c992 50%, #8a7028 60%, #2c261e 86%, #100e0b 100%);
+    }
     .email-container {
       max-width: 640px;
       margin: 0 auto;
-      background-color: #faf8f3;
-      border-radius: 3px;
+      background-color: #f8f6f1;
+      border-radius: 2px;
       overflow: hidden;
-      border: 1px solid #cfc3b2;
-      box-shadow: 0 10px 44px rgba(18, 14, 10, 0.14), 0 2px 10px rgba(18, 14, 10, 0.05);
+      border: 1px solid #b9a892;
+      box-shadow: 0 0 0 1px rgba(255,255,255,0.42) inset, 0 26px 64px rgba(8, 6, 5, 0.16), 0 8px 20px rgba(8, 6, 5, 0.07);
     }
 
     /* ===== HEADER ===== */
     .header {
-      background: #faf8f3;
+      background: #f8f6f1;
       padding: 52px 40px 44px;
       text-align: center;
       position: relative;
@@ -69,11 +75,11 @@
     .header h1 {
       margin: 0 0 12px;
       font-family: 'Playfair Display', 'Georgia', serif;
-      font-size: 36px;
+      font-size: 37px;
       font-weight: 400;
-      color: #2c2218;
-      letter-spacing: 1px;
-      line-height: 1.15;
+      color: #1a1612;
+      letter-spacing: -0.02em;
+      line-height: 1.12;
     }
     .header h1 em { font-style: italic; color: #a67c28; }
     .header .tagline {
@@ -88,11 +94,11 @@
 
     /* ===== INTRO STRIP ===== */
     .intro-strip {
-      background: linear-gradient(180deg, #f4ede4 0%, #ebe3d8 100%);
+      background: linear-gradient(180deg, #f0e9df 0%, #ebe3d8 100%);
       padding: 26px 40px;
       text-align: center;
-      border-bottom: 1px solid #d3c9bd;
-      border-top: 1px solid #d3c9bd;
+      border-bottom: 1px solid #c4b8a6;
+      border-top: 1px solid #c4b8a6;
     }
     .intro-strip p {
       font-family: 'EB Garamond', Georgia, serif;
@@ -107,7 +113,7 @@
     .product-grid {
       padding: 52px 32px 44px;
       text-align: center;
-      background: linear-gradient(180deg, #faf8f3 0%, #f7f2eb 100%);
+      background: linear-gradient(180deg, #f8f6f1 0%, #f2ebe2 100%);
     }
     .grid-label {
       display: inline-block;
@@ -144,8 +150,8 @@
     }
     .product-cell-gutter { width: 5%; }
     .product-card {
-      background: #fffefc;
-      border: 1px solid #d3c9bd;
+      background: #fdfcfa;
+      border: 1px solid #c4b8a6;
       border-radius: 10px;
       padding: 28px 14px 22px;
       box-shadow: 0 3px 18px rgba(22, 18, 14, 0.06);
@@ -181,22 +187,22 @@
       font-weight: 700;
       letter-spacing: 2px;
       text-transform: uppercase;
-      color: #faf8f3;
+      color: #f8f6f1;
       background: linear-gradient(180deg, #c6a349 0%, #a67c28 100%);
       padding: 11px 22px;
       border-radius: 999px;
       text-decoration: none;
       box-shadow: 0 2px 10px rgba(166, 124, 40, 0.2);
     }
-    .product-btn:hover { background: #9a7328; color: #faf8f3; }
+    .product-btn:hover { background: #9a7328; color: #f8f6f1; }
 
     /* ===== HERITAGE STRIP ===== */
     .heritage {
       padding: 44px 40px 40px;
-      background: linear-gradient(145deg, #f1ebe3 0%, #e8dfd4 50%, #e2d8cc 100%);
+      background: linear-gradient(145deg, #ebe5da 0%, #e8dfd4 50%, #e2d8cc 100%);
       text-align: center;
-      border-top: 1px solid #d3c9bd;
-      border-bottom: 1px solid #d3c9bd;
+      border-top: 1px solid #c4b8a6;
+      border-bottom: 1px solid #c4b8a6;
     }
     .heritage table { width: 100%; border-spacing: 0; }
     .heritage-cell {
@@ -204,8 +210,8 @@
       vertical-align: top;
       text-align: center;
       padding: 22px 14px;
-      background: #faf8f3;
-      border: 1px solid #d3c9bd;
+      background: #f8f6f1;
+      border: 1px solid #c4b8a6;
       border-radius: 10px;
       box-shadow: 0 3px 16px rgba(22, 18, 14, 0.06);
     }
@@ -230,10 +236,10 @@
     /* ===== CTA BANNER ===== */
     .cta-banner {
       padding: 52px 40px;
-      background: #f1ebe3;
+      background: #ebe5da;
       text-align: center;
       position: relative;
-      border-top: 1px solid #d3c9bd;
+      border-top: 1px solid #c4b8a6;
     }
     .cta-banner::before {
       content: '';
@@ -266,7 +272,7 @@
       font-weight: 700;
       letter-spacing: 3px;
       text-transform: uppercase;
-      color: #faf8f3;
+      color: #f8f6f1;
       background: linear-gradient(180deg, #c6a349 0%, #a67c28 100%);
       padding: 17px 48px;
       border-radius: 999px;
@@ -279,8 +285,8 @@
     .footer {
       padding: 44px 36px 42px;
       text-align: center;
-      background: linear-gradient(180deg, #ebe4da 0%, #e4ddd4 100%);
-      border-top: 1px solid #c9bfb2;
+      background: linear-gradient(180deg, #e0d6ca 0%, #d5cbc0 100%);
+      border-top: 1px solid #b0a090;
     }
     .footer-logo {
       max-width: 112px;
@@ -316,6 +322,7 @@
       <tr>
         <td align="center">
           <div class="email-container">
+            <div class="mast-accent" role="presentation"></div>
 
             <!-- ============ HEADER ============ -->
             <div class="header">

@@ -12,17 +12,23 @@
     America's Original Spirit. 95% rye mash. Pre-Prohibition character revived — bold, unapologetic, built to mix.
     &zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;
   </div>
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     body, table, td, a { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
     table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
-    img { -ms-interpolation-mode: bicubic; border: 0; outline: none; text-decoration: none; }
-    body { margin: 0; padding: 0; width: 100% !important; background-color: #e4ddd4; }
+    img { -ms-interpolation-mode: bicubic; border: 0; outline: none; text-decoration: none; display: block; }
+    body { margin: 0; padding: 0; width: 100% !important; background-color: #d5cbc0; }
     * { box-sizing: border-box; }
-    body, td, th { font-family: 'Source Serif 4', Georgia, serif; color: #2c2218; }
+    body, td, th { font-family: 'Libre Baskerville', Georgia, serif; color: #2c2218; }
 
-    .email-wrapper { width: 100%; background-color: #e4ddd4; padding: 40px 16px; }
-    .email-container { max-width: 640px; margin: 0 auto; background-color: #faf8f3; overflow: hidden; border: 1px solid #cfc3b2; box-shadow: 0 10px 44px rgba(18, 14, 10, 0.14), 0 2px 10px rgba(18, 14, 10, 0.05); }
+    .email-wrapper { width: 100%; background-color: #d5cbc0; padding: 48px 20px; }
+    .mast-accent {
+      height: 4px;
+      font-size: 0;
+      line-height: 0;
+      background: linear-gradient(90deg, #0a0607 0%, #4a1520 20%, #8b2332 42%, #c49b44 50%, #8b2332 58%, #4a1520 80%, #0a0607 100%);
+    }
+    .email-container { max-width: 640px; margin: 0 auto; background-color: #f8f6f1; overflow: hidden; border: 1px solid #b9a892; border-radius: 2px; box-shadow: 0 0 0 1px rgba(255,255,255,0.42) inset, 0 26px 64px rgba(8, 6, 5, 0.16), 0 8px 20px rgba(8, 6, 5, 0.07); }
 
     /* ===== HEADER ===== */
     .header { padding: 48px 32px 24px; text-align: center; }
@@ -79,21 +85,22 @@
       margin: 0 0 24px;
       font-family: 'Oswald', Arial, sans-serif;
       font-size: 40px;
-      font-weight: 600;
-      color: #2c2218;
-      line-height: 1.1;
-      letter-spacing: 2px;
+      font-weight: 500;
+      color: #1a1612;
+      line-height: 1.08;
+      letter-spacing: 3px;
       text-transform: uppercase;
     }
     .brand-story h1 span { color: #8b2332; font-style: normal; }
     .brand-story p {
+      font-family: 'Libre Baskerville', Georgia, serif;
       font-size: 16px;
-      line-height: 1.7;
-      color: #6b5d4f;
+      line-height: 1.72;
+      color: #4a433c;
       margin: 0 0 18px;
     }
     .brand-story p.manifesto {
-      font-family: 'Source Serif 4', Georgia, serif;
+      font-family: 'Libre Baskerville', Georgia, serif;
       font-size: 20px;
       font-style: italic;
       color: #8b2332;
@@ -110,14 +117,14 @@
       padding: 32px 28px 36px;
       border-top: 1px solid rgba(139,35,50,0.15);
       border-bottom: 1px solid rgba(139,35,50,0.15);
-      background: #faf8f3;
+      background: #f8f6f1;
     }
     .stats-bar table { width: 100%; border-spacing: 0; }
     .stat-cell {
       width: 30%;
       text-align: center;
       padding: 18px 12px;
-      background: #fffefc;
+      background: #fdfcfa;
       border: 1px solid rgba(139,35,50,0.12);
       border-radius: 10px;
       box-shadow: 0 3px 14px rgba(22, 18, 14, 0.05);
@@ -126,10 +133,10 @@
     .stat-number {
       font-family: 'Oswald', Arial, sans-serif;
       font-size: 28px;
-      font-weight: 600;
-      color: #c49b44;
+      font-weight: 500;
+      color: #b8892e;
       margin: 0 0 2px;
-      letter-spacing: 1px;
+      letter-spacing: 2px;
     }
     .stat-label {
       font-family: 'Inter', Arial, sans-serif;
@@ -145,7 +152,7 @@
     .cocktail {
       padding: 52px 32px 44px;
       text-align: center;
-      background: linear-gradient(180deg, #faf8f3 0%, #f5f0e8 100%);
+      background: linear-gradient(180deg, #f8f6f1 0%, #f5f0e8 100%);
     }
     .cocktail img {
       width: 100%;
@@ -191,14 +198,14 @@
       padding: 44px 32px 48px;
       text-align: center;
       position: relative;
-      background: linear-gradient(180deg, #ebe4da 0%, #e4ddd4 100%);
+      background: linear-gradient(180deg, #ebe4da 0%, #d5cbc0 100%);
     }
     .shop-cta::before {
       content: '';
       display: block;
       width: 100%;
       height: 4px;
-      background: linear-gradient(90deg, #faf8f3 0%, #a02838 22%, #c49b44 50%, #a02838 78%, #faf8f3 100%);
+      background: linear-gradient(90deg, #f8f6f1 0%, #a02838 22%, #c49b44 50%, #a02838 78%, #f8f6f1 100%);
       position: absolute;
       top: 0;
       left: 0;
@@ -226,7 +233,7 @@
       padding: 44px 36px 42px;
       text-align: center;
       border-top: 1px solid rgba(139,35,50,0.14);
-      background: linear-gradient(180deg, #ebe4da 0%, #e4ddd4 100%);
+      background: linear-gradient(180deg, #ebe4da 0%, #d5cbc0 100%);
     }
     .footer-logo { max-width: 96px; height: auto; margin-bottom: 22px; opacity: 0.62; }
     .footer p { font-family: 'Inter', Arial, sans-serif; font-size: 10px; line-height: 1.85; color: #8f8275; margin: 10px 0 0; }
@@ -249,6 +256,7 @@
       <tr>
         <td align="center">
           <div class="email-container">
+            <div class="mast-accent" role="presentation"></div>
 
             <div class="header">
               <img src="https://braze-images.com/appboy/communication/assets/image_assets/images/69bc55916c576e0060f0ab5a/original.png?1773950352" alt="Redemption Whiskey" class="header-logo">
