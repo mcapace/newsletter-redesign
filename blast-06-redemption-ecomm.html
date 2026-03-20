@@ -222,7 +222,14 @@
       background: #1a0e12;
       border-top: 2px solid #c49b44;
     }
-    .footer-logo { max-width: 100px; height: auto; margin: 0 auto 20px; opacity: 0.92; }
+    .footer-logo {
+      max-width: 100px;
+      height: auto;
+      margin: 0 auto 20px;
+      opacity: 1;
+      filter: brightness(0) invert(1);
+      -webkit-filter: brightness(0) invert(1);
+    }
     .footer p { font-family: 'Inter', Arial, sans-serif; font-size: 10px; line-height: 1.9; color: rgba(235, 228, 220, 0.5); margin: 10px 0 0; }
     .footer a { color: #c49b44; text-decoration: underline; }
     .footer-legal { color: rgba(235, 228, 220, 0.35) !important; font-size: 9px !important; }
