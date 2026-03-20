@@ -17,39 +17,45 @@
     body, table, td, a { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
     table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
     img { -ms-interpolation-mode: bicubic; border: 0; outline: none; text-decoration: none; display: block; }
-    body { margin: 0; padding: 0; width: 100% !important; background-color: #ebe6df; }
+    body { margin: 0; padding: 0; width: 100% !important; background-color: #c9c2b8; }
     * { box-sizing: border-box; }
-    body, td, th { font-family: 'EB Garamond', Georgia, serif; color: #252220; }
+    body, td, th { font-family: 'EB Garamond', Georgia, serif; color: #1a1814; }
 
-    .email-wrapper { width: 100%; background-color: #ebe6df; padding: 48px 20px; }
+    .email-wrapper { width: 100%; background-color: #c9c2b8; padding: 40px 12px; }
     .mast-accent {
-      height: 4px;
+      height: 6px;
       font-size: 0;
       line-height: 0;
-      background: linear-gradient(90deg, #100e0b 0%, #2c261e 14%, #8a7028 40%, #d8c992 50%, #8a7028 60%, #2c261e 86%, #100e0b 100%);
+      background: linear-gradient(90deg, #0a0908 0%, #3d3318 18%, #c9a227 42%, #f2e8c9 50%, #c9a227 58%, #3d3318 82%, #0a0908 100%);
     }
-    .email-container { max-width: 640px; margin: 0 auto; background-color: #f8f6f1; overflow: hidden; border: 1px solid #b9a892; border-radius: 2px; box-shadow: 0 0 0 1px rgba(255,255,255,0.42) inset, 0 26px 64px rgba(8, 6, 5, 0.16), 0 8px 20px rgba(8, 6, 5, 0.07); }
-
-    /* ===== HEADER ===== */
-    .header {
-      background: #f8f6f1;
-      padding: 40px 32px 36px;
+    .co-brand {
+      margin: 0;
+      padding: 14px 24px 0;
       text-align: center;
-      position: relative;
+      font-family: 'Montserrat', Arial, sans-serif;
+      font-size: 9px;
+      font-weight: 600;
+      letter-spacing: 3.5px;
+      text-transform: uppercase;
+      color: #7a756c;
+      background: #faf9f6;
     }
-    .header::after {
-      content: '';
-      display: block;
-      width: 100%;
-      height: 2px;
-      background: linear-gradient(90deg, transparent 0%, rgba(198, 163, 73, 0.35) 50%, transparent 100%);
-      position: absolute;
-      bottom: 0;
-      left: 0;
+    .email-container {
+      max-width: 640px;
+      margin: 0 auto;
+      background: #faf9f6;
+      overflow: hidden;
+      box-shadow: 0 32px 80px rgba(10, 8, 6, 0.2);
     }
-    .header-logo { max-width: 160px; height: auto; }
 
-    /* ===== LIFESTYLE HERO ===== */
+    .header {
+      background: #faf9f6;
+      padding: 36px 32px 32px;
+      text-align: center;
+      border-bottom: 3px solid #12100e;
+    }
+    .header-logo { max-width: 168px; height: auto; margin: 0 auto; }
+
     .lifestyle-hero { position: relative; }
     .lifestyle-hero img { width: 100%; height: auto; display: block; }
     .hero-overlay {
@@ -57,31 +63,31 @@
       bottom: 0;
       left: 0;
       right: 0;
-      padding: 40px 32px 24px;
-      background: linear-gradient(0deg, rgba(15,12,8,0.85) 0%, transparent 100%);
+      padding: 44px 32px 28px;
+      background: linear-gradient(0deg, rgba(10, 8, 6, 0.92) 0%, transparent 100%);
       text-align: center;
     }
     .hero-overlay h1 {
       font-family: 'Playfair Display', Georgia, serif;
-      font-size: 34px;
+      font-size: 36px;
       font-weight: 400;
-      color: #ffffff;
+      color: #faf9f6;
       margin: 0;
-      line-height: 1.2;
+      line-height: 1.15;
+      letter-spacing: -0.02em;
     }
-    .hero-overlay h1 em { font-style: italic; color: #c6a349; }
+    .hero-overlay h1 em { font-style: italic; color: #d4b86a; }
 
-    /* ===== MOOD COPY ===== */
     .mood-copy {
-      padding: 48px 48px;
+      padding: 48px 44px;
       text-align: center;
-      background: #f8f6f1;
+      background: #faf9f6;
     }
     .gold-rule {
-      width: 56px;
+      width: 72px;
       border: none;
-      border-top: 2px solid #c6a349;
-      margin: 0 auto 30px;
+      border-top: 2px solid #b8942e;
+      margin: 0 auto 28px;
     }
     .mood-copy .eyebrow {
       font-family: 'Montserrat', Arial, sans-serif;
@@ -89,42 +95,40 @@
       font-weight: 600;
       letter-spacing: 4px;
       text-transform: uppercase;
-      color: #c6a349;
+      color: #7a6b2d;
       margin: 0 0 12px;
     }
     .mood-copy h2 {
       margin: 0 0 26px;
       font-family: 'Playfair Display', Georgia, serif;
-      font-size: 28px;
+      font-size: 30px;
       font-weight: 400;
-      color: #1a120b;
-      line-height: 1.2;
+      color: #12100e;
+      line-height: 1.18;
     }
     .mood-copy p.ritual-quote {
       font-family: 'Playfair Display', Georgia, serif;
       font-size: 21px;
       font-style: italic;
-      color: #2e2318;
+      color: #e8e2d8;
       line-height: 1.48;
       margin: 0 0 32px;
       padding: 28px 24px;
-      background: linear-gradient(135deg, #ebe5da 0%, #e6ded4 100%);
-      border-radius: 10px;
-      border-left: 4px solid #c6a349;
+      background: #12100e;
+      border-left: 4px solid #d4b86a;
       text-align: left;
-      box-shadow: 0 4px 20px rgba(22, 18, 14, 0.06), inset 0 1px 0 rgba(255,255,255,0.45);
     }
     .mood-copy p {
       font-size: 17px;
       line-height: 1.7;
-      color: #6a5d50;
+      color: #5c574f;
       margin: 0 0 18px;
     }
 
-    /* ===== MOMENT CARDS ===== */
     .moments {
-      padding: 0 32px 44px;
-      background: #f8f6f1;
+      padding: 0 32px 48px;
+      background: #e5dfd6;
+      border-top: 1px solid #c9c0b4;
     }
     .moments table { width: 100%; border-spacing: 0; }
     .moment-cell {
@@ -132,16 +136,14 @@
       vertical-align: top;
       text-align: center;
       padding: 32px 22px;
-      background: linear-gradient(165deg, #f8f6f1 0%, #ebe5da 100%);
-      border: 1px solid #c4b8a6;
-      border-radius: 12px;
-      box-shadow: 0 4px 18px rgba(22, 18, 14, 0.07);
+      background: #ffffff;
+      border: 1px solid #d5cdc2;
     }
     .moment-gutter { width: 4%; }
     .moment-icon {
       font-family: 'Playfair Display', Georgia, serif;
       font-size: 28px;
-      color: #c6a349;
+      color: #9a7b28;
       margin: 0 0 10px;
     }
     .moment-title {
@@ -150,7 +152,7 @@
       font-weight: 700;
       letter-spacing: 2.5px;
       text-transform: uppercase;
-      color: #c6a349;
+      color: #12100e;
       margin: 0 0 10px;
     }
     .moment-desc {
@@ -158,34 +160,22 @@
       font-size: 15px;
       font-style: italic;
       line-height: 1.5;
-      color: #6a5d50;
+      color: #6b6560;
       margin: 0;
     }
 
-    /* ===== FOOTER SHOP ===== */
     .footer-shop {
-      padding: 44px 36px 40px;
+      padding: 44px 36px 42px;
       text-align: center;
-      background: linear-gradient(180deg, #e0d6ca 0%, #e6ded4 100%);
-      position: relative;
-      border-top: 1px solid #c4b8a6;
-    }
-    .footer-shop::before {
-      content: '';
-      display: block;
-      width: 100%;
-      height: 1px;
-      background: linear-gradient(90deg, transparent, rgba(198,163,73,0.35), transparent);
-      position: absolute;
-      top: 0;
-      left: 0;
+      background: #d4b86a;
+      border-top: 2px solid #12100e;
     }
     .footer-shop p {
       font-family: 'EB Garamond', Georgia, serif;
-      font-size: 17px;
+      font-size: 18px;
       font-style: italic;
-      color: #8a7a6a;
-      margin: 0 0 16px;
+      color: #3a3428;
+      margin: 0 0 20px;
     }
     .footer-shop-cta {
       display: inline-block;
@@ -194,24 +184,24 @@
       font-weight: 700;
       letter-spacing: 3px;
       text-transform: uppercase;
-      color: #f8f6f1;
-      background: linear-gradient(180deg, #c6a349 0%, #a67c28 100%);
-      padding: 17px 48px;
-      border-radius: 999px;
+      color: #f5f0e6;
+      background: #12100e;
+      padding: 16px 44px;
       text-decoration: none;
-      box-shadow: 0 2px 12px rgba(166, 124, 40, 0.25);
+      border: 1px solid #12100e;
     }
+    .footer-shop-cta:hover { background: #2a2620; }
 
-    /* ===== FOOTER ===== */
     .footer {
-      padding: 44px 36px 42px;
+      padding: 40px 36px 44px;
       text-align: center;
-      background: linear-gradient(180deg, #ddd3c8 0%, #ebe6df 100%);
-      border-top: 1px solid #b0a090;
+      background: #12100e;
+      border-top: 2px solid #b8942e;
     }
-    .footer-logo { max-width: 112px; height: auto; margin-bottom: 22px; opacity: 0.72; }
-    .footer p { font-family: 'Montserrat', Arial, sans-serif; font-size: 10px; line-height: 1.85; color: #8f8275; margin: 10px 0 0; }
-    .footer a { color: #2e2318; text-decoration: underline; }
+    .footer-logo { max-width: 100px; height: auto; margin: 0 auto 20px; opacity: 0.92; }
+    .footer p { font-family: 'Montserrat', Arial, sans-serif; font-size: 10px; line-height: 1.9; color: rgba(235, 230, 220, 0.5); margin: 10px 0 0; }
+    .footer a { color: #d4b86a; text-decoration: underline; }
+    .footer-legal { color: rgba(235, 230, 220, 0.35) !important; font-size: 9px !important; }
 
     @media screen and (max-width: 640px) {
       .email-container { width: 100% !important; }
@@ -230,6 +220,7 @@
         <td align="center">
           <div class="email-container">
             <div class="mast-accent" role="presentation"></div>
+            <p class="co-brand">Whisky Advocate &middot; Deutsch Spirits</p>
 
             <div class="header">
               <img src="https://braze-images.com/appboy/communication/assets/image_assets/images/69bc5675439b710060149528/original.png?1773950581" alt="Bib & Tucker" class="header-logo">
@@ -295,7 +286,7 @@
               </p>
               <p>&copy; {{current_year}} Deutsch Spirits. All rights reserved. Must be 21+. Please drink responsibly.</p>
               <p><a href="{% abort_message('unsubscribed') %}">Unsubscribe</a> &middot; <a href="https://whiskyadvocate.com/about">Privacy Policy</a></p>
-              <p style="margin-top:14px;font-size:9px;color:#c0b0a0;">M. Shanken Communications Inc. &middot; 825 Eighth Avenue, 33rd Floor &middot; New York, NY 10019</p>
+              <p class="footer-legal" style="margin-top:14px;">M. Shanken Communications Inc. &middot; 825 Eighth Avenue, 33rd Floor &middot; New York, NY 10019</p>
             </div>
 
           </div>

@@ -17,84 +17,82 @@
     body, table, td, a { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
     table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
     img { -ms-interpolation-mode: bicubic; border: 0; outline: none; text-decoration: none; display: block; }
-    body { margin: 0; padding: 0; width: 100% !important; background-color: #ebe6df; }
+    body { margin: 0; padding: 0; width: 100% !important; background-color: #c9c2b8; }
     * { box-sizing: border-box; }
-    body, td, th { font-family: 'EB Garamond', Georgia, serif; color: #2c2218; }
+    body, td, th { font-family: 'EB Garamond', Georgia, serif; color: #1a1814; }
 
-    .email-wrapper { width: 100%; background-color: #ebe6df; padding: 48px 20px; }
+    .email-wrapper { width: 100%; background-color: #c9c2b8; padding: 40px 12px; }
     .mast-accent {
-      height: 4px;
+      height: 6px;
       font-size: 0;
       line-height: 0;
-      background: linear-gradient(90deg, #100e0b 0%, #2c261e 14%, #8a7028 40%, #d8c992 50%, #8a7028 60%, #2c261e 86%, #100e0b 100%);
+      background: linear-gradient(90deg, #0a0908 0%, #3d3318 18%, #c9a227 42%, #f2e8c9 50%, #c9a227 58%, #3d3318 82%, #0a0908 100%);
     }
-    .email-container { max-width: 640px; margin: 0 auto; background-color: #f8f6f1; overflow: hidden; border: 1px solid #b9a892; border-radius: 2px; box-shadow: 0 0 0 1px rgba(255,255,255,0.42) inset, 0 26px 64px rgba(8, 6, 5, 0.16), 0 8px 20px rgba(8, 6, 5, 0.07); }
+    .co-brand {
+      margin: 0;
+      padding: 14px 24px 0;
+      text-align: center;
+      font-family: 'Montserrat', Arial, sans-serif;
+      font-size: 9px;
+      font-weight: 600;
+      letter-spacing: 3.5px;
+      text-transform: uppercase;
+      color: #7a756c;
+      background: #faf9f6;
+    }
+    .email-container {
+      max-width: 640px;
+      margin: 0 auto;
+      background: #faf9f6;
+      overflow: hidden;
+      box-shadow: 0 32px 80px rgba(10, 8, 6, 0.2);
+    }
 
-    /* ===== HEADER ===== */
     .header {
-      padding: 52px 32px 32px;
+      padding: 44px 32px 28px;
       text-align: center;
-      position: relative;
+      background: #faf9f6;
+      border-bottom: 3px solid #12100e;
     }
-    .header::after {
-      content: '';
-      display: block;
-      width: 100%;
-      height: 2px;
-      background: linear-gradient(90deg, transparent 0%, rgba(198, 163, 73, 0.35) 50%, transparent 100%);
-      position: absolute;
-      bottom: 0;
-      left: 0;
-    }
-    .header-logo { max-width: 140px; height: auto; opacity: 1; }
+    .header-logo { max-width: 150px; height: auto; margin: 0 auto; }
 
-    /* ===== HERO BOTTLE ===== */
     .hero-bottle-wrap {
-      padding: 0 40px 8px;
+      padding: 36px 40px 12px;
       text-align: center;
-      position: relative;
-    }
-    .hero-bottle-wrap::before {
-      content: '';
-      display: block;
-      width: 1px;
-      height: 40px;
-      background: linear-gradient(180deg, transparent, #c6a349);
-      margin: 0 auto 24px;
+      background: #12100e;
     }
     .hero-bottle {
-      max-width: 240px;
+      max-width: 260px;
       height: auto;
       display: block;
       margin: 0 auto;
-      filter: drop-shadow(0 12px 28px rgba(22, 18, 14, 0.12));
+      filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.45));
     }
 
-    /* ===== LABEL DETAIL ===== */
     .label-detail {
-      padding: 32px 64px;
+      padding: 36px 48px;
       text-align: center;
+      background: #e5dfd6;
     }
     .label-img {
       width: 100%;
-      max-width: 240px;
+      max-width: 260px;
       height: auto;
-      border: 1px solid rgba(198,163,73,0.35);
-      border-radius: 8px;
+      border: 1px solid #d5cdc2;
       display: block;
       margin: 0 auto;
-      box-shadow: 0 8px 28px rgba(22, 18, 14, 0.1);
+      box-shadow: 0 12px 36px rgba(10, 8, 6, 0.12);
     }
 
-    /* ===== COPY ===== */
     .dark-copy {
-      padding: 52px 52px 48px;
+      padding: 48px 44px 44px;
       text-align: center;
+      background: #faf9f6;
     }
     .gold-rule {
-      width: 48px;
+      width: 72px;
       border: none;
-      border-top: 1.5px solid #c6a349;
+      border-top: 2px solid #b8942e;
       margin: 0 auto 28px;
     }
     .dark-copy .eyebrow {
@@ -103,53 +101,48 @@
       font-weight: 600;
       letter-spacing: 4px;
       text-transform: uppercase;
-      color: #c6a349;
+      color: #7a6b2d;
       margin: 0 0 12px;
     }
     .dark-copy h1 {
       margin: 0 0 20px;
       font-family: 'Playfair Display', Georgia, serif;
-      font-size: 34px;
+      font-size: 36px;
       font-weight: 400;
-      color: #2c2218;
-      line-height: 1.2;
+      color: #12100e;
+      line-height: 1.15;
     }
-    .dark-copy h1 em { font-style: italic; color: #c6a349; }
+    .dark-copy h1 em { font-style: italic; color: #9a7b28; }
     .dark-copy p {
       font-size: 17px;
       line-height: 1.7;
-      color: #6b5d4f;
+      color: #5c574f;
       margin: 0 0 18px;
     }
     .dark-copy p.pull-quote {
       font-family: 'Playfair Display', Georgia, serif;
       font-size: 22px;
       font-style: italic;
-      color: #c6a349;
+      color: #12100e;
       line-height: 1.4;
       margin: 32px 0;
-      padding: 28px 0;
-      border-top: 1px solid rgba(198,163,73,0.25);
-      border-bottom: 1px solid rgba(198,163,73,0.25);
+      padding: 28px 20px;
+      background: #e5dfd6;
+      border-left: 4px solid #d4b86a;
     }
 
-    /* ===== DESIGN DETAILS STRIP ===== */
     .design-strip {
       padding: 44px 28px 42px;
-      border-top: 1px solid rgba(198,163,73,0.22);
-      border-bottom: 1px solid rgba(198,163,73,0.22);
-      background: linear-gradient(180deg, rgba(198,163,73,0.07) 0%, rgba(198,163,73,0.03) 100%);
+      background: #12100e;
     }
     .design-strip table { width: 100%; border-spacing: 0; }
     .design-cell {
       width: 30%;
       vertical-align: top;
       text-align: center;
-      padding: 22px 16px;
-      background: #f8f6f1;
-      border: 1px solid #c4b8a6;
-      border-radius: 10px;
-      box-shadow: 0 3px 16px rgba(22, 18, 14, 0.06);
+      padding: 24px 16px;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(212, 184, 106, 0.25);
     }
     .design-gutter { width: 5%; }
     .design-title {
@@ -158,61 +151,47 @@
       font-weight: 700;
       letter-spacing: 2.5px;
       text-transform: uppercase;
-      color: #c6a349;
-      margin: 0 0 6px;
+      color: #d4b86a;
+      margin: 0 0 8px;
     }
     .design-desc {
       font-size: 14px;
       font-style: italic;
-      color: #8a7d6d;
+      color: rgba(235, 230, 220, 0.55);
       margin: 0;
       line-height: 1.5;
     }
 
-    /* ===== MINIMAL CTA ===== */
     .minimal-cta-wrap {
       padding: 48px 32px 52px;
       text-align: center;
-      background: #f8f6f1;
-    }
-    .minimal-cta-wrap::before {
-      content: '';
-      display: block;
-      width: 2px;
-      height: 36px;
-      background: linear-gradient(180deg, #c6a349, transparent);
-      margin: 0 auto 26px;
-      border-radius: 1px;
+      background: #d4b86a;
+      border-top: 2px solid #12100e;
     }
     .minimal-cta {
       display: inline-block;
       font-family: 'Montserrat', Arial, sans-serif;
-      font-size: 12px;
+      font-size: 11px;
       font-weight: 700;
-      letter-spacing: 1.5px;
-      color: #2e2318;
+      letter-spacing: 2px;
+      color: #f5f0e6;
       text-decoration: none;
-      border: 1.5px solid #c6a349;
-      padding: 14px 36px;
-      border-radius: 999px;
-      background: #fdfcfa;
-      box-shadow: 0 2px 14px rgba(198, 163, 73, 0.14);
+      background: #12100e;
+      padding: 15px 40px;
+      border: 1px solid #12100e;
     }
-    .minimal-cta:hover {
-      border-color: #a67c28;
-      color: #a67c28;
-    }
+    .minimal-cta:hover { background: #2a2620; }
 
-    /* ===== FOOTER ===== */
     .footer {
-      padding: 44px 36px 42px;
+      padding: 40px 36px 44px;
       text-align: center;
-      border-top: 1px solid rgba(198, 163, 73, 0.28);
-      background: linear-gradient(180deg, #e0d6ca 0%, #ebe6df 100%);
+      background: #12100e;
+      border-top: 2px solid #b8942e;
     }
-    .footer-logo { max-width: 96px; height: auto; margin-bottom: 22px; opacity: 0.62; }
-    .footer p { font-family: 'Montserrat', Arial, sans-serif; font-size: 10px; line-height: 1.85; color: #8f8275; margin: 10px 0 0; }
-    .footer a { color: #a67c28; text-decoration: underline; }
+    .footer-logo { max-width: 100px; height: auto; margin: 0 auto 20px; opacity: 0.92; }
+    .footer p { font-family: 'Montserrat', Arial, sans-serif; font-size: 10px; line-height: 1.9; color: rgba(235, 230, 220, 0.5); margin: 10px 0 0; }
+    .footer a { color: #d4b86a; text-decoration: underline; }
+    .footer-legal { color: rgba(235, 230, 220, 0.35) !important; font-size: 9px !important; }
 
     @media screen and (max-width: 640px) {
       .email-container { width: 100% !important; }
@@ -232,6 +211,7 @@
         <td align="center">
           <div class="email-container">
             <div class="mast-accent" role="presentation"></div>
+            <p class="co-brand">Whisky Advocate &middot; Deutsch Spirits</p>
 
             <div class="header">
               <img src="https://braze-images.com/appboy/communication/assets/image_assets/images/69bc5675439b710060149528/original.png?1773950581" alt="Bib & Tucker" class="header-logo">
@@ -300,7 +280,7 @@
               </p>
               <p>&copy; {{current_year}} Deutsch Spirits. All rights reserved. Must be 21+. Please drink responsibly.</p>
               <p><a href="{% abort_message('unsubscribed') %}">Unsubscribe</a> &middot; <a href="https://whiskyadvocate.com/about">Privacy Policy</a></p>
-              <p style="margin-top:14px;font-size:9px;color:#c4b8a8;">M. Shanken Communications Inc. &middot; 825 Eighth Avenue, 33rd Floor &middot; New York, NY 10019</p>
+              <p class="footer-legal" style="margin-top:14px;">M. Shanken Communications Inc. &middot; 825 Eighth Avenue, 33rd Floor &middot; New York, NY 10019</p>
             </div>
 
           </div>

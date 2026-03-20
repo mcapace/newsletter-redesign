@@ -17,57 +17,67 @@
     body, table, td, a { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
     table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
     img { -ms-interpolation-mode: bicubic; border: 0; outline: none; text-decoration: none; display: block; }
-    body { margin: 0; padding: 0; width: 100% !important; background-color: #ebe6df; }
+    body { margin: 0; padding: 0; width: 100% !important; background-color: #bfb8b5; }
     * { box-sizing: border-box; }
-    body, td, th { font-family: 'Libre Baskerville', Georgia, serif; color: #2c2218; }
+    body, td, th { font-family: 'Libre Baskerville', Georgia, serif; color: #1a1416; }
 
-    .email-wrapper { width: 100%; background-color: #ebe6df; padding: 48px 20px; }
+    .email-wrapper { width: 100%; background-color: #bfb8b5; padding: 40px 12px; }
     .mast-accent {
-      height: 4px;
+      height: 6px;
       font-size: 0;
       line-height: 0;
       background: linear-gradient(90deg, #0a0607 0%, #4a1520 20%, #8b2332 42%, #c49b44 50%, #8b2332 58%, #4a1520 80%, #0a0607 100%);
     }
-    .email-container { max-width: 640px; margin: 0 auto; background-color: #f8f6f1; overflow: hidden; border: 1px solid #b9a892; border-radius: 2px; box-shadow: 0 0 0 1px rgba(255,255,255,0.42) inset, 0 26px 64px rgba(8, 6, 5, 0.16), 0 8px 20px rgba(8, 6, 5, 0.07); }
-
-    /* ===== HEADER ===== */
-    .header { padding: 48px 32px 24px; text-align: center; }
-    .header-logo { max-width: 170px; height: auto; }
-
-    /* ===== DRAMATIC HERO ===== */
-    .dramatic-hero {
-      padding: 0 32px;
+    .co-brand {
+      margin: 0;
+      padding: 14px 24px 0;
       text-align: center;
-      position: relative;
+      font-family: 'Inter', Arial, sans-serif;
+      font-size: 9px;
+      font-weight: 600;
+      letter-spacing: 3.5px;
+      text-transform: uppercase;
+      color: #7a7270;
+      background: #faf9f6;
     }
-    .dramatic-hero::before {
-      content: '';
-      display: block;
-      width: 4px;
-      height: 52px;
-      border-radius: 2px;
-      background: linear-gradient(180deg, transparent, #8b2332, #c49b44);
-      margin: 0 auto 32px;
+    .email-container {
+      max-width: 640px;
+      margin: 0 auto;
+      background: #faf9f6;
+      overflow: hidden;
+      box-shadow: 0 32px 80px rgba(10, 6, 8, 0.22);
+    }
+
+    .header {
+      padding: 40px 32px 20px;
+      text-align: center;
+      background: #faf9f6;
+      border-bottom: 3px solid #1a0e12;
+    }
+    .header-logo { max-width: 180px; height: auto; margin: 0 auto; }
+
+    .dramatic-hero {
+      padding: 36px 32px 8px;
+      text-align: center;
+      background: #1a0e12;
     }
     .dramatic-hero img {
       width: 100%;
-      max-width: 400px;
+      max-width: 420px;
       height: auto;
       display: block;
       margin: 0 auto;
-      border-radius: 10px;
-      border: 1px solid rgba(139,35,50,0.15);
-      box-shadow: 0 8px 28px rgba(22, 18, 14, 0.08);
+      border: 1px solid rgba(196, 155, 68, 0.35);
+      box-shadow: 0 24px 56px rgba(0, 0, 0, 0.4);
     }
 
-    /* ===== BRAND STORY ===== */
     .brand-story {
-      padding: 56px 48px 52px;
+      padding: 52px 44px 48px;
       text-align: center;
-      background: linear-gradient(180deg, #ebe4da 0%, #f1ebe3 45%, #ebe4da 100%);
+      background: #faf9f6;
     }
     .red-rule {
-      width: 48px;
+      width: 56px;
       border: none;
       border-top: 3px solid #8b2332;
       margin: 0 auto 28px;
@@ -84,10 +94,10 @@
     .brand-story h1 {
       margin: 0 0 24px;
       font-family: 'Oswald', Arial, sans-serif;
-      font-size: 40px;
+      font-size: 42px;
       font-weight: 500;
-      color: #1a1612;
-      line-height: 1.08;
+      color: #1a0e12;
+      line-height: 1.06;
       letter-spacing: 3px;
       text-transform: uppercase;
     }
@@ -103,39 +113,35 @@
       font-family: 'Libre Baskerville', Georgia, serif;
       font-size: 20px;
       font-style: italic;
-      color: #8b2332;
+      color: #e8e0d8;
       line-height: 1.5;
       margin: 32px 0;
       padding: 28px 24px;
-      border: 1px solid rgba(139,35,50,0.2);
-      border-radius: 10px;
-      background: rgba(139,35,50,0.04);
+      border-left: 4px solid #c49b44;
+      background: #1a0e12;
+      text-align: left;
     }
 
-    /* ===== STATS BAR ===== */
     .stats-bar {
-      padding: 32px 28px 36px;
-      border-top: 1px solid rgba(139,35,50,0.15);
-      border-bottom: 1px solid rgba(139,35,50,0.15);
-      background: #f8f6f1;
+      padding: 36px 28px 40px;
+      background: #e8e4df;
+      border-top: 1px solid #d5cdc6;
     }
     .stats-bar table { width: 100%; border-spacing: 0; }
     .stat-cell {
       width: 30%;
       text-align: center;
-      padding: 18px 12px;
-      background: #fdfcfa;
-      border: 1px solid rgba(139,35,50,0.12);
-      border-radius: 10px;
-      box-shadow: 0 3px 14px rgba(22, 18, 14, 0.05);
+      padding: 22px 14px;
+      background: #ffffff;
+      border: 1px solid #d5cdc6;
     }
     .stat-gutter { width: 14px; min-width: 14px; font-size: 0; line-height: 0; }
     .stat-number {
       font-family: 'Oswald', Arial, sans-serif;
-      font-size: 28px;
+      font-size: 30px;
       font-weight: 500;
-      color: #b8892e;
-      margin: 0 0 2px;
+      color: #c49b44;
+      margin: 0 0 4px;
       letter-spacing: 2px;
     }
     .stat-label {
@@ -144,25 +150,23 @@
       font-weight: 600;
       letter-spacing: 2px;
       text-transform: uppercase;
-      color: #a09585;
+      color: #8b2332;
       margin: 0;
     }
 
-    /* ===== COCKTAIL ===== */
     .cocktail {
-      padding: 52px 32px 44px;
+      padding: 48px 32px 44px;
       text-align: center;
-      background: linear-gradient(180deg, #f8f6f1 0%, #f5f0e8 100%);
+      background: #faf9f6;
     }
     .cocktail img {
       width: 100%;
-      max-width: 400px;
+      max-width: 420px;
       height: auto;
       display: block;
-      margin: 0 auto 24px;
-      border-radius: 10px;
-      border: 1px solid rgba(139,35,50,0.12);
-      box-shadow: 0 8px 28px rgba(22, 18, 14, 0.07);
+      margin: 0 auto 26px;
+      border: 1px solid #d5cdc6;
+      box-shadow: 0 16px 40px rgba(10, 6, 8, 0.1);
     }
     .cocktail-eyebrow {
       font-family: 'Inter', Arial, sans-serif;
@@ -174,41 +178,30 @@
       margin: 0 0 8px;
     }
     .cocktail h3 {
-      margin: 0 0 10px;
+      margin: 0 0 12px;
       font-family: 'Oswald', Arial, sans-serif;
-      font-size: 22px;
+      font-size: 24px;
       font-weight: 500;
-      color: #2c2218;
-      letter-spacing: 1px;
+      color: #1a0e12;
+      letter-spacing: 2px;
       text-transform: uppercase;
     }
     .cocktail p {
       font-size: 15px;
       font-style: italic;
       line-height: 1.6;
-      color: #6b5d4f;
+      color: #5c534c;
       margin: 0;
       max-width: 420px;
       margin-left: auto;
       margin-right: auto;
     }
 
-    /* ===== CTA ===== */
     .shop-cta {
       padding: 44px 32px 48px;
       text-align: center;
-      position: relative;
-      background: linear-gradient(180deg, #ebe4da 0%, #ebe6df 100%);
-    }
-    .shop-cta::before {
-      content: '';
-      display: block;
-      width: 100%;
-      height: 4px;
-      background: linear-gradient(90deg, #f8f6f1 0%, #a02838 22%, #c49b44 50%, #a02838 78%, #f8f6f1 100%);
-      position: absolute;
-      top: 0;
-      left: 0;
+      background: #c49b44;
+      border-top: 2px solid #1a0e12;
     }
     .shop-btn {
       display: inline-block;
@@ -217,27 +210,24 @@
       font-weight: 700;
       letter-spacing: 3px;
       text-transform: uppercase;
-      color: #ffffff;
-      background: linear-gradient(180deg, #9e2a3a 0%, #6a1a28 100%);
-      padding: 17px 50px;
-      border-radius: 999px;
+      color: #faf9f6;
+      background: #1a0e12;
+      padding: 16px 48px;
       text-decoration: none;
-      box-shadow: 0 2px 14px rgba(106, 26, 40, 0.28);
+      border: 1px solid #1a0e12;
     }
-    .shop-btn:hover {
-      background: #8b2332;
-    }
+    .shop-btn:hover { background: #2c181c; }
 
-    /* ===== FOOTER ===== */
     .footer {
-      padding: 44px 36px 42px;
+      padding: 40px 36px 44px;
       text-align: center;
-      border-top: 1px solid rgba(139,35,50,0.14);
-      background: linear-gradient(180deg, #ebe4da 0%, #ebe6df 100%);
+      background: #1a0e12;
+      border-top: 2px solid #c49b44;
     }
-    .footer-logo { max-width: 96px; height: auto; margin-bottom: 22px; opacity: 0.62; }
-    .footer p { font-family: 'Inter', Arial, sans-serif; font-size: 10px; line-height: 1.85; color: #8f8275; margin: 10px 0 0; }
-    .footer a { color: #8b2332; text-decoration: underline; }
+    .footer-logo { max-width: 100px; height: auto; margin: 0 auto 20px; opacity: 0.92; }
+    .footer p { font-family: 'Inter', Arial, sans-serif; font-size: 10px; line-height: 1.9; color: rgba(235, 228, 220, 0.5); margin: 10px 0 0; }
+    .footer a { color: #c49b44; text-decoration: underline; }
+    .footer-legal { color: rgba(235, 228, 220, 0.35) !important; font-size: 9px !important; }
 
     @media screen and (max-width: 640px) {
       .email-container { width: 100% !important; }
@@ -257,6 +247,7 @@
         <td align="center">
           <div class="email-container">
             <div class="mast-accent" role="presentation"></div>
+            <p class="co-brand">Whisky Advocate &middot; Deutsch Spirits</p>
 
             <div class="header">
               <img src="https://braze-images.com/appboy/communication/assets/image_assets/images/69bc55916c576e0060f0ab5a/original.png?1773950352" alt="Redemption Whiskey" class="header-logo">
@@ -335,7 +326,7 @@
               </p>
               <p>&copy; {{current_year}} Deutsch Spirits. All rights reserved. Must be 21+. Please drink responsibly.</p>
               <p><a href="{% abort_message('unsubscribed') %}">Unsubscribe</a> &middot; <a href="https://whiskyadvocate.com/about">Privacy Policy</a></p>
-              <p style="margin-top:14px;font-size:9px;color:#c4b8a8;">M. Shanken Communications Inc. &middot; 825 Eighth Avenue, 33rd Floor &middot; New York, NY 10019</p>
+              <p class="footer-legal" style="margin-top:14px;">M. Shanken Communications Inc. &middot; 825 Eighth Avenue, 33rd Floor &middot; New York, NY 10019</p>
             </div>
 
           </div>
