@@ -16,7 +16,7 @@
   <style>
     body, table, td, a { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
     table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
-    img { -ms-interpolation-mode: bicubic; border: 0; outline: none; text-decoration: none; display: block; }
+    img { -ms-interpolation-mode: bicubic; border: 0; outline: none; text-decoration: none; display: block; height: auto !important; }
     body { margin: 0; padding: 0; width: 100% !important; background-color: #c9c2b8; }
     * { box-sizing: border-box; }
     body, td, th { font-family: 'EB Garamond', Georgia, serif; color: #1a1814; }
@@ -54,7 +54,7 @@
       text-align: center;
       border-bottom: 3px solid #12100e;
     }
-    .header-logo { max-width: 168px; height: auto; margin: 0 auto 12px; }
+    .header-logo { max-width: 168px; width: auto; height: auto; margin: 0 auto 12px; }
     .header-sub {
       font-family: 'Montserrat', Arial, sans-serif;
       font-size: 10px;
@@ -70,8 +70,8 @@
       padding: 48px 18px 52px;
     }
     .texture-hero img {
-      width: 100%;
       max-width: 560px;
+      width: auto;
       height: auto;
       display: block;
       margin: 8px auto 0;
@@ -211,6 +211,7 @@
     }
     .footer-logo {
       max-width: 100px;
+      width: auto;
       height: auto;
       margin: 0 auto 20px;
       opacity: 1;

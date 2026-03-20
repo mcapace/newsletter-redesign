@@ -16,7 +16,7 @@
   <style>
     body, table, td, a { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
     table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
-    img { -ms-interpolation-mode: bicubic; border: 0; outline: none; text-decoration: none; display: block; }
+    img { -ms-interpolation-mode: bicubic; border: 0; outline: none; text-decoration: none; display: block; height: auto !important; }
     body { margin: 0; padding: 0; width: 100% !important; background-color: #c9c2b8; }
     * { box-sizing: border-box; }
     body, td, th { font-family: 'EB Garamond', Georgia, serif; color: #1a1814; }
@@ -54,7 +54,7 @@
       text-align: center;
       border-bottom: 3px solid #12100e;
     }
-    .hero-logo { max-width: 200px; height: auto; margin: 0 auto 28px; }
+    .hero-logo { max-width: 200px; width: auto; height: auto; margin: 0 auto 28px; }
     .hero-eyebrow {
       font-family: 'Montserrat', Arial, sans-serif;
       font-size: 10px;
@@ -87,7 +87,7 @@
     }
     .hero-bottle {
       max-width: 300px;
-      width: 100%;
+      width: auto;
       height: auto;
       display: block;
       margin: 0 auto;
@@ -178,7 +178,7 @@
     .sibling-gutter { width: 8%; }
     .sibling-img {
       max-width: 148px;
-      width: 100%;
+      width: auto;
       height: auto;
       margin: 4px auto 22px;
       display: block;
@@ -222,6 +222,7 @@
     }
     .footer-logo {
       max-width: 100px;
+      width: auto;
       height: auto;
       margin: 0 auto 20px;
       opacity: 1;

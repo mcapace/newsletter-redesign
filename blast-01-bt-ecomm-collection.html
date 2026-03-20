@@ -16,7 +16,7 @@
   <style>
     body, table, td, a { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
     table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
-    img { -ms-interpolation-mode: bicubic; border: 0; outline: none; text-decoration: none; display: block; }
+    img { -ms-interpolation-mode: bicubic; border: 0; outline: none; text-decoration: none; display: block; height: auto !important; }
     body { margin: 0; padding: 0; width: 100% !important; background-color: #c9c2b8; }
     * { box-sizing: border-box; }
     body, td, th { font-family: 'EB Garamond', Georgia, serif; color: #1a1814; }
@@ -54,7 +54,7 @@
       text-align: center;
       border-bottom: 3px solid #12100e;
     }
-    .header-logo { max-width: 240px; height: auto; margin: 0 auto 20px; }
+    .header-logo { max-width: 240px; width: auto; height: auto; margin: 0 auto 20px; }
     .header-rule {
       width: 72px;
       border: none;
@@ -134,8 +134,8 @@
       padding: 40px 12px 32px;
     }
     .product-img {
-      width: 100%;
       max-width: 210px;
+      width: auto;
       height: auto;
       margin: 6px auto 26px;
     }
@@ -246,6 +246,7 @@
     }
     .footer-logo {
       max-width: 100px;
+      width: auto;
       height: auto;
       margin: 0 auto 20px;
       opacity: 1;
