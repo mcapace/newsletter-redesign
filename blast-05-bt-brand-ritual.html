@@ -58,11 +58,14 @@
 
     .lifestyle-hero { position: relative; padding: 28px 0 0; background: #faf9f6; }
     .lifestyle-hero img {
-      max-width: 100%;
+      max-width: 520px;
+      max-height: 292px;
       width: auto;
       height: auto;
       display: block;
       margin: 0 auto;
+      object-fit: contain;
+      -o-object-fit: contain;
     }
     .hero-overlay {
       position: absolute;
@@ -224,6 +227,7 @@
       .moments, .footer-shop, .footer { padding-left: 20px !important; padding-right: 20px !important; }
       .moment-cell { display: block !important; width: 100% !important; margin-bottom: 12px !important; }
       .moment-gutter { display: none !important; }
+      .lifestyle-hero img { max-width: 100% !important; }
     }
   </style>
 </head>

@@ -69,12 +69,16 @@
       background: #12100e;
       padding: 48px 18px 52px;
     }
+    /* Editorial wide slot (~16:9 cap) — consistent scene framing */
     .texture-hero img {
-      max-width: 560px;
+      max-width: 520px;
+      max-height: 292px;
       width: auto;
       height: auto;
       display: block;
       margin: 8px auto 0;
+      object-fit: contain;
+      -o-object-fit: contain;
       border: 1px solid rgba(130, 126, 120, 0.45);
       box-shadow: 0 24px 56px rgba(0, 0, 0, 0.4);
     }
@@ -229,6 +233,7 @@
       .values, .soft-cta, .footer { padding-left: 20px !important; padding-right: 20px !important; }
       .value-cell { display: block !important; width: 100% !important; margin-bottom: 16px !important; }
       .value-gutter { display: none !important; }
+      .texture-hero img { max-width: 100% !important; }
     }
   </style>
 </head>

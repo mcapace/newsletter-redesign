@@ -62,11 +62,14 @@
       background: #1a0e12;
     }
     .dramatic-hero img {
-      max-width: 600px;
+      max-width: 520px;
+      max-height: 292px;
       width: auto;
       height: auto;
       display: block;
       margin: 12px auto 0;
+      object-fit: contain;
+      -o-object-fit: contain;
       border: 1px solid rgba(148, 138, 130, 0.45);
       box-shadow: 0 28px 64px rgba(0, 0, 0, 0.45);
     }
@@ -160,11 +163,14 @@
       background: #faf9f6;
     }
     .cocktail img {
-      max-width: 580px;
+      max-width: 520px;
+      max-height: 292px;
       width: auto;
       height: auto;
       display: block;
       margin: 12px auto 30px;
+      object-fit: contain;
+      -o-object-fit: contain;
       border: 1px solid #d5cdc6;
       box-shadow: 0 20px 48px rgba(10, 6, 8, 0.12);
     }
@@ -245,6 +251,7 @@
       .stats-bar { padding: 24px 18px 28px !important; }
       .stat-cell { display: block !important; width: 100% !important; margin-bottom: 14px !important; padding: 20px 16px !important; }
       .stat-gutter { display: none !important; }
+      .dramatic-hero img, .cocktail img { max-width: 100% !important; }
     }
   </style>
 </head>

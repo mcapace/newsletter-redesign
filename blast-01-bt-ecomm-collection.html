@@ -133,11 +133,15 @@
       border: 1px solid #d5cdc2;
       padding: 40px 12px 32px;
     }
+    /* Unified landscape slot (~3:2) — same across all blast product grids */
     .product-img {
-      max-width: 210px;
+      max-width: 256px;
+      max-height: 168px;
       width: auto;
       height: auto;
       margin: 6px auto 26px;
+      object-fit: contain;
+      -o-object-fit: contain;
     }
     .product-name {
       font-family: 'Montserrat', Arial, sans-serif;
@@ -272,6 +276,7 @@
       .product-cell-gutter { display: none !important; }
       .heritage-cell { display: block !important; width: 100% !important; margin-bottom: 16px !important; }
       .heritage-gutter { display: none !important; }
+      .product-img { max-width: 100% !important; }
     }
   </style>
 </head>

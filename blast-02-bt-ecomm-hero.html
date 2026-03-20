@@ -85,12 +85,16 @@
       margin-left: auto;
       margin-right: auto;
     }
+    /* Same bottle slot as collection grid — landscape, not tall portrait */
     .hero-bottle {
-      max-width: 300px;
+      max-width: 256px;
+      max-height: 168px;
       width: auto;
       height: auto;
       display: block;
       margin: 0 auto;
+      object-fit: contain;
+      -o-object-fit: contain;
       filter: drop-shadow(0 20px 44px rgba(10, 8, 6, 0.2));
     }
 
@@ -177,11 +181,14 @@
     }
     .sibling-gutter { width: 8%; }
     .sibling-img {
-      max-width: 148px;
+      max-width: 256px;
+      max-height: 168px;
       width: auto;
       height: auto;
       margin: 4px auto 22px;
       display: block;
+      object-fit: contain;
+      -o-object-fit: contain;
     }
     .sibling-name {
       font-family: 'Montserrat', Arial, sans-serif;
@@ -247,6 +254,7 @@
       .siblings, .footer { padding-left: 20px !important; padding-right: 20px !important; }
       .sibling-cell { display: block !important; width: 100% !important; margin-bottom: 20px !important; }
       .sibling-gutter { display: none !important; }
+      .hero-bottle, .sibling-img { max-width: 100% !important; }
     }
   </style>
 </head>
