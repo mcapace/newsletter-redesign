@@ -3,277 +3,331 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Deutsch Spirits — Email Blast Previews</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <title>Deutsch Spirits — Email previews</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-      color: #f5f0e8;
-      padding: 56px 24px 80px;
-      min-height: 100vh;
-      background:
-        radial-gradient(ellipse 120% 80% at 50% -20%, rgba(198, 163, 73, 0.12), transparent 50%),
-        radial-gradient(ellipse 80% 50% at 100% 50%, rgba(139, 35, 50, 0.08), transparent 45%),
-        linear-gradient(165deg, #12100e 0%, #0a0806 40%, #0d0b09 100%);
-    }
-    .page-header { text-align: center; margin-bottom: 52px; max-width: 720px; margin-left: auto; margin-right: auto; }
-    .page-header .eyebrow {
-      font-size: 10px;
-      font-weight: 700;
-      letter-spacing: 4px;
-      text-transform: uppercase;
-      color: #c6a349;
-      margin-bottom: 14px;
-    }
-    h1 {
-      font-family: 'Playfair Display', Georgia, serif;
-      font-size: clamp(32px, 4vw, 42px);
-      font-weight: 400;
-      margin-bottom: 10px;
-      line-height: 1.15;
-    }
-    .subtitle {
-      color: rgba(245, 240, 232, 0.45);
-      font-size: 15px;
+      color: #1a1816;
+      background: #ebe6df;
       line-height: 1.5;
     }
-    .brand-section {
-      max-width: 1200px;
-      margin: 0 auto 64px;
+
+    /* —— Deutsch hub–inspired chrome (matches deutsch.whiskyadvocate.com tone) —— */
+    .site-header {
+      background: linear-gradient(180deg, #141210 0%, #1c1916 100%);
+      color: #f5f2ec;
+      padding: 28px 24px 36px;
+      text-align: center;
+      border-bottom: 3px solid #b8942e;
     }
-    .brand-label {
-      display: inline-block;
-      font-size: 10px;
-      font-weight: 700;
+    .site-header .lockup {
+      font-size: 11px;
+      font-weight: 600;
       letter-spacing: 3px;
       text-transform: uppercase;
-      padding: 8px 18px;
-      margin-bottom: 26px;
-      border-radius: 999px;
+      color: rgba(245, 242, 236, 0.55);
+      margin-bottom: 16px;
     }
-    .brand-label.bt {
-      background: linear-gradient(135deg, #2a2218, #1a140f);
-      color: #c6a349;
-      border: 1px solid rgba(198, 163, 73, 0.28);
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35);
-    }
-    .brand-label.redemption {
-      background: linear-gradient(135deg, #7a1f2e, #4a121c);
-      color: #d4af56;
-      border: 1px solid rgba(196, 155, 68, 0.25);
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35);
-    }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
-      gap: 32px;
-    }
-    .card {
-      background: linear-gradient(180deg, #1a1714 0%, #141210 100%);
-      border: 1px solid rgba(198, 163, 73, 0.12);
-      border-radius: 12px;
-      overflow: hidden;
-      transition: transform 0.22s ease, border-color 0.22s ease, box-shadow 0.22s ease;
-      cursor: pointer;
-      text-decoration: none;
-      color: inherit;
-      display: block;
-      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.45), 0 2px 0 rgba(255, 255, 255, 0.04) inset;
-    }
-    .card:hover {
-      transform: translateY(-8px);
-      border-color: rgba(198, 163, 73, 0.35);
-      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.55), 0 0 0 1px rgba(198, 163, 73, 0.15);
-    }
-    .card-preview-wrapper {
-      width: 100%;
-      height: 288px;
-      overflow: hidden;
-      position: relative;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-      background: #d5cbc0;
-    }
-    .card-preview {
-      width: 640px;
-      height: 800px;
-      border: none;
-      pointer-events: none;
-      transform-origin: top left;
-    }
-    .card-info { padding: 22px 26px 24px; }
-    .card-info .number {
-      font-size: 10px;
-      font-weight: 700;
-      letter-spacing: 3px;
-      text-transform: uppercase;
-      color: rgba(245, 240, 232, 0.32);
-      margin-bottom: 8px;
-    }
-    .card-info h3 {
+    .site-header h1 {
       font-family: 'Playfair Display', Georgia, serif;
-      font-size: 19px;
+      font-size: clamp(28px, 5vw, 40px);
       font-weight: 400;
-      margin-bottom: 8px;
-      line-height: 1.25;
+      letter-spacing: -0.02em;
+      line-height: 1.15;
+      margin-bottom: 10px;
     }
-    .card-info .type {
-      font-size: 13px;
-      color: rgba(245, 240, 232, 0.38);
-      line-height: 1.45;
+    .site-header h1 em {
+      font-style: italic;
+      color: #d4b86a;
     }
-    .type-tag {
+    .site-header .sub {
+      font-size: 15px;
+      color: rgba(245, 242, 236, 0.65);
+      max-width: 520px;
+      margin: 0 auto 20px;
+    }
+    .site-header .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: center;
+      align-items: center;
+    }
+    .site-header a.btn {
       display: inline-block;
-      font-family: 'Inter', sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 12px 22px;
+      border-radius: 999px;
+      border: 1px solid rgba(212, 184, 106, 0.45);
+      color: #1a1816;
+      background: linear-gradient(180deg, #d4b86a 0%, #b8942e 100%);
+    }
+    .site-header a.btn-ghost {
+      background: transparent;
+      color: #e8dcc8;
+      border-color: rgba(245, 242, 236, 0.25);
+    }
+    .site-header a.btn:hover { filter: brightness(1.06); }
+
+    .page-wrap {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 40px 20px 80px;
+    }
+
+    .note {
+      text-align: center;
+      font-size: 13px;
+      color: #5c564e;
+      margin-bottom: 36px;
+      padding: 20px 24px;
+      background: rgba(255, 255, 255, 0.55);
+      border: 1px solid #d4cec4;
+      border-radius: 8px;
+    }
+    .note code {
+      font-size: 12px;
+      background: rgba(184, 148, 46, 0.12);
+      padding: 2px 7px;
+      border-radius: 4px;
+      color: #6b5a28;
+    }
+
+    .brand-block {
+      margin-bottom: 48px;
+    }
+    .brand-block > .label {
+      display: inline-block;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: #6b5a28;
+      margin-bottom: 20px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid #b8942e;
+    }
+
+    /* —— Email preview: proportional scale, top-center, full letter height —— */
+    .email-row {
+      margin-bottom: 48px;
+    }
+    .email-row .meta {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 14px;
+    }
+    .email-row .meta h2 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 20px;
+      font-weight: 400;
+      color: #141210;
+    }
+    .email-row .meta .badge {
       font-size: 9px;
       font-weight: 700;
-      letter-spacing: 1.5px;
+      letter-spacing: 2px;
       text-transform: uppercase;
-      padding: 4px 11px;
+      padding: 4px 10px;
       border-radius: 999px;
-      margin-left: 10px;
-      vertical-align: middle;
+      background: rgba(184, 148, 46, 0.15);
+      color: #6b5a28;
     }
-    .type-tag.ecomm { background: rgba(198, 163, 73, 0.18); color: #d4b85c; }
-    .type-tag.brand { background: rgba(139, 35, 50, 0.28); color: #e8a8b0; }
-    .instructions {
-      max-width: 680px;
-      margin: 0 auto 56px;
-      text-align: center;
-      padding: 36px 40px;
-      background: rgba(255, 255, 255, 0.04);
-      border: 1px solid rgba(198, 163, 73, 0.15);
-      border-radius: 12px;
-      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    .email-row .meta .badge.brand {
+      background: rgba(107, 26, 40, 0.1);
+      color: #72232f;
     }
-    .instructions p {
+    .email-row .desc {
       font-size: 14px;
-      color: rgba(245, 240, 232, 0.5);
-      line-height: 1.75;
+      color: #5c564e;
+      margin-bottom: 16px;
     }
-    .instructions code {
-      background: rgba(198, 163, 73, 0.12);
-      color: #c6a349;
-      padding: 3px 8px;
-      border-radius: 4px;
+    .email-row a.open {
       font-size: 12px;
-      border: 1px solid rgba(198, 163, 73, 0.2);
+      font-weight: 600;
+      color: #72232f;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(114, 35, 47, 0.35);
+      margin-bottom: 16px;
+      display: inline-block;
+    }
+    .email-row a.open:hover { color: #8b2332; }
+
+    .preview-shell {
+      background: #ebe6df;
+      border-radius: 8px;
+      padding: 16px;
+      border: 1px solid #c4b8a8;
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.35), 0 12px 32px rgba(20, 18, 16, 0.08);
+    }
+    .preview-viewport {
+      position: relative;
+      width: 100%;
+      max-width: 640px;
+      margin: 0 auto;
+      overflow: hidden;
+      background: #ebe6df;
+    }
+    .preview-scale {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 640px;
+      margin-left: -320px;
+      transform-origin: top center;
+      will-change: transform;
+    }
+    .preview-scale iframe {
+      display: block;
+      width: 640px;
+      height: 2800px;
+      border: 0;
+      background: #f8f6f1;
     }
   </style>
 </head>
 <body>
-  <div class="page-header">
-    <p class="eyebrow">Deutsch Spirits &bull; Braze Email Program</p>
-    <h1>Email Blast Previews</h1>
-    <p class="subtitle">Click any card to open the full email mock</p>
-  </div>
-
-  <div class="instructions">
-    <p>
-      All images uploaded to Braze CDN. All URLs mapped to <code>deutsch.whiskyadvocate.com</code> and <code>store.whiskyadvocate.com</code>.<br>
-      Braze Liquid tags in place: <code>{{current_year}}</code>, <code>{{${email_url}}}</code>, <code>{{ ${set_user_field} }}</code>.
-    </p>
-  </div>
-
-  <div class="brand-section">
-    <span class="brand-label bt">Bib & Tucker &mdash; 5 Sends</span>
-    <div class="grid">
-      <a class="card" href="blast-01-bt-ecomm-collection.html" target="_blank">
-        <div class="card-preview-wrapper">
-          <iframe class="card-preview" src="blast-01-bt-ecomm-collection.html" scrolling="no" tabindex="-1"></iframe>
-        </div>
-        <div class="card-info">
-          <div class="number">Blast 01</div>
-          <h3>Meet the Collection <span class="type-tag ecomm">Ecomm</span></h3>
-          <p class="type">3-SKU grid &mdash; 6-Year, Double Char, Gold Roast</p>
-        </div>
-      </a>
-
-      <a class="card" href="blast-02-bt-ecomm-hero.html" target="_blank">
-        <div class="card-preview-wrapper">
-          <iframe class="card-preview" src="blast-02-bt-ecomm-hero.html" scrolling="no" tabindex="-1"></iframe>
-        </div>
-        <div class="card-info">
-          <div class="number">Blast 02</div>
-          <h3>The One Worth Reaching For <span class="type-tag ecomm">Ecomm</span></h3>
-          <p class="type">Hero bottle + occasion positioning</p>
-        </div>
-      </a>
-
-      <a class="card" href="blast-03-bt-brand-craft.html" target="_blank">
-        <div class="card-preview-wrapper">
-          <iframe class="card-preview" src="blast-03-bt-brand-craft.html" scrolling="no" tabindex="-1"></iframe>
-        </div>
-        <div class="card-info">
-          <div class="number">Blast 03</div>
-          <h3>Rooted in Tennessee <span class="type-tag brand">Branding</span></h3>
-          <p class="type">Craft story + heritage values</p>
-        </div>
-      </a>
-
-      <a class="card" href="blast-04-bt-brand-design.html" target="_blank">
-        <div class="card-preview-wrapper">
-          <iframe class="card-preview" src="blast-04-bt-brand-design.html" scrolling="no" tabindex="-1"></iframe>
-        </div>
-        <div class="card-info">
-          <div class="number">Blast 04</div>
-          <h3>Dressed to Impress <span class="type-tag brand">Branding</span></h3>
-          <p class="type">Dark editorial &mdash; bottle as design object</p>
-        </div>
-      </a>
-
-      <a class="card" href="blast-05-bt-brand-ritual.html" target="_blank">
-        <div class="card-preview-wrapper">
-          <iframe class="card-preview" src="blast-05-bt-brand-ritual.html" scrolling="no" tabindex="-1"></iframe>
-        </div>
-        <div class="card-info">
-          <div class="number">Blast 05</div>
-          <h3>Some Moments Deserve Something Better <span class="type-tag brand">Branding</span></h3>
-          <p class="type">Lifestyle mood + hosting/gifting</p>
-        </div>
-      </a>
+  <header class="site-header">
+    <p class="lockup">Whisky Advocate &times; Deutsch Family Wine &amp; Spirits</p>
+    <h1>Email blast <em>previews</em></h1>
+    <p class="sub">Same 640px artboard as Braze. Below, each send is scaled to fit—full length, aligned, no cropped hero grid.</p>
+    <div class="actions">
+      <a class="btn" href="https://deutsch.whiskyadvocate.com/" target="_blank" rel="noopener">Deutsch spirits hub</a>
+      <a class="btn btn-ghost" href="https://store.whiskyadvocate.com/" target="_blank" rel="noopener">Whisky Advocate store</a>
     </div>
-  </div>
+  </header>
 
-  <div class="brand-section">
-    <span class="brand-label redemption">Redemption &mdash; 2 Sends</span>
-    <div class="grid">
-      <a class="card" href="blast-06-redemption-ecomm.html" target="_blank">
-        <div class="card-preview-wrapper">
-          <iframe class="card-preview" src="blast-06-redemption-ecomm.html" scrolling="no" tabindex="-1"></iframe>
-        </div>
-        <div class="card-info">
-          <div class="number">Blast 06</div>
-          <h3>Shop the Lineup <span class="type-tag ecomm">Ecomm</span></h3>
-          <p class="type">2x2 grid &mdash; Rye, Bourbon, High Rye, Wheated</p>
-        </div>
-      </a>
+  <div class="page-wrap">
+    <div class="note">
+      Assets on Braze CDN. Links point to <code>deutsch.whiskyadvocate.com</code> &amp; <code>store.whiskyadvocate.com</code>.
+      Liquid: <code>{{current_year}}</code>, <code>{{${email_url}}}</code>, <code>{{ ${set_user_field} }}</code>.
+    </div>
 
-      <a class="card" href="blast-07-redemption-brand.html" target="_blank">
-        <div class="card-preview-wrapper">
-          <iframe class="card-preview" src="blast-07-redemption-brand.html" scrolling="no" tabindex="-1"></iframe>
+    <div class="brand-block">
+      <div class="label">Bib &amp; Tucker</div>
+
+      <article class="email-row" data-preview="blast-01-bt-ecomm-collection.html">
+        <div class="meta">
+          <h2>01 &mdash; Meet the Collection</h2>
+          <span class="badge">Ecomm</span>
         </div>
-        <div class="card-info">
-          <div class="number">Blast 07</div>
-          <h3>The Rye Revival <span class="type-tag brand">Branding</span></h3>
-          <p class="type">Dark manifesto + cocktail moment</p>
+        <p class="desc">Three-SKU grid: 6-Year, Double Char, Gold Roast.</p>
+        <a class="open" href="blast-01-bt-ecomm-collection.html" target="_blank" rel="noopener">Open full tab</a>
+        <div class="preview-shell">
+          <div class="preview-viewport"><div class="preview-scale"><iframe src="blast-01-bt-ecomm-collection.html" title="Blast 01 preview" loading="lazy"></iframe></div></div>
         </div>
-      </a>
+      </article>
+
+      <article class="email-row" data-preview="blast-02-bt-ecomm-hero.html">
+        <div class="meta">
+          <h2>02 &mdash; The One Worth Reaching For</h2>
+          <span class="badge">Ecomm</span>
+        </div>
+        <p class="desc">Hero bottle and occasion story.</p>
+        <a class="open" href="blast-02-bt-ecomm-hero.html" target="_blank" rel="noopener">Open full tab</a>
+        <div class="preview-shell">
+          <div class="preview-viewport"><div class="preview-scale"><iframe src="blast-02-bt-ecomm-hero.html" title="Blast 02 preview" loading="lazy"></iframe></div></div>
+        </div>
+      </article>
+
+      <article class="email-row" data-preview="blast-03-bt-brand-craft.html">
+        <div class="meta">
+          <h2>03 &mdash; Rooted in Tennessee</h2>
+          <span class="badge brand">Brand</span>
+        </div>
+        <p class="desc">Craft narrative and value pillars.</p>
+        <a class="open" href="blast-03-bt-brand-craft.html" target="_blank" rel="noopener">Open full tab</a>
+        <div class="preview-shell">
+          <div class="preview-viewport"><div class="preview-scale"><iframe src="blast-03-bt-brand-craft.html" title="Blast 03 preview" loading="lazy"></iframe></div></div>
+        </div>
+      </article>
+
+      <article class="email-row" data-preview="blast-04-bt-brand-design.html">
+        <div class="meta">
+          <h2>04 &mdash; Dressed to Impress</h2>
+          <span class="badge brand">Brand</span>
+        </div>
+        <p class="desc">Editorial bottle and label story.</p>
+        <a class="open" href="blast-04-bt-brand-design.html" target="_blank" rel="noopener">Open full tab</a>
+        <div class="preview-shell">
+          <div class="preview-viewport"><div class="preview-scale"><iframe src="blast-04-bt-brand-design.html" title="Blast 04 preview" loading="lazy"></iframe></div></div>
+        </div>
+      </article>
+
+      <article class="email-row" data-preview="blast-05-bt-brand-ritual.html">
+        <div class="meta">
+          <h2>05 &mdash; Some Moments Deserve Something Better</h2>
+          <span class="badge brand">Brand</span>
+        </div>
+        <p class="desc">Lifestyle mood and hosting.</p>
+        <a class="open" href="blast-05-bt-brand-ritual.html" target="_blank" rel="noopener">Open full tab</a>
+        <div class="preview-shell">
+          <div class="preview-viewport"><div class="preview-scale"><iframe src="blast-05-bt-brand-ritual.html" title="Blast 05 preview" loading="lazy"></iframe></div></div>
+        </div>
+      </article>
+    </div>
+
+    <div class="brand-block">
+      <div class="label">Redemption</div>
+
+      <article class="email-row" data-preview="blast-06-redemption-ecomm.html">
+        <div class="meta">
+          <h2>06 &mdash; Shop the Lineup</h2>
+          <span class="badge">Ecomm</span>
+        </div>
+        <p class="desc">2&times;2 product grid.</p>
+        <a class="open" href="blast-06-redemption-ecomm.html" target="_blank" rel="noopener">Open full tab</a>
+        <div class="preview-shell">
+          <div class="preview-viewport"><div class="preview-scale"><iframe src="blast-06-redemption-ecomm.html" title="Blast 06 preview" loading="lazy"></iframe></div></div>
+        </div>
+      </article>
+
+      <article class="email-row" data-preview="blast-07-redemption-brand.html">
+        <div class="meta">
+          <h2>07 &mdash; The Rye Revival</h2>
+          <span class="badge brand">Brand</span>
+        </div>
+        <p class="desc">Manifesto, stats, cocktail.</p>
+        <a class="open" href="blast-07-redemption-brand.html" target="_blank" rel="noopener">Open full tab</a>
+        <div class="preview-shell">
+          <div class="preview-viewport"><div class="preview-scale"><iframe src="blast-07-redemption-brand.html" title="Blast 07 preview" loading="lazy"></iframe></div></div>
+        </div>
+      </article>
     </div>
   </div>
 
   <script>
-    function scaleIframes() {
-      document.querySelectorAll('.card-preview-wrapper').forEach(wrapper => {
-        const iframe = wrapper.querySelector('iframe');
-        const scale = wrapper.offsetWidth / 640;
-        iframe.style.transform = `scale(${scale})`;
-        iframe.style.width = '640px';
-        iframe.style.height = `${wrapper.offsetHeight / scale}px`;
-      });
-    }
-    window.addEventListener('load', scaleIframes);
-    window.addEventListener('resize', scaleIframes);
+    (function () {
+      var IFRAME_H = 2800;
+
+      function layoutPreviews() {
+        document.querySelectorAll('.preview-viewport').forEach(function (vp) {
+          var inner = vp.querySelector('.preview-scale');
+          if (!inner) return;
+          var w = vp.offsetWidth;
+          var scale = Math.min(1, w / 640);
+          inner.style.transform = 'scale(' + scale + ')';
+          vp.style.height = Math.ceil(IFRAME_H * scale) + 'px';
+        });
+      }
+
+      window.addEventListener('load', layoutPreviews);
+      window.addEventListener('resize', layoutPreviews);
+      if (document.fonts && document.fonts.ready) {
+        document.fonts.ready.then(layoutPreviews);
+      }
+    })();
   </script>
 </body>
 </html>
