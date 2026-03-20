@@ -12,23 +12,34 @@
     The Lincoln County Process. Sugar maple charcoal. Six years of Tennessee patience. Discover what sets Bib &amp; Tucker apart.
     &zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;
   </div>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     body, table, td, a { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
     table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
     img { -ms-interpolation-mode: bicubic; border: 0; outline: none; text-decoration: none; }
-    body { margin: 0; padding: 0; width: 100% !important; background-color: #f5f0e6; }
+    body { margin: 0; padding: 0; width: 100% !important; background-color: #e4ddd4; }
     * { box-sizing: border-box; }
-    body, td, th { font-family: 'Cormorant Garamond', Georgia, serif; color: #2c2c2c; }
+    body, td, th { font-family: 'EB Garamond', Georgia, serif; color: #2c2c2c; }
 
-    .email-wrapper { width: 100%; background-color: #f5f0e6; padding: 32px 0; }
-    .email-container { max-width: 640px; margin: 0 auto; background-color: #fffdf8; overflow: hidden; }
+    .email-wrapper { width: 100%; background-color: #e4ddd4; padding: 40px 16px; }
+    .email-container { max-width: 640px; margin: 0 auto; background-color: #faf8f3; overflow: hidden; border: 1px solid #cfc3b2; box-shadow: 0 10px 44px rgba(18, 14, 10, 0.14), 0 2px 10px rgba(18, 14, 10, 0.05); }
 
     /* ===== HEADER ===== */
     .header {
-      background: #fffdf8;
-      padding: 40px 32px;
+      background: #faf8f3;
+      padding: 44px 32px 40px;
       text-align: center;
+      position: relative;
+    }
+    .header::after {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 2px;
+      background: linear-gradient(90deg, transparent 0%, rgba(198, 163, 73, 0.2) 50%, transparent 100%);
+      position: absolute;
+      bottom: 0;
+      left: 0;
     }
     .header-logo { max-width: 160px; height: auto; margin-bottom: 10px; }
     .header-sub {
@@ -36,14 +47,14 @@
       font-size: 10px;
       letter-spacing: 3px;
       text-transform: uppercase;
-      color: #b8943e;
+      color: #a67c28;
       margin: 0;
     }
 
     /* ===== TEXTURE HERO ===== */
     .texture-hero {
       text-align: center;
-      background: #f7f2ea;
+      background: #f1ebe3;
       padding: 40px 32px;
     }
     .texture-hero img {
@@ -52,21 +63,22 @@
       height: auto;
       display: block;
       margin: 0 auto;
-      border-radius: 4px;
-      border: 1px solid #e0d6c6;
+      border-radius: 10px;
+      border: 1px solid #d3c9bd;
+      box-shadow: 0 6px 22px rgba(22, 18, 14, 0.07);
     }
 
     /* ===== STORY ===== */
     .story {
-      padding: 52px 48px;
+      padding: 56px 48px 52px;
       text-align: center;
-      background: #fffdf8;
+      background: #faf8f3;
     }
     .gold-rule {
-      width: 48px;
+      width: 56px;
       border: none;
-      border-top: 1.5px solid #d4a853;
-      margin: 0 auto 28px;
+      border-top: 2px solid #c6a349;
+      margin: 0 auto 30px;
     }
     .story-eyebrow {
       font-family: 'Montserrat', Arial, sans-serif;
@@ -74,18 +86,18 @@
       font-weight: 600;
       letter-spacing: 4px;
       text-transform: uppercase;
-      color: #d4a853;
+      color: #c6a349;
       margin: 0 0 12px;
     }
     .story h1 {
-      margin: 0 0 20px;
+      margin: 0 0 22px;
       font-family: 'Playfair Display', Georgia, serif;
-      font-size: 32px;
+      font-size: 34px;
       font-weight: 400;
       color: #1a120b;
-      line-height: 1.2;
+      line-height: 1.18;
     }
-    .story h1 em { font-style: italic; color: #d4a853; }
+    .story h1 em { font-style: italic; color: #c6a349; }
     .story p {
       font-size: 17px;
       line-height: 1.7;
@@ -97,27 +109,28 @@
       font-style: italic;
       color: #2e2318;
       margin-bottom: 28px;
-      padding: 24px 16px;
-      background: linear-gradient(135deg, #f7f2ea 0%, #ece4d8 100%);
-      border-radius: 4px;
-      border-left: 3px solid #d4a853;
+      padding: 26px 20px;
+      background: linear-gradient(135deg, #f1ebe3 0%, #e6ded4 100%);
+      border-radius: 10px;
+      border-left: 4px solid #c6a349;
       text-align: left;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.5);
     }
 
     /* ===== VALUES ===== */
     .values {
-      padding: 44px 32px;
-      background: #f7f2ea;
+      padding: 48px 36px 46px;
+      background: #f1ebe3;
       position: relative;
-      border-top: 1px solid #e0d6c6;
-      border-bottom: 1px solid #e0d6c6;
+      border-top: 1px solid #d3c9bd;
+      border-bottom: 1px solid #d3c9bd;
     }
     .values::before {
       content: '';
       display: block;
       width: 100%;
       height: 1px;
-      background: linear-gradient(90deg, transparent, rgba(184,148,62,0.3), transparent);
+      background: linear-gradient(90deg, transparent, rgba(198,163,73,0.35), transparent);
       position: absolute;
       top: 0;
       left: 0;
@@ -129,7 +142,7 @@
       font-weight: 600;
       letter-spacing: 3px;
       text-transform: uppercase;
-      color: #d4a853;
+      color: #c6a349;
       margin: 0 0 28px;
     }
     .values table { width: 100%; border-spacing: 0; }
@@ -137,16 +150,17 @@
       width: 30%;
       vertical-align: top;
       text-align: center;
-      padding: 20px 12px;
-      border: 1px solid #e0d6c6;
-      border-radius: 4px;
-      background: #fffdf8;
+      padding: 22px 14px;
+      border: 1px solid #d3c9bd;
+      border-radius: 10px;
+      background: #faf8f3;
+      box-shadow: 0 2px 14px rgba(22, 18, 14, 0.05);
     }
     .value-gutter { width: 5%; }
     .value-number {
       font-family: 'Playfair Display', Georgia, serif;
       font-size: 32px;
-      color: #d4a853;
+      color: #c6a349;
       margin: 0 0 6px;
     }
     .value-title {
@@ -159,7 +173,7 @@
       margin: 0 0 8px;
     }
     .value-desc {
-      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-family: 'EB Garamond', Georgia, serif;
       font-size: 14px;
       font-style: italic;
       line-height: 1.5;
@@ -169,39 +183,44 @@
 
     /* ===== SOFT CTA ===== */
     .soft-cta {
-      padding: 40px 32px;
+      padding: 48px 36px 46px;
       text-align: center;
-      background: #fffdf8;
-      border-top: 1px solid #ece4d8;
+      background: linear-gradient(180deg, #faf8f3 0%, #f5f0e8 100%);
+      border-top: 1px solid #e6ded4;
     }
     .soft-cta p {
-      font-family: 'Cormorant Garamond', Georgia, serif;
-      font-size: 17px;
+      font-family: 'EB Garamond', Georgia, serif;
+      font-size: 18px;
       font-style: italic;
-      color: #8a7a6a;
-      margin: 0 0 16px;
+      color: #6e655c;
+      margin: 0 0 22px;
+      line-height: 1.55;
     }
     .explore-link {
       display: inline-block;
       font-family: 'Montserrat', Arial, sans-serif;
       font-size: 11px;
       font-weight: 700;
-      letter-spacing: 1px;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
       color: #2e2318;
       text-decoration: none;
-      border-bottom: 2px solid #d4a853;
-      padding-bottom: 3px;
+      border: 1.5px solid #c6a349;
+      padding: 14px 32px;
+      border-radius: 999px;
+      background: #faf8f3;
+      box-shadow: 0 2px 12px rgba(198, 163, 73, 0.12);
     }
 
     /* ===== FOOTER ===== */
     .footer {
-      padding: 36px 32px;
+      padding: 44px 36px 42px;
       text-align: center;
-      background-color: #f7f2ea;
-      border-top: 1px solid #e0d6c6;
+      background: linear-gradient(180deg, #ebe4da 0%, #e4ddd4 100%);
+      border-top: 1px solid #c9bfb2;
     }
-    .footer-logo { max-width: 110px; height: auto; margin-bottom: 16px; opacity: 0.6; }
-    .footer p { font-family: 'Montserrat', Arial, sans-serif; font-size: 10px; line-height: 1.7; color: #a09080; margin: 8px 0 0; }
+    .footer-logo { max-width: 112px; height: auto; margin-bottom: 22px; opacity: 0.72; }
+    .footer p { font-family: 'Montserrat', Arial, sans-serif; font-size: 10px; line-height: 1.85; color: #8f8275; margin: 10px 0 0; }
     .footer a { color: #2e2318; text-decoration: underline; }
 
     @media screen and (max-width: 640px) {

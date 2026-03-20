@@ -12,25 +12,36 @@
     Fireside. Slow pour. The kind of moment that calls for something with weight. Where Bold Meets Refined.
     &zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;
   </div>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     body, table, td, a { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
     table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
     img { -ms-interpolation-mode: bicubic; border: 0; outline: none; text-decoration: none; }
-    body { margin: 0; padding: 0; width: 100% !important; background-color: #f5f0e6; }
+    body { margin: 0; padding: 0; width: 100% !important; background-color: #e4ddd4; }
     * { box-sizing: border-box; }
-    body, td, th { font-family: 'Cormorant Garamond', Georgia, serif; color: #2c2c2c; }
+    body, td, th { font-family: 'EB Garamond', Georgia, serif; color: #2c2c2c; }
 
-    .email-wrapper { width: 100%; background-color: #f5f0e6; padding: 32px 0; }
-    .email-container { max-width: 640px; margin: 0 auto; background-color: #fffdf8; overflow: hidden; }
+    .email-wrapper { width: 100%; background-color: #e4ddd4; padding: 40px 16px; }
+    .email-container { max-width: 640px; margin: 0 auto; background-color: #faf8f3; overflow: hidden; border: 1px solid #cfc3b2; box-shadow: 0 10px 44px rgba(18, 14, 10, 0.14), 0 2px 10px rgba(18, 14, 10, 0.05); }
 
     /* ===== HEADER ===== */
     .header {
-      background: #fffdf8;
-      padding: 36px 32px;
+      background: #faf8f3;
+      padding: 40px 32px 36px;
       text-align: center;
+      position: relative;
     }
-    .header-logo { max-width: 150px; height: auto; }
+    .header::after {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 2px;
+      background: linear-gradient(90deg, transparent 0%, rgba(198, 163, 73, 0.35) 50%, transparent 100%);
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+    .header-logo { max-width: 160px; height: auto; }
 
     /* ===== LIFESTYLE HERO ===== */
     .lifestyle-hero { position: relative; }
@@ -52,19 +63,19 @@
       margin: 0;
       line-height: 1.2;
     }
-    .hero-overlay h1 em { font-style: italic; color: #d4a853; }
+    .hero-overlay h1 em { font-style: italic; color: #c6a349; }
 
     /* ===== MOOD COPY ===== */
     .mood-copy {
       padding: 48px 48px;
       text-align: center;
-      background: #fffdf8;
+      background: #faf8f3;
     }
     .gold-rule {
-      width: 48px;
+      width: 56px;
       border: none;
-      border-top: 1.5px solid #d4a853;
-      margin: 0 auto 28px;
+      border-top: 2px solid #c6a349;
+      margin: 0 auto 30px;
     }
     .mood-copy .eyebrow {
       font-family: 'Montserrat', Arial, sans-serif;
@@ -72,28 +83,30 @@
       font-weight: 600;
       letter-spacing: 4px;
       text-transform: uppercase;
-      color: #d4a853;
+      color: #c6a349;
       margin: 0 0 12px;
     }
     .mood-copy h2 {
-      margin: 0 0 24px;
+      margin: 0 0 26px;
       font-family: 'Playfair Display', Georgia, serif;
-      font-size: 26px;
+      font-size: 28px;
       font-weight: 400;
       color: #1a120b;
+      line-height: 1.2;
     }
     .mood-copy p.ritual-quote {
       font-family: 'Playfair Display', Georgia, serif;
-      font-size: 20px;
+      font-size: 21px;
       font-style: italic;
       color: #2e2318;
-      line-height: 1.45;
-      margin: 0 0 28px;
-      padding: 24px;
-      background: linear-gradient(135deg, #f7f2ea 0%, #ece4d8 100%);
-      border-radius: 4px;
-      border-left: 3px solid #d4a853;
+      line-height: 1.48;
+      margin: 0 0 32px;
+      padding: 28px 24px;
+      background: linear-gradient(135deg, #f1ebe3 0%, #e6ded4 100%);
+      border-radius: 10px;
+      border-left: 4px solid #c6a349;
       text-align: left;
+      box-shadow: 0 4px 20px rgba(22, 18, 14, 0.06), inset 0 1px 0 rgba(255,255,255,0.45);
     }
     .mood-copy p {
       font-size: 17px;
@@ -105,23 +118,24 @@
     /* ===== MOMENT CARDS ===== */
     .moments {
       padding: 0 32px 44px;
-      background: #fffdf8;
+      background: #faf8f3;
     }
     .moments table { width: 100%; border-spacing: 0; }
     .moment-cell {
       width: 48%;
       vertical-align: top;
       text-align: center;
-      padding: 28px 20px;
-      background: #f7f2ea;
-      border: 1px solid #e0d6c6;
-      border-radius: 4px;
+      padding: 32px 22px;
+      background: linear-gradient(165deg, #faf8f3 0%, #f1ebe3 100%);
+      border: 1px solid #d3c9bd;
+      border-radius: 12px;
+      box-shadow: 0 4px 18px rgba(22, 18, 14, 0.07);
     }
     .moment-gutter { width: 4%; }
     .moment-icon {
       font-family: 'Playfair Display', Georgia, serif;
       font-size: 28px;
-      color: #d4a853;
+      color: #c6a349;
       margin: 0 0 10px;
     }
     .moment-title {
@@ -130,11 +144,11 @@
       font-weight: 700;
       letter-spacing: 2.5px;
       text-transform: uppercase;
-      color: #d4a853;
+      color: #c6a349;
       margin: 0 0 10px;
     }
     .moment-desc {
-      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-family: 'EB Garamond', Georgia, serif;
       font-size: 15px;
       font-style: italic;
       line-height: 1.5;
@@ -144,24 +158,24 @@
 
     /* ===== FOOTER SHOP ===== */
     .footer-shop {
-      padding: 36px 32px;
+      padding: 44px 36px 40px;
       text-align: center;
-      background: #f7f2ea;
+      background: linear-gradient(180deg, #ebe4da 0%, #e6ded4 100%);
       position: relative;
-      border-top: 1px solid #e0d6c6;
+      border-top: 1px solid #d3c9bd;
     }
     .footer-shop::before {
       content: '';
       display: block;
       width: 100%;
       height: 1px;
-      background: linear-gradient(90deg, transparent, rgba(184,148,62,0.3), transparent);
+      background: linear-gradient(90deg, transparent, rgba(198,163,73,0.35), transparent);
       position: absolute;
       top: 0;
       left: 0;
     }
     .footer-shop p {
-      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-family: 'EB Garamond', Georgia, serif;
       font-size: 17px;
       font-style: italic;
       color: #8a7a6a;
@@ -170,26 +184,27 @@
     .footer-shop-cta {
       display: inline-block;
       font-family: 'Montserrat', Arial, sans-serif;
-      font-size: 12px;
+      font-size: 11px;
       font-weight: 700;
-      letter-spacing: 2.5px;
+      letter-spacing: 3px;
       text-transform: uppercase;
-      color: #fffdf8;
-      background: #b8943e;
-      padding: 16px 44px;
-      border-radius: 2px;
+      color: #faf8f3;
+      background: linear-gradient(180deg, #c6a349 0%, #a67c28 100%);
+      padding: 17px 48px;
+      border-radius: 999px;
       text-decoration: none;
+      box-shadow: 0 2px 12px rgba(166, 124, 40, 0.25);
     }
 
     /* ===== FOOTER ===== */
     .footer {
-      padding: 36px 32px;
+      padding: 44px 36px 42px;
       text-align: center;
-      background-color: #f7f2ea;
-      border-top: 1px solid #e0d6c6;
+      background: linear-gradient(180deg, #e8e0d6 0%, #e4ddd4 100%);
+      border-top: 1px solid #c9bfb2;
     }
-    .footer-logo { max-width: 110px; height: auto; margin-bottom: 16px; opacity: 0.6; }
-    .footer p { font-family: 'Montserrat', Arial, sans-serif; font-size: 10px; line-height: 1.7; color: #a09080; margin: 8px 0 0; }
+    .footer-logo { max-width: 112px; height: auto; margin-bottom: 22px; opacity: 0.72; }
+    .footer p { font-family: 'Montserrat', Arial, sans-serif; font-size: 10px; line-height: 1.85; color: #8f8275; margin: 10px 0 0; }
     .footer a { color: #2e2318; text-decoration: underline; }
 
     @media screen and (max-width: 640px) {

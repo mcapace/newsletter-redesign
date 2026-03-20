@@ -9,32 +9,38 @@
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-      background: #0a0806;
-      color: #ffffff;
-      padding: 60px 24px;
+      color: #f5f0e8;
+      padding: 56px 24px 80px;
+      min-height: 100vh;
+      background:
+        radial-gradient(ellipse 120% 80% at 50% -20%, rgba(198, 163, 73, 0.12), transparent 50%),
+        radial-gradient(ellipse 80% 50% at 100% 50%, rgba(139, 35, 50, 0.08), transparent 45%),
+        linear-gradient(165deg, #12100e 0%, #0a0806 40%, #0d0b09 100%);
     }
-    .page-header { text-align: center; margin-bottom: 56px; }
+    .page-header { text-align: center; margin-bottom: 52px; max-width: 720px; margin-left: auto; margin-right: auto; }
     .page-header .eyebrow {
       font-size: 10px;
       font-weight: 700;
       letter-spacing: 4px;
       text-transform: uppercase;
-      color: #d4a853;
-      margin-bottom: 12px;
+      color: #c6a349;
+      margin-bottom: 14px;
     }
     h1 {
       font-family: 'Playfair Display', Georgia, serif;
-      font-size: 36px;
+      font-size: clamp(32px, 4vw, 42px);
       font-weight: 400;
-      margin-bottom: 8px;
+      margin-bottom: 10px;
+      line-height: 1.15;
     }
     .subtitle {
-      color: rgba(255,255,255,0.4);
-      font-size: 14px;
+      color: rgba(245, 240, 232, 0.45);
+      font-size: 15px;
+      line-height: 1.5;
     }
     .brand-section {
       max-width: 1200px;
-      margin: 0 auto 60px;
+      margin: 0 auto 64px;
     }
     .brand-label {
       display: inline-block;
@@ -42,44 +48,51 @@
       font-weight: 700;
       letter-spacing: 3px;
       text-transform: uppercase;
-      padding: 6px 16px;
-      margin-bottom: 24px;
+      padding: 8px 18px;
+      margin-bottom: 26px;
+      border-radius: 999px;
     }
     .brand-label.bt {
-      background: linear-gradient(135deg, #2e2318, #1a120b);
-      color: #d4a853;
-      border: 1px solid rgba(212,168,83,0.2);
+      background: linear-gradient(135deg, #2a2218, #1a140f);
+      color: #c6a349;
+      border: 1px solid rgba(198, 163, 73, 0.28);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35);
     }
     .brand-label.redemption {
-      background: linear-gradient(135deg, #8b2332, #6a1a28);
-      color: #c49b44;
+      background: linear-gradient(135deg, #7a1f2e, #4a121c);
+      color: #d4af56;
+      border: 1px solid rgba(196, 155, 68, 0.25);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35);
     }
     .grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
-      gap: 28px;
+      gap: 32px;
     }
     .card {
-      background: #151210;
-      border: 1px solid rgba(255,255,255,0.06);
-      border-radius: 6px;
+      background: linear-gradient(180deg, #1a1714 0%, #141210 100%);
+      border: 1px solid rgba(198, 163, 73, 0.12);
+      border-radius: 12px;
       overflow: hidden;
-      transition: transform 0.2s, border-color 0.3s;
+      transition: transform 0.22s ease, border-color 0.22s ease, box-shadow 0.22s ease;
       cursor: pointer;
       text-decoration: none;
       color: inherit;
       display: block;
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.45), 0 2px 0 rgba(255, 255, 255, 0.04) inset;
     }
     .card:hover {
-      transform: translateY(-6px);
-      border-color: rgba(212,168,83,0.3);
+      transform: translateY(-8px);
+      border-color: rgba(198, 163, 73, 0.35);
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.55), 0 0 0 1px rgba(198, 163, 73, 0.15);
     }
     .card-preview-wrapper {
       width: 100%;
-      height: 280px;
+      height: 288px;
       overflow: hidden;
       position: relative;
-      border-bottom: 1px solid rgba(255,255,255,0.06);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+      background: #e4ddd4;
     }
     .card-preview {
       width: 640px;
@@ -88,24 +101,26 @@
       pointer-events: none;
       transform-origin: top left;
     }
-    .card-info { padding: 20px 24px; }
+    .card-info { padding: 22px 26px 24px; }
     .card-info .number {
       font-size: 10px;
       font-weight: 700;
       letter-spacing: 3px;
       text-transform: uppercase;
-      color: rgba(255,255,255,0.25);
-      margin-bottom: 6px;
+      color: rgba(245, 240, 232, 0.32);
+      margin-bottom: 8px;
     }
     .card-info h3 {
       font-family: 'Playfair Display', Georgia, serif;
-      font-size: 18px;
+      font-size: 19px;
       font-weight: 400;
-      margin-bottom: 6px;
+      margin-bottom: 8px;
+      line-height: 1.25;
     }
     .card-info .type {
-      font-size: 12px;
-      color: rgba(255,255,255,0.35);
+      font-size: 13px;
+      color: rgba(245, 240, 232, 0.38);
+      line-height: 1.45;
     }
     .type-tag {
       display: inline-block;
@@ -114,33 +129,35 @@
       font-weight: 700;
       letter-spacing: 1.5px;
       text-transform: uppercase;
-      padding: 3px 10px;
-      border-radius: 2px;
+      padding: 4px 11px;
+      border-radius: 999px;
       margin-left: 10px;
       vertical-align: middle;
     }
-    .type-tag.ecomm { background: rgba(196,155,68,0.15); color: #c49b44; }
-    .type-tag.brand { background: rgba(139,35,50,0.2); color: #c46b78; }
+    .type-tag.ecomm { background: rgba(198, 163, 73, 0.18); color: #d4b85c; }
+    .type-tag.brand { background: rgba(139, 35, 50, 0.28); color: #e8a8b0; }
     .instructions {
-      max-width: 640px;
-      margin: 0 auto 60px;
+      max-width: 680px;
+      margin: 0 auto 56px;
       text-align: center;
-      padding: 32px;
-      background: rgba(255,255,255,0.03);
-      border: 1px solid rgba(255,255,255,0.06);
-      border-radius: 6px;
+      padding: 36px 40px;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(198, 163, 73, 0.15);
+      border-radius: 12px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
     }
     .instructions p {
-      font-size: 13px;
-      color: rgba(255,255,255,0.4);
-      line-height: 1.7;
+      font-size: 14px;
+      color: rgba(245, 240, 232, 0.5);
+      line-height: 1.75;
     }
     .instructions code {
-      background: rgba(212,168,83,0.1);
-      color: #d4a853;
-      padding: 2px 6px;
-      border-radius: 3px;
+      background: rgba(198, 163, 73, 0.12);
+      color: #c6a349;
+      padding: 3px 8px;
+      border-radius: 4px;
       font-size: 12px;
+      border: 1px solid rgba(198, 163, 73, 0.2);
     }
   </style>
 </head>

@@ -13,32 +13,34 @@
     Three bourbons. 92 Proof. Tennessee craft at its finest — shop the full Bib &amp; Tucker collection.
     &zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;
   </div>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     /* ===== RESET ===== */
     body, table, td, a { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
     table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
     img { -ms-interpolation-mode: bicubic; border: 0; outline: none; text-decoration: none; }
-    body { margin: 0; padding: 0; width: 100% !important; background-color: #f5f0e6; }
+    body { margin: 0; padding: 0; width: 100% !important; background-color: #e4ddd4; }
 
     * { box-sizing: border-box; }
     body, td, th {
-      font-family: 'Cormorant Garamond', 'Georgia', serif;
+      font-family: 'EB Garamond', 'Georgia', serif;
       color: #2c2c2c;
     }
 
-    .email-wrapper { width: 100%; background-color: #f5f0e6; padding: 32px 0; }
+    .email-wrapper { width: 100%; background-color: #e4ddd4; padding: 40px 16px; }
     .email-container {
       max-width: 640px;
       margin: 0 auto;
-      background-color: #fffdf8;
-      border-radius: 0;
+      background-color: #faf8f3;
+      border-radius: 3px;
       overflow: hidden;
+      border: 1px solid #cfc3b2;
+      box-shadow: 0 10px 44px rgba(18, 14, 10, 0.14), 0 2px 10px rgba(18, 14, 10, 0.05);
     }
 
     /* ===== HEADER ===== */
     .header {
-      background: #fffdf8;
+      background: #faf8f3;
       padding: 52px 40px 44px;
       text-align: center;
       position: relative;
@@ -47,8 +49,8 @@
       content: '';
       display: block;
       width: 100%;
-      height: 1px;
-      background: linear-gradient(90deg, transparent, rgba(184,148,62,0.4), transparent);
+      height: 2px;
+      background: linear-gradient(90deg, transparent 0%, rgba(198, 163, 73, 0.15) 20%, rgba(198, 163, 73, 0.55) 50%, rgba(198, 163, 73, 0.15) 80%, transparent 100%);
       position: absolute;
       bottom: 0;
       left: 0;
@@ -59,10 +61,10 @@
       margin-bottom: 28px;
     }
     .header-rule {
-      width: 48px;
+      width: 56px;
       border: none;
-      border-top: 1.5px solid #d4a853;
-      margin: 0 auto 20px;
+      border-top: 2px solid #c6a349;
+      margin: 0 auto 24px;
     }
     .header h1 {
       margin: 0 0 12px;
@@ -73,7 +75,7 @@
       letter-spacing: 1px;
       line-height: 1.15;
     }
-    .header h1 em { font-style: italic; color: #b8943e; }
+    .header h1 em { font-style: italic; color: #a67c28; }
     .header .tagline {
       margin: 0;
       font-family: 'Montserrat', Arial, sans-serif;
@@ -86,26 +88,26 @@
 
     /* ===== INTRO STRIP ===== */
     .intro-strip {
-      background: #f7f2ea;
-      padding: 20px 40px;
+      background: linear-gradient(180deg, #f4ede4 0%, #ebe3d8 100%);
+      padding: 26px 40px;
       text-align: center;
-      border-bottom: 1px solid #e0d6c6;
-      border-top: 1px solid #e0d6c6;
+      border-bottom: 1px solid #d3c9bd;
+      border-top: 1px solid #d3c9bd;
     }
     .intro-strip p {
-      font-family: 'Cormorant Garamond', Georgia, serif;
-      font-size: 17px;
+      font-family: 'EB Garamond', Georgia, serif;
+      font-size: 18px;
       font-style: italic;
-      color: #6a5d50;
+      color: #5a5248;
       margin: 0;
-      line-height: 1.5;
+      line-height: 1.55;
     }
 
     /* ===== PRODUCT GRID ===== */
     .product-grid {
-      padding: 48px 32px 40px;
+      padding: 52px 32px 44px;
       text-align: center;
-      background: #fffdf8;
+      background: linear-gradient(180deg, #faf8f3 0%, #f7f2eb 100%);
     }
     .grid-label {
       display: inline-block;
@@ -114,19 +116,20 @@
       font-weight: 600;
       letter-spacing: 3px;
       text-transform: uppercase;
-      color: #d4a853;
+      color: #c6a349;
       margin-bottom: 10px;
     }
     .product-grid h2 {
-      margin: 0 0 8px;
+      margin: 0 0 10px;
       font-family: 'Playfair Display', Georgia, serif;
-      font-size: 28px;
+      font-size: 30px;
       font-weight: 400;
       color: #1a120b;
       letter-spacing: 0.5px;
+      line-height: 1.2;
     }
     .product-grid .subtitle {
-      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-family: 'EB Garamond', Georgia, serif;
       font-size: 16px;
       font-style: italic;
       color: #8a7a6a;
@@ -141,11 +144,11 @@
     }
     .product-cell-gutter { width: 5%; }
     .product-card {
-      background: #ffffff;
-      border: 1px solid #ece4d8;
-      border-radius: 4px;
-      padding: 24px 12px 20px;
-      transition: box-shadow 0.2s;
+      background: #fffefc;
+      border: 1px solid #d3c9bd;
+      border-radius: 10px;
+      padding: 28px 14px 22px;
+      box-shadow: 0 3px 18px rgba(22, 18, 14, 0.06);
     }
     .product-img {
       width: 100%;
@@ -164,7 +167,7 @@
       margin: 0 0 6px;
     }
     .product-desc {
-      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-family: 'EB Garamond', Georgia, serif;
       font-size: 14px;
       font-style: italic;
       color: #8a7a6a;
@@ -178,34 +181,39 @@
       font-weight: 700;
       letter-spacing: 2px;
       text-transform: uppercase;
-      color: #fffdf8;
-      background: #b8943e;
-      padding: 10px 20px;
-      border-radius: 2px;
+      color: #faf8f3;
+      background: linear-gradient(180deg, #c6a349 0%, #a67c28 100%);
+      padding: 11px 22px;
+      border-radius: 999px;
       text-decoration: none;
+      box-shadow: 0 2px 10px rgba(166, 124, 40, 0.2);
     }
-    .product-btn:hover { background: #d4a853; color: #1a120b; }
+    .product-btn:hover { background: #9a7328; color: #faf8f3; }
 
     /* ===== HERITAGE STRIP ===== */
     .heritage {
-      padding: 36px 48px;
-      background: linear-gradient(135deg, #f7f2ea 0%, #ece4d8 100%);
+      padding: 44px 40px 40px;
+      background: linear-gradient(145deg, #f1ebe3 0%, #e8dfd4 50%, #e2d8cc 100%);
       text-align: center;
-      border-top: 1px solid #e0d6c6;
-      border-bottom: 1px solid #e0d6c6;
+      border-top: 1px solid #d3c9bd;
+      border-bottom: 1px solid #d3c9bd;
     }
     .heritage table { width: 100%; border-spacing: 0; }
     .heritage-cell {
       width: 30%;
       vertical-align: top;
       text-align: center;
-      padding: 0 8px;
+      padding: 22px 14px;
+      background: #faf8f3;
+      border: 1px solid #d3c9bd;
+      border-radius: 10px;
+      box-shadow: 0 3px 16px rgba(22, 18, 14, 0.06);
     }
     .heritage-gutter { width: 5%; }
     .heritage-stat {
       font-family: 'Playfair Display', Georgia, serif;
       font-size: 28px;
-      color: #d4a853;
+      color: #c6a349;
       margin: 0 0 4px;
       font-weight: 400;
     }
@@ -222,17 +230,17 @@
     /* ===== CTA BANNER ===== */
     .cta-banner {
       padding: 52px 40px;
-      background: #f7f2ea;
+      background: #f1ebe3;
       text-align: center;
       position: relative;
-      border-top: 1px solid #e0d6c6;
+      border-top: 1px solid #d3c9bd;
     }
     .cta-banner::before {
       content: '';
       display: block;
       width: 100%;
       height: 1px;
-      background: linear-gradient(90deg, transparent, rgba(184,148,62,0.3), transparent);
+      background: linear-gradient(90deg, transparent, rgba(198, 163, 73, 0.35), transparent);
       position: absolute;
       top: 0;
       left: 0;
@@ -245,7 +253,7 @@
       font-weight: 400;
     }
     .cta-banner p {
-      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-family: 'EB Garamond', Georgia, serif;
       font-size: 16px;
       font-style: italic;
       color: #8a7a6a;
@@ -254,48 +262,38 @@
     .cta-btn {
       display: inline-block;
       font-family: 'Montserrat', Arial, sans-serif;
-      font-size: 12px;
+      font-size: 11px;
       font-weight: 700;
-      letter-spacing: 2.5px;
+      letter-spacing: 3px;
       text-transform: uppercase;
-      color: #fffdf8;
-      background: #b8943e;
-      padding: 16px 44px;
-      border-radius: 2px;
+      color: #faf8f3;
+      background: linear-gradient(180deg, #c6a349 0%, #a67c28 100%);
+      padding: 17px 48px;
+      border-radius: 999px;
       text-decoration: none;
+      box-shadow: 0 2px 12px rgba(166, 124, 40, 0.25);
     }
-    .cta-btn:hover { background: #a0802e; }
-
-    /* ===== ANIMATED ACCENT ===== */
-    @keyframes shimmer {
-      0% { background-position: -200% center; }
-      100% { background-position: 200% center; }
-    }
-    .header::before {
-      background: linear-gradient(90deg, transparent 0%, rgba(184,148,62,0.1) 25%, rgba(184,148,62,0.4) 50%, rgba(184,148,62,0.1) 75%, transparent 100%);
-      background-size: 200% 100%;
-      animation: shimmer 4s ease-in-out infinite;
-    }
+    .cta-btn:hover { background: #9a7328; }
 
     /* ===== FOOTER ===== */
     .footer {
-      padding: 36px 32px;
+      padding: 44px 36px 42px;
       text-align: center;
-      background-color: #f7f2ea;
-      border-top: 1px solid #e0d6c6;
+      background: linear-gradient(180deg, #ebe4da 0%, #e4ddd4 100%);
+      border-top: 1px solid #c9bfb2;
     }
     .footer-logo {
-      max-width: 110px;
+      max-width: 112px;
       height: auto;
-      margin-bottom: 16px;
-      opacity: 0.6;
+      margin-bottom: 22px;
+      opacity: 0.72;
     }
     .footer p {
       font-family: 'Montserrat', Arial, sans-serif;
       font-size: 10px;
-      line-height: 1.7;
-      color: #a09080;
-      margin: 8px 0 0;
+      line-height: 1.85;
+      color: #8f8275;
+      margin: 10px 0 0;
     }
     .footer a { color: #2e2318; text-decoration: underline; }
 

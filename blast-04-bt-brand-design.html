@@ -12,21 +12,35 @@
     The flask silhouette. The hand-pressed ampersand. Every detail designed to say something before you even pour.
     &zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;
   </div>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     body, table, td, a { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
     table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
     img { -ms-interpolation-mode: bicubic; border: 0; outline: none; text-decoration: none; }
-    body { margin: 0; padding: 0; width: 100% !important; background-color: #f5f0e6; }
+    body { margin: 0; padding: 0; width: 100% !important; background-color: #e4ddd4; }
     * { box-sizing: border-box; }
-    body, td, th { font-family: 'Cormorant Garamond', Georgia, serif; color: #2c2218; }
+    body, td, th { font-family: 'EB Garamond', Georgia, serif; color: #2c2218; }
 
-    .email-wrapper { width: 100%; background-color: #f5f0e6; padding: 32px 0; }
-    .email-container { max-width: 640px; margin: 0 auto; background-color: #fffdf8; overflow: hidden; }
+    .email-wrapper { width: 100%; background-color: #e4ddd4; padding: 40px 16px; }
+    .email-container { max-width: 640px; margin: 0 auto; background-color: #faf8f3; overflow: hidden; border: 1px solid #cfc3b2; box-shadow: 0 10px 44px rgba(18, 14, 10, 0.14), 0 2px 10px rgba(18, 14, 10, 0.05); }
 
     /* ===== HEADER ===== */
-    .header { padding: 48px 32px 28px; text-align: center; }
-    .header-logo { max-width: 130px; height: auto; opacity: 1; }
+    .header {
+      padding: 52px 32px 32px;
+      text-align: center;
+      position: relative;
+    }
+    .header::after {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 2px;
+      background: linear-gradient(90deg, transparent 0%, rgba(198, 163, 73, 0.35) 50%, transparent 100%);
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+    .header-logo { max-width: 140px; height: auto; opacity: 1; }
 
     /* ===== HERO BOTTLE ===== */
     .hero-bottle-wrap {
@@ -39,14 +53,15 @@
       display: block;
       width: 1px;
       height: 40px;
-      background: linear-gradient(180deg, transparent, #b8943e);
+      background: linear-gradient(180deg, transparent, #c6a349);
       margin: 0 auto 24px;
     }
     .hero-bottle {
-      max-width: 220px;
+      max-width: 240px;
       height: auto;
       display: block;
       margin: 0 auto;
+      filter: drop-shadow(0 12px 28px rgba(22, 18, 14, 0.12));
     }
 
     /* ===== LABEL DETAIL ===== */
@@ -58,20 +73,22 @@
       width: 100%;
       max-width: 240px;
       height: auto;
-      border: 1px solid rgba(212,168,83,0.3);
+      border: 1px solid rgba(198,163,73,0.35);
+      border-radius: 8px;
       display: block;
       margin: 0 auto;
+      box-shadow: 0 8px 28px rgba(22, 18, 14, 0.1);
     }
 
     /* ===== COPY ===== */
     .dark-copy {
-      padding: 48px 56px;
+      padding: 52px 52px 48px;
       text-align: center;
     }
     .gold-rule {
       width: 48px;
       border: none;
-      border-top: 1.5px solid #d4a853;
+      border-top: 1.5px solid #c6a349;
       margin: 0 auto 28px;
     }
     .dark-copy .eyebrow {
@@ -80,7 +97,7 @@
       font-weight: 600;
       letter-spacing: 4px;
       text-transform: uppercase;
-      color: #b8943e;
+      color: #c6a349;
       margin: 0 0 12px;
     }
     .dark-copy h1 {
@@ -91,7 +108,7 @@
       color: #2c2218;
       line-height: 1.2;
     }
-    .dark-copy h1 em { font-style: italic; color: #b8943e; }
+    .dark-copy h1 em { font-style: italic; color: #c6a349; }
     .dark-copy p {
       font-size: 17px;
       line-height: 1.7;
@@ -102,27 +119,31 @@
       font-family: 'Playfair Display', Georgia, serif;
       font-size: 22px;
       font-style: italic;
-      color: #b8943e;
+      color: #c6a349;
       line-height: 1.4;
       margin: 32px 0;
       padding: 28px 0;
-      border-top: 1px solid rgba(184,148,62,0.25);
-      border-bottom: 1px solid rgba(184,148,62,0.25);
+      border-top: 1px solid rgba(198,163,73,0.25);
+      border-bottom: 1px solid rgba(198,163,73,0.25);
     }
 
     /* ===== DESIGN DETAILS STRIP ===== */
     .design-strip {
-      padding: 36px 32px;
-      border-top: 1px solid rgba(184,148,62,0.2);
-      border-bottom: 1px solid rgba(184,148,62,0.2);
-      background: rgba(184,148,62,0.06);
+      padding: 44px 28px 42px;
+      border-top: 1px solid rgba(198,163,73,0.22);
+      border-bottom: 1px solid rgba(198,163,73,0.22);
+      background: linear-gradient(180deg, rgba(198,163,73,0.07) 0%, rgba(198,163,73,0.03) 100%);
     }
     .design-strip table { width: 100%; border-spacing: 0; }
     .design-cell {
       width: 30%;
       vertical-align: top;
       text-align: center;
-      padding: 0 8px;
+      padding: 22px 16px;
+      background: #faf8f3;
+      border: 1px solid #d3c9bd;
+      border-radius: 10px;
+      box-shadow: 0 3px 16px rgba(22, 18, 14, 0.06);
     }
     .design-gutter { width: 5%; }
     .design-title {
@@ -131,7 +152,7 @@
       font-weight: 700;
       letter-spacing: 2.5px;
       text-transform: uppercase;
-      color: #b8943e;
+      color: #c6a349;
       margin: 0 0 6px;
     }
     .design-desc {
@@ -144,44 +165,48 @@
 
     /* ===== MINIMAL CTA ===== */
     .minimal-cta-wrap {
-      padding: 40px 32px;
+      padding: 48px 32px 52px;
       text-align: center;
+      background: #faf8f3;
     }
     .minimal-cta-wrap::before {
       content: '';
       display: block;
-      width: 1px;
-      height: 32px;
-      background: linear-gradient(180deg, #b8943e, transparent);
-      margin: 0 auto 24px;
+      width: 2px;
+      height: 36px;
+      background: linear-gradient(180deg, #c6a349, transparent);
+      margin: 0 auto 26px;
+      border-radius: 1px;
     }
     .minimal-cta {
       display: inline-block;
       font-family: 'Montserrat', Arial, sans-serif;
-      font-size: 11px;
+      font-size: 12px;
       font-weight: 700;
-      letter-spacing: 1px;
-      color: #b8943e;
+      letter-spacing: 1.5px;
+      color: #2e2318;
       text-decoration: none;
-      border-bottom: 1.5px solid rgba(184,148,62,0.5);
-      padding-bottom: 3px;
-      transition: border-color 0.3s, letter-spacing 0.3s;
+      border: 1.5px solid #c6a349;
+      padding: 14px 36px;
+      border-radius: 999px;
+      background: #fffefc;
+      box-shadow: 0 2px 14px rgba(198, 163, 73, 0.14);
     }
     .minimal-cta:hover {
-      border-color: #b8943e;
-      letter-spacing: 2px;
+      border-color: #a67c28;
+      color: #a67c28;
     }
 
     /* ===== FOOTER ===== */
     .footer {
-      padding: 36px 32px;
+      padding: 44px 36px 42px;
       text-align: center;
-      border-top: 1px solid rgba(184,148,62,0.2);
-      background: #faf7f0;
+      border-top: 1px solid rgba(198, 163, 73, 0.28);
+      background: linear-gradient(180deg, #ebe4da 0%, #e4ddd4 100%);
     }
-    .footer-logo { max-width: 90px; height: auto; margin-bottom: 16px; opacity: 0.5; }
-    .footer p { font-family: 'Montserrat', Arial, sans-serif; font-size: 10px; line-height: 1.7; color: #a09585; margin: 8px 0 0; }
-    .footer a { color: #b8943e; text-decoration: underline; }
+    .footer-logo { max-width: 96px; height: auto; margin-bottom: 22px; opacity: 0.62; }
+    .footer p { font-family: 'Montserrat', Arial, sans-serif; font-size: 10px; line-height: 1.85; color: #8f8275; margin: 10px 0 0; }
+    .footer a { color: #a67c28; text-decoration: underline; }
 
     @media screen and (max-width: 640px) {
       .email-container { width: 100% !important; }
