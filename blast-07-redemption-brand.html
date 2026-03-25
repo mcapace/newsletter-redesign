@@ -17,93 +17,95 @@
     * { box-sizing: border-box; }
     body, td, th { font-family: 'Cormorant Garamond', Georgia, serif; color: #1c1819; }
 
-    .email-wrapper { width: 100%; background: linear-gradient(180deg, #0d0b0c 0%, #161214 35%, #1a1618 100%); padding: 28px 12px; }
+    .email-wrapper { width: 100%; background: #0e0c0d; padding: 32px 16px; }
     .mast-line {
       height: 1px;
       font-size: 0;
       line-height: 0;
-      background: linear-gradient(90deg, transparent 0%, rgba(201, 169, 98, 0.35) 20%, rgba(232, 208, 165, 0.55) 50%, rgba(201, 169, 98, 0.35) 80%, transparent 100%);
+      margin: 0;
+      background: rgba(255, 255, 255, 0.07);
     }
     .co-brand {
       margin: 0;
-      padding: 12px 22px 6px;
+      padding: 20px 40px 16px;
       text-align: center;
       font-family: 'Inter', Arial, sans-serif;
-      font-size: 8px;
+      font-size: 9px;
       font-weight: 500;
-      letter-spacing: 4px;
+      letter-spacing: 0.22em;
       text-transform: uppercase;
-      color: #8a8580;
-      background: #faf8f5;
+      color: #8f8983;
+      background: #f7f5f2;
     }
     .email-container {
-      max-width: 600px;
+      max-width: 560px;
       margin: 0 auto;
-      background: #faf8f5;
+      background: #f7f5f2;
       overflow: hidden;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.035), 0 28px 72px rgba(0, 0, 0, 0.26);
-      border: 1px solid rgba(255, 255, 255, 0.06);
+      box-shadow: 0 22px 64px rgba(0, 0, 0, 0.28);
+      border: 1px solid rgba(26, 23, 20, 0.06);
+    }
+
+    .section-hairline {
+      width: 100%;
+      height: 1px;
+      margin: 0;
+      background: rgba(20, 16, 17, 0.06);
+      font-size: 0;
+      line-height: 0;
     }
 
     .header {
-      padding: 30px 24px 18px;
+      padding: 36px 40px 28px;
       text-align: center;
-      background: #faf8f5;
-      border-bottom: 1px solid rgba(20, 16, 17, 0.07);
+      background: #f7f5f2;
     }
     .header-rule {
-      width: 40px;
+      width: 72px;
       height: 1px;
-      margin: 0 auto 12px;
-      background: linear-gradient(90deg, transparent, rgba(114, 47, 55, 0.5), transparent);
+      margin: 0 auto 20px;
+      background: rgba(114, 47, 55, 0.22);
     }
-    .header-logo { max-width: 168px; width: auto; height: auto; margin: 0 auto; }
+    .header-logo { max-width: 176px; width: auto; height: auto; margin: 0 auto; }
 
     .dramatic-hero {
-      padding: 26px 12px 24px;
+      padding: 28px 40px 32px;
       text-align: center;
-      background: #141011;
+      background: #f7f5f2;
     }
     .dramatic-hero img {
-      max-width: 600px;
-      max-height: 336px;
+      max-width: 520px;
+      max-height: 292px;
       width: auto !important;
       height: auto !important;
       display: block;
-      margin: 8px auto 0;
+      margin: 0 auto;
       object-fit: contain !important;
       -o-object-fit: contain;
-      border: 1px solid rgba(148, 138, 130, 0.35);
-      box-shadow: 0 24px 60px rgba(0, 0, 0, 0.5);
+      border: 1px solid rgba(20, 16, 17, 0.08);
+      box-shadow: 0 18px 48px rgba(20, 16, 17, 0.09);
     }
 
     .brand-story {
-      padding: 32px 28px 30px;
+      padding: 40px 40px 40px;
       text-align: center;
-      background: #faf8f5;
-    }
-    .accent-rule {
-      width: 40px;
-      height: 2px;
-      border: none;
-      margin: 0 auto 16px;
-      background: linear-gradient(90deg, transparent, #722f37, transparent);
+      background: #f7f5f2;
     }
     .brand-story .eyebrow {
       font-family: 'Inter', Arial, sans-serif;
-      font-size: 8px;
-      font-weight: 600;
-      letter-spacing: 3.5px;
+      font-size: 9px;
+      font-weight: 500;
+      letter-spacing: 0.2em;
       text-transform: uppercase;
       color: #722f37;
-      margin: 0 0 6px;
-      opacity: 0.95;
+      margin: 0 0 10px;
+      opacity: 0.88;
     }
     .brand-story h1 {
-      margin: 0 0 14px;
+      margin: 0 0 16px;
       font-family: 'Playfair Display', Georgia, serif;
-      font-size: 30px;
-      font-weight: 500;
+      font-size: 34px;
+      font-weight: 400;
       color: #141011;
       line-height: 1.14;
       letter-spacing: 0.01em;
@@ -119,34 +121,35 @@
     .brand-story p.manifesto {
       font-size: 17px;
       font-style: italic;
-      color: #e8e0d8;
-      line-height: 1.48;
-      margin: 18px 0;
-      padding: 20px 18px;
-      border-left: 3px solid #722f37;
-      background: #141011;
-      text-align: left;
+      color: #3a3632;
+      line-height: 1.5;
+      margin: 22px auto;
+      padding: 22px 22px;
+      max-width: 32em;
+      text-align: center;
+      background: rgba(255, 255, 255, 0.7);
+      border: 1px solid rgba(114, 47, 55, 0.12);
+      box-shadow: 0 10px 32px rgba(20, 16, 17, 0.04);
     }
 
     .stats-bar {
-      padding: 28px 18px 30px;
-      background: #ebe5de;
-      border-top: 1px solid rgba(20, 16, 17, 0.06);
+      padding: 40px 40px 44px;
+      background: #f7f5f2;
     }
     .stats-bar table { width: 100%; border-spacing: 0; }
     .stat-cell {
       width: 30%;
       text-align: center;
-      padding: 16px 10px;
+      padding: 22px 12px;
       background: #ffffff;
-      border: 1px solid rgba(20, 16, 17, 0.07);
-      box-shadow: 0 5px 20px rgba(20, 16, 17, 0.035);
+      border: 1px solid rgba(20, 16, 17, 0.055);
+      box-shadow: 0 12px 40px rgba(20, 16, 17, 0.045);
     }
-    .stat-gutter { width: 14px; min-width: 14px; font-size: 0; line-height: 0; }
+    .stat-gutter { width: 3%; }
     .stat-number {
       font-family: 'Playfair Display', Georgia, serif;
-      font-size: 24px;
-      font-weight: 500;
+      font-size: 26px;
+      font-weight: 400;
       color: #722f37;
       margin: 0 0 6px;
     }
@@ -154,46 +157,46 @@
       font-family: 'Inter', Arial, sans-serif;
       font-size: 8px;
       font-weight: 600;
-      letter-spacing: 2.2px;
+      letter-spacing: 0.16em;
       text-transform: uppercase;
-      color: #5c574c;
+      color: #656059;
       margin: 0;
     }
 
     .cocktail {
-      padding: 28px 14px 30px;
+      padding: 40px 40px 44px;
       text-align: center;
-      background: #faf8f5;
-      border-top: 1px solid rgba(20, 16, 17, 0.06);
+      background: #f7f5f2;
     }
     .cocktail img {
-      max-width: 600px;
-      max-height: 320px;
+      max-width: 520px;
+      max-height: 278px;
       width: auto !important;
       height: auto !important;
       display: block;
-      margin: 4px auto 18px;
+      margin: 0 auto 22px;
       object-fit: contain !important;
       -o-object-fit: contain;
-      border: 1px solid rgba(20, 16, 17, 0.1);
-      box-shadow: 0 18px 44px rgba(20, 16, 17, 0.1);
+      border: 1px solid rgba(20, 16, 17, 0.07);
+      box-shadow: 0 14px 40px rgba(20, 16, 17, 0.08);
     }
     .cocktail-eyebrow {
       font-family: 'Inter', Arial, sans-serif;
       font-size: 9px;
-      font-weight: 600;
-      letter-spacing: 3.5px;
+      font-weight: 500;
+      letter-spacing: 0.2em;
       text-transform: uppercase;
       color: #722f37;
       margin: 0 0 10px;
+      opacity: 0.88;
     }
     .cocktail h3 {
-      margin: 0 0 8px;
+      margin: 0 0 10px;
       font-family: 'Playfair Display', Georgia, serif;
-      font-size: 21px;
-      font-weight: 500;
+      font-size: 26px;
+      font-weight: 400;
       color: #141011;
-      letter-spacing: 0.02em;
+      letter-spacing: 0.01em;
     }
     .cocktail p {
       font-family: 'Cormorant Garamond', Georgia, serif;
@@ -208,52 +211,50 @@
     }
 
     .shop-cta {
-      padding: 30px 24px 32px;
+      padding: 48px 40px 52px;
       text-align: center;
-      background: linear-gradient(165deg, #d8cfc4 0%, #c9bfb4 100%);
-      border-top: 1px solid rgba(20, 16, 17, 0.06);
+      background: #f7f5f2;
     }
     .shop-btn {
       display: inline-block;
       font-family: 'Inter', Arial, sans-serif;
       font-size: 9px;
-      font-weight: 600;
-      letter-spacing: 2.8px;
+      font-weight: 500;
+      letter-spacing: 0.2em;
       text-transform: uppercase;
-      color: #faf8f5;
+      color: #f7f5f2;
       background: #141011;
-      padding: 12px 40px;
+      padding: 16px 44px;
       text-decoration: none;
       border: 1px solid #141011;
     }
     .shop-btn:hover { background: #2a2426; }
 
     .footer {
-      padding: 28px 24px 32px;
+      padding: 36px 40px 40px;
       text-align: center;
-      background: #0f0d0e;
-      border-top: 1px solid rgba(232, 208, 165, 0.15);
+      background: #0c0a0b;
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
     }
     .footer-logo {
-      max-width: 84px;
+      max-width: 80px;
       width: auto;
       height: auto;
-      margin: 0 auto 14px;
+      margin: 0 auto 20px;
       filter: brightness(0) invert(1);
       -webkit-filter: brightness(0) invert(1);
     }
-    .footer p { font-family: 'Inter', Arial, sans-serif; font-size: 9px; line-height: 1.65; color: rgba(230, 225, 218, 0.45); margin: 7px 0 0; }
+    .footer p { font-family: 'Inter', Arial, sans-serif; font-size: 9px; line-height: 1.7; color: rgba(235, 231, 226, 0.42); margin: 8px 0 0; max-width: 36em; margin-left: auto; margin-right: auto; }
     .footer a { color: #c4b8aa; text-decoration: underline; text-underline-offset: 2px; }
     .footer-legal { color: rgba(230, 225, 218, 0.32) !important; font-size: 9px !important; }
 
     @media screen and (max-width: 640px) {
       .email-wrapper { padding: 24px 12px !important; }
       .email-container { width: 100% !important; }
-      .brand-story { padding: 36px 22px !important; }
-      .brand-story h1 { font-size: 28px !important; }
-      .dramatic-hero, .cocktail, .shop-cta, .footer { padding-left: 18px !important; padding-right: 18px !important; }
-      .stats-bar { padding: 24px 16px 28px !important; }
-      .stat-cell { display: block !important; width: 100% !important; margin-bottom: 12px !important; padding: 20px 14px !important; }
+      .brand-story { padding: 36px 28px !important; }
+      .brand-story h1 { font-size: 30px !important; }
+      .header, .dramatic-hero, .cocktail, .shop-cta, .footer, .stats-bar { padding-left: 28px !important; padding-right: 28px !important; }
+      .stat-cell { display: block !important; width: 100% !important; margin-bottom: 12px !important; }
       .stat-gutter { display: none !important; }
       .dramatic-hero img, .cocktail img { max-width: 100% !important; width: auto !important; height: auto !important; }
     }
@@ -277,12 +278,15 @@
               <img src="https://braze-images.com/appboy/communication/assets/image_assets/images/69bc55916c576e0060f0ab5a/original.png?1773950352" alt="Redemption Whiskey" class="header-logo">
             </div>
 
+            <div class="section-hairline" role="presentation"></div>
+
             <div class="dramatic-hero">
               <img src="https://braze-images.com/appboy/communication/assets/image_assets/images/69bc54e08d2109005fbbf9d1/original.?1773950175" alt="Redemption Whiskey — bold rye character">
             </div>
 
+            <div class="section-hairline" role="presentation"></div>
+
             <div class="brand-story">
-              <hr class="accent-rule">
               <p class="eyebrow">America&rsquo;s Original Spirit</p>
               <h1>The rye <span>revival</span></h1>
               <p class="manifesto">
@@ -303,6 +307,8 @@
                 depth that made American whiskey legendary in the first place.
               </p>
             </div>
+
+            <div class="section-hairline" role="presentation"></div>
 
             <div class="stats-bar">
               <table role="presentation">
@@ -325,6 +331,8 @@
               </table>
             </div>
 
+            <div class="section-hairline" role="presentation"></div>
+
             <div class="cocktail">
               <img src="https://braze-images.com/appboy/communication/assets/image_assets/images/69bc54e2303e8b0061983d2b/original.?1773950177" alt="A Manhattan made with Redemption Rye">
               <p class="cocktail-eyebrow">The Perfect Pour</p>
@@ -335,6 +343,8 @@
                 and every classic that demands character.
               </p>
             </div>
+
+            <div class="section-hairline" role="presentation"></div>
 
             <div class="shop-cta">
               <a href="https://store.whiskyadvocate.com/collections/redemption" class="shop-btn">Shop Redemption</a>

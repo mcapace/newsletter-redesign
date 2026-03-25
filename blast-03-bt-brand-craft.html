@@ -17,46 +17,54 @@
     * { box-sizing: border-box; }
     body, td, th { font-family: 'Cormorant Garamond', Georgia, serif; color: #1a1714; }
 
-    .email-wrapper { width: 100%; background: linear-gradient(180deg, #0f0d0a 0%, #1a1612 40%, #221c18 100%); padding: 28px 12px; }
+    .email-wrapper { width: 100%; background: #0e0c0d; padding: 32px 16px; }
     .mast-line {
       height: 1px;
       font-size: 0;
       line-height: 0;
-      background: linear-gradient(90deg, transparent 0%, rgba(201, 169, 110, 0.4) 22%, rgba(232, 210, 170, 0.65) 50%, rgba(201, 169, 110, 0.4) 78%, transparent 100%);
+      margin: 0;
+      background: rgba(255, 255, 255, 0.07);
     }
     .co-brand {
       margin: 0;
-      padding: 12px 22px 6px;
+      padding: 20px 40px 16px;
       text-align: center;
       font-family: 'Inter', Arial, sans-serif;
-      font-size: 8px;
+      font-size: 9px;
       font-weight: 500;
-      letter-spacing: 4px;
+      letter-spacing: 0.22em;
       text-transform: uppercase;
-      color: #7e786f;
-      background: #faf7f2;
+      color: #8f8983;
+      background: #f7f5f2;
     }
     .email-container {
-      max-width: 600px;
+      max-width: 560px;
       margin: 0 auto;
-      background: #faf7f2;
+      background: #f7f5f2;
       overflow: hidden;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.035), 0 28px 72px rgba(0, 0, 0, 0.26);
-      border: 1px solid rgba(255, 255, 255, 0.05);
+      box-shadow: 0 22px 64px rgba(0, 0, 0, 0.28);
+      border: 1px solid rgba(26, 23, 20, 0.06);
+    }
+
+    .section-hairline {
+      width: 100%;
+      height: 1px;
+      margin: 0;
+      background: rgba(20, 16, 17, 0.06);
+      font-size: 0;
+      line-height: 0;
     }
 
     .header {
-      background: #faf7f2;
-      padding: 30px 24px 26px;
+      background: #f7f5f2;
+      padding: 40px 40px 32px;
       text-align: center;
-      border-bottom: 1px solid rgba(26, 23, 20, 0.07);
     }
     .header-rule {
-      width: 40px;
+      width: 72px;
       height: 1px;
-      margin: 0 auto 12px;
-      background: linear-gradient(90deg, transparent, #b8945c, transparent);
-      opacity: 0.75;
+      margin: 0 auto 20px;
+      background: rgba(184, 148, 92, 0.32);
     }
     .header-logo { max-width: 152px; width: auto; height: auto; margin: 0 auto 10px; }
     .header-sub {
@@ -71,33 +79,26 @@
 
     .texture-hero {
       text-align: center;
-      background: #14110d;
-      padding: 28px 14px 32px;
+      background: #f7f5f2;
+      padding: 32px 40px 36px;
     }
     .texture-hero img {
-      max-width: 600px;
-      max-height: 336px;
+      max-width: 480px;
+      max-height: 270px;
       width: auto !important;
       height: auto !important;
       display: block;
-      margin: 6px auto 0;
+      margin: 0 auto;
       object-fit: contain !important;
       -o-object-fit: contain;
-      border: 1px solid rgba(201, 169, 110, 0.25);
-      box-shadow: 0 20px 56px rgba(0, 0, 0, 0.45);
+      border: 1px solid rgba(26, 23, 20, 0.08);
+      box-shadow: 0 16px 48px rgba(20, 17, 13, 0.1);
     }
 
     .story {
-      padding: 32px 28px 30px;
+      padding: 40px 40px 40px;
       text-align: center;
-      background: #faf7f2;
-    }
-    .gold-rule {
-      width: 40px;
-      height: 1px;
-      border: none;
-      margin: 0 auto 16px;
-      background: linear-gradient(90deg, transparent, #9a7b4a, transparent);
+      background: #f7f5f2;
     }
     .story-eyebrow {
       font-family: 'Inter', Arial, sans-serif;
@@ -110,12 +111,12 @@
       opacity: 0.92;
     }
     .story h1 {
-      margin: 0 0 14px;
+      margin: 0 0 16px;
       font-family: 'Playfair Display', Georgia, serif;
-      font-size: 28px;
-      font-weight: 500;
+      font-size: 32px;
+      font-weight: 400;
       color: #14110d;
-      line-height: 1.15;
+      line-height: 1.14;
     }
     .story h1 em { font-style: italic; font-weight: 400; color: #6b5a3e; }
     .story p {
@@ -127,18 +128,18 @@
     .story p.lead {
       font-size: 17px;
       font-style: italic;
-      color: #e8dfd4;
-      margin-bottom: 20px;
-      padding: 20px 18px;
-      background: #14110d;
-      border-left: 3px solid #c9a96e;
-      text-align: left;
+      color: #3a3632;
+      margin: 20px auto 22px;
+      padding: 22px 22px;
+      max-width: 32em;
+      background: rgba(255, 255, 255, 0.7);
+      border: 1px solid rgba(184, 148, 92, 0.15);
+      text-align: center;
     }
 
     .values {
-      padding: 30px 18px 28px;
-      background: #ebe4d8;
-      border-top: 1px solid rgba(26, 23, 20, 0.06);
+      padding: 40px 40px 44px;
+      background: #f7f5f2;
     }
     .values-title {
       text-align: center;
@@ -155,12 +156,12 @@
       width: 30%;
       vertical-align: top;
       text-align: center;
-      padding: 16px 10px;
-      border: 1px solid rgba(26, 23, 20, 0.07);
+      padding: 22px 12px;
+      border: 1px solid rgba(26, 23, 20, 0.055);
       background: #ffffff;
-      box-shadow: 0 5px 20px rgba(20, 17, 13, 0.035);
+      box-shadow: 0 12px 40px rgba(20, 17, 13, 0.045);
     }
-    .value-gutter { width: 5%; }
+    .value-gutter { width: 3%; }
     .value-number {
       font-family: 'Playfair Display', Georgia, serif;
       font-size: 26px;
@@ -187,10 +188,9 @@
     }
 
     .soft-cta {
-      padding: 30px 24px 28px;
+      padding: 48px 40px 48px;
       text-align: center;
-      background: linear-gradient(168deg, #ddd4c8 0%, #d0c6b8 100%);
-      border-top: 1px solid rgba(26, 23, 20, 0.06);
+      background: #f7f5f2;
     }
     .soft-cta p {
       font-family: 'Cormorant Garamond', Georgia, serif;
@@ -207,7 +207,7 @@
       font-weight: 600;
       letter-spacing: 2.4px;
       text-transform: uppercase;
-      color: #faf7f2;
+      color: #f7f5f2;
       text-decoration: none;
       background: #14110d;
       padding: 12px 34px;
@@ -216,29 +216,29 @@
     .explore-link:hover { background: #2a2620; }
 
     .footer {
-      padding: 28px 24px 32px;
+      padding: 36px 40px 40px;
       text-align: center;
-      background: #0c0a08;
-      border-top: 1px solid rgba(201, 169, 110, 0.2);
+      background: #0c0a0b;
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
     }
     .footer-logo {
-      max-width: 84px;
+      max-width: 80px;
       width: auto;
       height: auto;
-      margin: 0 auto 14px;
+      margin: 0 auto 20px;
       filter: brightness(0) invert(1);
       -webkit-filter: brightness(0) invert(1);
     }
-    .footer p { font-family: 'Inter', Arial, sans-serif; font-size: 9px; line-height: 1.65; color: rgba(230, 225, 218, 0.45); margin: 7px 0 0; }
+    .footer p { font-family: 'Inter', Arial, sans-serif; font-size: 9px; line-height: 1.7; color: rgba(235, 231, 226, 0.42); margin: 8px 0 0; max-width: 36em; margin-left: auto; margin-right: auto; }
     .footer a { color: #c9bfae; text-decoration: underline; text-underline-offset: 2px; }
     .footer-legal { color: rgba(230, 225, 218, 0.32) !important; font-size: 9px !important; }
 
     @media screen and (max-width: 640px) {
       .email-wrapper { padding: 24px 12px !important; }
       .email-container { width: 100% !important; }
-      .story { padding: 36px 22px !important; }
-      .story h1 { font-size: 26px !important; }
-      .values, .soft-cta, .footer { padding-left: 18px !important; padding-right: 18px !important; }
+      .story { padding: 36px 28px !important; }
+      .story h1 { font-size: 28px !important; }
+      .header, .texture-hero, .values, .soft-cta, .footer { padding-left: 28px !important; padding-right: 28px !important; }
       .value-cell { display: block !important; width: 100% !important; margin-bottom: 14px !important; }
       .value-gutter { display: none !important; }
       .texture-hero img { max-width: 100% !important; width: auto !important; height: auto !important; }
@@ -264,12 +264,15 @@
               <p class="header-sub">Tennessee Small Batch Bourbon</p>
             </div>
 
+            <div class="section-hairline" role="presentation"></div>
+
             <div class="texture-hero">
               <img src="https://braze-images.com/appboy/communication/assets/image_assets/images/69bc54d52dae5d005fc6d065/original.?1773950164" alt="Tennessee craft — oak and grain">
             </div>
 
+            <div class="section-hairline" role="presentation"></div>
+
             <div class="story">
-              <hr class="gold-rule">
               <p class="story-eyebrow">Our Story</p>
               <h1>Rooted in Tennessee.<br>Refined by <em>time.</em></h1>
               <p class="lead">
@@ -289,6 +292,8 @@
                 At 92 proof, you can taste every day of those six years.
               </p>
             </div>
+
+            <div class="section-hairline" role="presentation"></div>
 
             <div class="values">
               <p class="values-title">What sets us apart</p>
@@ -314,6 +319,8 @@
                 </tr>
               </table>
             </div>
+
+            <div class="section-hairline" role="presentation"></div>
 
             <div class="soft-cta">
               <p>Curious what six years of patience tastes like?</p>

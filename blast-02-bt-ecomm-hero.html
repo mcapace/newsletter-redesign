@@ -17,63 +17,71 @@
     * { box-sizing: border-box; }
     body, td, th { font-family: 'Cormorant Garamond', Georgia, serif; color: #1a1714; }
 
-    .email-wrapper { width: 100%; background: linear-gradient(180deg, #0f0d0a 0%, #1a1612 40%, #221c18 100%); padding: 28px 12px; }
+    .email-wrapper { width: 100%; background: #0e0c0d; padding: 32px 16px; }
     .mast-line {
       height: 1px;
       font-size: 0;
       line-height: 0;
-      background: linear-gradient(90deg, transparent 0%, rgba(201, 169, 110, 0.4) 22%, rgba(232, 210, 170, 0.65) 50%, rgba(201, 169, 110, 0.4) 78%, transparent 100%);
+      margin: 0;
+      background: rgba(255, 255, 255, 0.07);
     }
     .co-brand {
       margin: 0;
-      padding: 12px 22px 6px;
+      padding: 20px 40px 16px;
       text-align: center;
       font-family: 'Inter', Arial, sans-serif;
-      font-size: 8px;
+      font-size: 9px;
       font-weight: 500;
-      letter-spacing: 4px;
+      letter-spacing: 0.22em;
       text-transform: uppercase;
-      color: #7e786f;
-      background: #faf7f2;
+      color: #8f8983;
+      background: #f7f5f2;
     }
     .email-container {
-      max-width: 600px;
+      max-width: 560px;
       margin: 0 auto;
-      background: #faf7f2;
+      background: #f7f5f2;
       overflow: hidden;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.035), 0 28px 72px rgba(0, 0, 0, 0.26);
-      border: 1px solid rgba(255, 255, 255, 0.05);
+      box-shadow: 0 22px 64px rgba(0, 0, 0, 0.28);
+      border: 1px solid rgba(26, 23, 20, 0.06);
+    }
+
+    .section-hairline {
+      width: 100%;
+      height: 1px;
+      margin: 0;
+      background: rgba(20, 16, 17, 0.06);
+      font-size: 0;
+      line-height: 0;
     }
 
     .hero {
-      background: #faf7f2;
-      padding: 34px 20px 32px;
+      background: #f7f5f2;
+      padding: 44px 40px 36px;
       text-align: center;
-      border-bottom: 1px solid rgba(26, 23, 20, 0.07);
     }
     .header-rule {
-      width: 40px;
+      width: 72px;
       height: 1px;
-      margin: 0 auto 14px;
-      background: linear-gradient(90deg, transparent, #b8945c, transparent);
-      opacity: 0.75;
+      margin: 0 auto 20px;
+      background: rgba(184, 148, 92, 0.32);
     }
-    .hero-logo { max-width: 178px; width: auto; height: auto; margin: 0 auto 16px; }
+    .hero-logo { max-width: 178px; width: auto; height: auto; margin: 0 auto 20px; }
     .hero-eyebrow {
       font-family: 'Inter', Arial, sans-serif;
-      font-size: 8px;
-      font-weight: 600;
-      letter-spacing: 3.5px;
+      font-size: 9px;
+      font-weight: 500;
+      letter-spacing: 0.2em;
       text-transform: uppercase;
       color: #7a6228;
-      margin: 0 0 6px;
-      opacity: 0.92;
+      margin: 0 0 10px;
+      opacity: 0.88;
     }
     .hero h1 {
-      margin: 0 0 8px;
+      margin: 0 0 12px;
       font-family: 'Playfair Display', Georgia, serif;
-      font-size: 32px;
-      font-weight: 500;
+      font-size: 36px;
+      font-weight: 400;
       color: #14110d;
       letter-spacing: 0.01em;
       line-height: 1.12;
@@ -83,10 +91,10 @@
       font-family: 'Cormorant Garamond', Georgia, serif;
       font-size: 16px;
       font-style: italic;
-      color: #5a544c;
-      margin: 0 auto 22px;
-      line-height: 1.48;
-      max-width: 400px;
+      color: #656059;
+      margin: 0 auto 24px;
+      line-height: 1.52;
+      max-width: 28em;
     }
     .hero-bottle {
       max-width: 320px;
@@ -97,34 +105,21 @@
       margin: 0 auto;
       object-fit: contain !important;
       -o-object-fit: contain;
-      filter: drop-shadow(0 18px 40px rgba(20, 17, 13, 0.18));
-    }
-
-    .gradient-bridge {
-      height: 28px;
-      background: linear-gradient(180deg, #ebe4d8 0%, #faf7f2 100%);
+      filter: drop-shadow(0 14px 36px rgba(20, 17, 13, 0.12));
     }
 
     .occasion {
-      padding: 20px 28px 36px;
+      padding: 40px 40px 44px;
       text-align: center;
-      background: #faf7f2;
-    }
-    .gold-rule {
-      width: 40px;
-      height: 1px;
-      border: none;
-      margin: 0 auto 16px;
-      background: linear-gradient(90deg, transparent, #9a7b4a, transparent);
-      opacity: 0.8;
+      background: #f7f5f2;
     }
     .occasion h2 {
       margin: 0 0 12px;
       font-family: 'Playfair Display', Georgia, serif;
-      font-size: 23px;
-      font-weight: 500;
+      font-size: 28px;
+      font-weight: 400;
       color: #14110d;
-      line-height: 1.2;
+      line-height: 1.16;
     }
     .occasion p {
       font-family: 'Cormorant Garamond', Georgia, serif;
@@ -134,66 +129,56 @@
       margin: 0 0 12px;
     }
     .occasion p.accent {
-      font-size: 16px;
+      font-size: 17px;
       font-style: italic;
-      color: #14110d;
-      margin: 18px 0;
-      padding: 16px 0;
-      border-top: 1px solid rgba(26, 23, 20, 0.1);
-      border-bottom: 1px solid rgba(26, 23, 20, 0.1);
+      color: #4a4540;
+      margin: 20px auto;
+      padding: 22px 20px;
+      max-width: 32em;
+      background: rgba(255, 255, 255, 0.65);
+      border: 1px solid rgba(26, 23, 20, 0.07);
     }
     .occasion-cta {
       display: inline-block;
       font-family: 'Inter', Arial, sans-serif;
       font-size: 9px;
-      font-weight: 600;
-      letter-spacing: 2.8px;
+      font-weight: 500;
+      letter-spacing: 0.2em;
       text-transform: uppercase;
-      color: #faf7f2;
+      color: #f7f5f2;
       background: #14110d;
-      padding: 12px 36px;
+      padding: 16px 40px;
       text-decoration: none;
-      margin-top: 6px;
+      margin-top: 8px;
       border: 1px solid #14110d;
     }
     .occasion-cta:hover { background: #2a2620; }
 
     .siblings {
-      padding: 32px 14px 34px;
-      background: #ebe4d8;
+      padding: 40px 40px 48px;
       text-align: center;
-      border-top: 1px solid rgba(26, 23, 20, 0.06);
+      background: #f7f5f2;
     }
     .siblings-label {
       display: inline-block;
       font-family: 'Inter', Arial, sans-serif;
-      font-size: 8px;
-      font-weight: 600;
-      letter-spacing: 3.2px;
+      font-size: 9px;
+      font-weight: 500;
+      letter-spacing: 0.2em;
       text-transform: uppercase;
-      color: #5a544c;
-      margin-bottom: 14px;
+      color: #6a645c;
+      margin-bottom: 16px;
     }
     .siblings table { width: 100%; border-spacing: 0; }
     .sibling-cell {
       width: 46%;
       vertical-align: top;
       text-align: center;
-      padding: 20px 14px 18px;
+      padding: 24px 20px 22px;
       background: #ffffff;
-      border: 1px solid rgba(26, 23, 20, 0.07);
-      box-shadow: 0 6px 22px rgba(20, 17, 13, 0.04);
+      border: 1px solid rgba(26, 23, 20, 0.055);
+      box-shadow: 0 14px 44px rgba(20, 17, 13, 0.055);
       position: relative;
-    }
-    .sibling-cell::before {
-      content: '';
-      display: block;
-      width: 100%;
-      height: 2px;
-      background: linear-gradient(90deg, transparent, rgba(184, 148, 92, 0.85), transparent);
-      position: absolute;
-      top: 0;
-      left: 0;
     }
     .sibling-gutter { width: 6%; }
     .sibling-img {
@@ -225,38 +210,41 @@
     .sibling-btn {
       display: inline-block;
       font-family: 'Inter', Arial, sans-serif;
-      font-size: 8px;
-      font-weight: 600;
-      letter-spacing: 2px;
+      font-size: 9px;
+      font-weight: 500;
+      letter-spacing: 0.18em;
       text-transform: uppercase;
-      color: #faf7f2;
+      color: #f7f5f2;
       background: #2a2218;
-      padding: 10px 24px;
+      padding: 14px 30px;
       text-decoration: none;
       border: none;
     }
     .sibling-btn:hover { background: #4a3d28; }
 
     .footer {
-      padding: 28px 24px 32px;
+      padding: 36px 40px 40px;
       text-align: center;
-      background: #0c0a08;
-      border-top: 1px solid rgba(201, 169, 110, 0.2);
+      background: #0c0a0b;
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
     }
     .footer-logo {
-      max-width: 84px;
+      max-width: 80px;
       width: auto;
       height: auto;
-      margin: 0 auto 14px;
+      margin: 0 auto 20px;
       filter: brightness(0) invert(1);
       -webkit-filter: brightness(0) invert(1);
     }
     .footer p {
       font-family: 'Inter', Arial, sans-serif;
       font-size: 9px;
-      line-height: 1.65;
-      color: rgba(230, 225, 218, 0.45);
-      margin: 7px 0 0;
+      line-height: 1.7;
+      color: rgba(235, 231, 226, 0.42);
+      margin: 8px 0 0;
+      max-width: 36em;
+      margin-left: auto;
+      margin-right: auto;
     }
     .footer a { color: #c9bfae; text-decoration: underline; text-underline-offset: 2px; }
     .footer-legal { color: rgba(230, 225, 218, 0.32) !important; font-size: 9px !important; }
@@ -264,10 +252,10 @@
     @media screen and (max-width: 640px) {
       .email-wrapper { padding: 24px 12px !important; }
       .email-container { width: 100% !important; }
-      .hero { padding: 36px 18px 36px !important; }
-      .hero h1 { font-size: 28px !important; }
-      .occasion { padding: 24px 22px 40px !important; }
-      .siblings, .footer { padding-left: 18px !important; padding-right: 18px !important; }
+      .hero { padding: 36px 28px 32px !important; }
+      .hero h1 { font-size: 30px !important; }
+      .occasion { padding: 36px 28px 40px !important; }
+      .siblings, .footer { padding-left: 28px !important; padding-right: 28px !important; }
       .sibling-cell { display: block !important; width: 100% !important; margin-bottom: 16px !important; }
       .sibling-gutter { display: none !important; }
       .hero-bottle, .sibling-img { max-width: 100% !important; width: auto !important; height: auto !important; }
@@ -296,10 +284,9 @@
               <img src="https://braze-images.com/appboy/communication/assets/image_assets/images/69bc54d02dbdcf00600da8d6/original.?1773950160" alt="Bib & Tucker 6-Year Small Batch Bourbon" class="hero-bottle">
             </div>
 
-            <div class="gradient-bridge"></div>
+            <div class="section-hairline" role="presentation"></div>
 
             <div class="occasion">
-              <hr class="gold-rule">
               <h2>Built for the moments that matter</h2>
               <p class="accent">
                 The dinner party closer. The Wednesday night reward.<br>
@@ -314,6 +301,8 @@
               </p>
               <a href="https://store.whiskyadvocate.com/collections/bib-tucker" class="occasion-cta">Shop the 6-Year</a>
             </div>
+
+            <div class="section-hairline" role="presentation"></div>
 
             <div class="siblings">
               <span class="siblings-label">Complete the collection</span>
