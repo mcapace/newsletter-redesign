@@ -18,7 +18,6 @@
       line-height: 1.5;
     }
 
-    /* —— Deutsch hub–inspired chrome (matches deutsch.whiskyadvocate.com tone) —— */
     .site-header {
       background: linear-gradient(180deg, #141210 0%, #1c1916 100%);
       color: #f5f2ec;
@@ -49,7 +48,7 @@
     .site-header .sub {
       font-size: 15px;
       color: rgba(245, 242, 236, 0.65);
-      max-width: 520px;
+      max-width: 560px;
       margin: 0 auto 20px;
     }
     .site-header .actions {
@@ -80,7 +79,7 @@
     .site-header a.btn:hover { filter: brightness(1.06); }
 
     .page-wrap {
-      max-width: 720px;
+      max-width: 1180px;
       margin: 0 auto;
       padding: 40px 20px 80px;
     }
@@ -104,7 +103,7 @@
     }
 
     .brand-block {
-      margin-bottom: 48px;
+      margin-bottom: 44px;
     }
     .brand-block > .label {
       display: inline-block;
@@ -113,65 +112,141 @@
       letter-spacing: 3px;
       text-transform: uppercase;
       color: #4a4744;
-      margin-bottom: 20px;
+      margin-bottom: 16px;
       padding-bottom: 8px;
       border-bottom: 2px solid #6a6560;
     }
 
-    /* —— Email preview: proportional scale, top-center, full letter height —— */
-    .email-row {
-      margin-bottom: 48px;
+    .tile-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 14px;
+      align-items: start;
     }
-    .email-row .meta {
+
+    .preview-tile {
+      background: rgba(255, 255, 255, 0.72);
+      border: 1px solid #c8c2ba;
+      border-radius: 10px;
+      box-shadow: 0 8px 28px rgba(20, 18, 16, 0.08);
+      overflow: hidden;
+    }
+    .preview-tile.is-open {
+      grid-column: 1 / -1;
+      box-shadow: 0 14px 40px rgba(20, 18, 16, 0.12);
+      border-color: #9e9690;
+    }
+
+    .tile-trigger {
+      width: 100%;
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 16px 16px 16px 18px;
+      margin: 0;
+      border: none;
+      background: transparent;
+      cursor: pointer;
+      text-align: left;
+      font: inherit;
+      color: inherit;
+      transition: background 0.15s ease;
+    }
+    .tile-trigger:hover {
+      background: rgba(245, 242, 236, 0.65);
+    }
+    .tile-trigger:focus {
+      outline: 2px solid #72232f;
+      outline-offset: -2px;
+    }
+    .tile-trigger[aria-expanded="true"] {
+      background: rgba(232, 228, 220, 0.85);
+      border-bottom: 1px solid rgba(26, 24, 22, 0.08);
+    }
+
+    .tile-num {
+      flex: 0 0 auto;
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 22px;
+      font-weight: 400;
+      color: #6a6560;
+      line-height: 1.1;
+      min-width: 2ch;
+    }
+
+    .tile-main {
+      flex: 1;
+      min-width: 0;
+    }
+    .tile-title-row {
       display: flex;
       flex-wrap: wrap;
-      align-items: baseline;
-      justify-content: space-between;
-      gap: 12px;
-      margin-bottom: 14px;
+      align-items: center;
+      gap: 8px 10px;
+      margin-bottom: 6px;
     }
-    .email-row .meta h2 {
+    .tile-title {
       font-family: 'Playfair Display', Georgia, serif;
-      font-size: 20px;
+      font-size: 17px;
       font-weight: 400;
       color: #141210;
+      line-height: 1.2;
     }
-    .email-row .meta .badge {
-      font-size: 9px;
+    .badge {
+      font-size: 8px;
       font-weight: 700;
       letter-spacing: 2px;
       text-transform: uppercase;
-      padding: 4px 10px;
+      padding: 4px 9px;
       border-radius: 999px;
-      background: rgba(106, 101, 96, 0.12);
+      background: rgba(106, 101, 96, 0.14);
       color: #4a4744;
     }
-    .email-row .meta .badge.brand {
-      background: rgba(107, 26, 40, 0.1);
+    .badge.brand {
+      background: rgba(107, 26, 40, 0.12);
       color: #72232f;
     }
-    .email-row .desc {
-      font-size: 14px;
+    .tile-desc {
+      font-size: 13px;
       color: #5c564e;
-      margin-bottom: 16px;
+      line-height: 1.45;
     }
-    .email-row a.open {
+
+    .tile-chevron {
+      flex: 0 0 auto;
+      font-size: 11px;
+      color: #6a6560;
+      margin-top: 4px;
+      transition: transform 0.2s ease;
+    }
+    .tile-trigger[aria-expanded="true"] .tile-chevron {
+      transform: rotate(180deg);
+    }
+
+    .tile-panel {
+      padding: 0 14px 16px;
+    }
+    .tile-panel[hidden] {
+      display: none !important;
+    }
+
+    .tile-panel .open-full {
+      display: inline-block;
       font-size: 12px;
       font-weight: 600;
       color: #72232f;
       text-decoration: none;
       border-bottom: 1px solid rgba(114, 35, 47, 0.35);
-      margin-bottom: 16px;
-      display: inline-block;
+      margin: 4px 4px 14px;
     }
-    .email-row a.open:hover { color: #8b2332; }
+    .tile-panel .open-full:hover { color: #8b2332; }
 
     .preview-shell {
       background: #c9c2b8;
       border-radius: 8px;
-      padding: 16px;
+      padding: 12px;
       border: 1px solid #b0a89e;
-      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25), 0 16px 40px rgba(20, 18, 16, 0.1);
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25), 0 8px 24px rgba(20, 18, 16, 0.08);
     }
     .preview-viewport {
       position: relative;
@@ -197,13 +272,20 @@
       border: 0;
       background: #faf9f6;
     }
+
+    @media (max-width: 480px) {
+      .tile-grid {
+        grid-template-columns: 1fr;
+      }
+      .tile-title { font-size: 16px; }
+    }
   </style>
 </head>
 <body>
   <header class="site-header">
     <p class="lockup">Whisky Advocate &times; Deutsch Family Wine &amp; Spirits</p>
     <h1>Email blast <em>previews</em></h1>
-    <p class="sub">560px ivory card (Braze-safe), scaled below to fit your screen—full length, no cropped hero grid.</p>
+    <p class="sub">Click a tile to expand the live preview. One open at a time keeps the page light; open full tab anytime.</p>
     <div class="actions">
       <a class="btn" href="https://deutsch.whiskyadvocate.com/" target="_blank" rel="noopener">Deutsch spirits hub</a>
       <a class="btn btn-ghost" href="https://store.whiskyadvocate.com/" target="_blank" rel="noopener">Whisky Advocate store</a>
@@ -214,108 +296,168 @@
     <div class="note">
       Assets on Braze CDN. Links point to <code>deutsch.whiskyadvocate.com</code> &amp; <code>store.whiskyadvocate.com</code>.
       Liquid: <code>{{current_year}}</code>, <code>{{${email_url}}}</code>, <code>{{ ${set_user_field} }}</code>.
-      <strong>Deutsch refresh:</strong> shared 560px ivory shell; footers and section rules vary by blast (ledger, parchment, wine cap, and rail accents). Preview iframes use a tall canvas so legal blocks are not clipped—open full tab if anything still looks short. Preheaders live in <code>body</code>. Braze CDN uses <code>original.png?…</code> or <code>original.?…</code> (trailing dot); swapping them returns 403. Hard-refresh (Cmd+Shift+R) if previews look stale.
+      <strong>Previews:</strong> iframes load when you first expand a tile. Braze CDN: <code>original.png?…</code> or <code>original.?…</code> (trailing dot). Hard-refresh (Cmd+Shift+R) if previews look stale.
     </div>
 
     <div class="brand-block">
       <div class="label">Bib &amp; Tucker</div>
+      <div class="tile-grid">
+        <article class="preview-tile" data-blast="blast-01-bt-ecomm-collection.html" data-title="Blast 01 preview">
+          <button type="button" class="tile-trigger" aria-expanded="false" aria-controls="panel-01" id="btn-01">
+            <span class="tile-num">01</span>
+            <span class="tile-main">
+              <span class="tile-title-row">
+                <span class="tile-title">Meet the Collection</span>
+                <span class="badge">Ecomm</span>
+              </span>
+              <span class="tile-desc">Three-SKU grid: 6-Year, Double Char, Gold Roast.</span>
+            </span>
+            <span class="tile-chevron" aria-hidden="true">▼</span>
+          </button>
+          <div class="tile-panel" id="panel-01" role="region" aria-labelledby="btn-01" hidden>
+            <a class="open-full" href="blast-01-bt-ecomm-collection.html?v=tiles20250325" target="_blank" rel="noopener">Open full tab</a>
+            <div class="preview-shell">
+              <div class="preview-viewport"><div class="preview-scale"><iframe data-src="blast-01-bt-ecomm-collection.html?v=tiles20250325" title="Blast 01 preview"></iframe></div></div>
+            </div>
+          </div>
+        </article>
 
-      <article class="email-row" data-preview="blast-01-bt-ecomm-collection.html">
-        <div class="meta">
-          <h2>01 &mdash; Meet the Collection</h2>
-          <span class="badge">Ecomm</span>
-        </div>
-        <p class="desc">Three-SKU grid: 6-Year, Double Char, Gold Roast.</p>
-        <a class="open" href="blast-01-bt-ecomm-collection.html?v=diverse20250325" target="_blank" rel="noopener">Open full tab</a>
-        <div class="preview-shell">
-          <div class="preview-viewport"><div class="preview-scale"><iframe src="blast-01-bt-ecomm-collection.html?v=diverse20250325" title="Blast 01 preview" loading="lazy"></iframe></div></div>
-        </div>
-      </article>
+        <article class="preview-tile" data-blast="blast-02-bt-ecomm-hero.html" data-title="Blast 02 preview">
+          <button type="button" class="tile-trigger" aria-expanded="false" aria-controls="panel-02" id="btn-02">
+            <span class="tile-num">02</span>
+            <span class="tile-main">
+              <span class="tile-title-row">
+                <span class="tile-title">The One Worth Reaching For</span>
+                <span class="badge">Ecomm</span>
+              </span>
+              <span class="tile-desc">Hero bottle and occasion story.</span>
+            </span>
+            <span class="tile-chevron" aria-hidden="true">▼</span>
+          </button>
+          <div class="tile-panel" id="panel-02" role="region" aria-labelledby="btn-02" hidden>
+            <a class="open-full" href="blast-02-bt-ecomm-hero.html?v=tiles20250325" target="_blank" rel="noopener">Open full tab</a>
+            <div class="preview-shell">
+              <div class="preview-viewport"><div class="preview-scale"><iframe data-src="blast-02-bt-ecomm-hero.html?v=tiles20250325" title="Blast 02 preview"></iframe></div></div>
+            </div>
+          </div>
+        </article>
 
-      <article class="email-row" data-preview="blast-02-bt-ecomm-hero.html">
-        <div class="meta">
-          <h2>02 &mdash; The One Worth Reaching For</h2>
-          <span class="badge">Ecomm</span>
-        </div>
-        <p class="desc">Hero bottle and occasion story.</p>
-        <a class="open" href="blast-02-bt-ecomm-hero.html?v=diverse20250325" target="_blank" rel="noopener">Open full tab</a>
-        <div class="preview-shell">
-          <div class="preview-viewport"><div class="preview-scale"><iframe src="blast-02-bt-ecomm-hero.html?v=diverse20250325" title="Blast 02 preview" loading="lazy"></iframe></div></div>
-        </div>
-      </article>
+        <article class="preview-tile" data-blast="blast-03-bt-brand-craft.html" data-title="Blast 03 preview">
+          <button type="button" class="tile-trigger" aria-expanded="false" aria-controls="panel-03" id="btn-03">
+            <span class="tile-num">03</span>
+            <span class="tile-main">
+              <span class="tile-title-row">
+                <span class="tile-title">Rooted in Tennessee</span>
+                <span class="badge brand">Brand</span>
+              </span>
+              <span class="tile-desc">Craft narrative and value pillars.</span>
+            </span>
+            <span class="tile-chevron" aria-hidden="true">▼</span>
+          </button>
+          <div class="tile-panel" id="panel-03" role="region" aria-labelledby="btn-03" hidden>
+            <a class="open-full" href="blast-03-bt-brand-craft.html?v=tiles20250325" target="_blank" rel="noopener">Open full tab</a>
+            <div class="preview-shell">
+              <div class="preview-viewport"><div class="preview-scale"><iframe data-src="blast-03-bt-brand-craft.html?v=tiles20250325" title="Blast 03 preview"></iframe></div></div>
+            </div>
+          </div>
+        </article>
 
-      <article class="email-row" data-preview="blast-03-bt-brand-craft.html">
-        <div class="meta">
-          <h2>03 &mdash; Rooted in Tennessee</h2>
-          <span class="badge brand">Brand</span>
-        </div>
-        <p class="desc">Craft narrative and value pillars.</p>
-        <a class="open" href="blast-03-bt-brand-craft.html?v=diverse20250325" target="_blank" rel="noopener">Open full tab</a>
-        <div class="preview-shell">
-          <div class="preview-viewport"><div class="preview-scale"><iframe src="blast-03-bt-brand-craft.html?v=diverse20250325" title="Blast 03 preview" loading="lazy"></iframe></div></div>
-        </div>
-      </article>
+        <article class="preview-tile" data-blast="blast-04-bt-brand-design.html" data-title="Blast 04 preview">
+          <button type="button" class="tile-trigger" aria-expanded="false" aria-controls="panel-04" id="btn-04">
+            <span class="tile-num">04</span>
+            <span class="tile-main">
+              <span class="tile-title-row">
+                <span class="tile-title">Dressed to Impress</span>
+                <span class="badge brand">Brand</span>
+              </span>
+              <span class="tile-desc">Editorial bottle and label story.</span>
+            </span>
+            <span class="tile-chevron" aria-hidden="true">▼</span>
+          </button>
+          <div class="tile-panel" id="panel-04" role="region" aria-labelledby="btn-04" hidden>
+            <a class="open-full" href="blast-04-bt-brand-design.html?v=tiles20250325" target="_blank" rel="noopener">Open full tab</a>
+            <div class="preview-shell">
+              <div class="preview-viewport"><div class="preview-scale"><iframe data-src="blast-04-bt-brand-design.html?v=tiles20250325" title="Blast 04 preview"></iframe></div></div>
+            </div>
+          </div>
+        </article>
 
-      <article class="email-row" data-preview="blast-04-bt-brand-design.html">
-        <div class="meta">
-          <h2>04 &mdash; Dressed to Impress</h2>
-          <span class="badge brand">Brand</span>
-        </div>
-        <p class="desc">Editorial bottle and label story.</p>
-        <a class="open" href="blast-04-bt-brand-design.html?v=diverse20250325" target="_blank" rel="noopener">Open full tab</a>
-        <div class="preview-shell">
-          <div class="preview-viewport"><div class="preview-scale"><iframe src="blast-04-bt-brand-design.html?v=diverse20250325" title="Blast 04 preview" loading="lazy"></iframe></div></div>
-        </div>
-      </article>
-
-      <article class="email-row" data-preview="blast-05-bt-brand-ritual.html">
-        <div class="meta">
-          <h2>05 &mdash; Some Moments Deserve Something Better</h2>
-          <span class="badge brand">Brand</span>
-        </div>
-        <p class="desc">Lifestyle mood and hosting.</p>
-        <a class="open" href="blast-05-bt-brand-ritual.html?v=diverse20250325" target="_blank" rel="noopener">Open full tab</a>
-        <div class="preview-shell">
-          <div class="preview-viewport"><div class="preview-scale"><iframe src="blast-05-bt-brand-ritual.html?v=diverse20250325" title="Blast 05 preview" loading="lazy"></iframe></div></div>
-        </div>
-      </article>
+        <article class="preview-tile" data-blast="blast-05-bt-brand-ritual.html" data-title="Blast 05 preview">
+          <button type="button" class="tile-trigger" aria-expanded="false" aria-controls="panel-05" id="btn-05">
+            <span class="tile-num">05</span>
+            <span class="tile-main">
+              <span class="tile-title-row">
+                <span class="tile-title">Some Moments Deserve Something Better</span>
+                <span class="badge brand">Brand</span>
+              </span>
+              <span class="tile-desc">Lifestyle mood and hosting.</span>
+            </span>
+            <span class="tile-chevron" aria-hidden="true">▼</span>
+          </button>
+          <div class="tile-panel" id="panel-05" role="region" aria-labelledby="btn-05" hidden>
+            <a class="open-full" href="blast-05-bt-brand-ritual.html?v=tiles20250325" target="_blank" rel="noopener">Open full tab</a>
+            <div class="preview-shell">
+              <div class="preview-viewport"><div class="preview-scale"><iframe data-src="blast-05-bt-brand-ritual.html?v=tiles20250325" title="Blast 05 preview"></iframe></div></div>
+            </div>
+          </div>
+        </article>
+      </div>
     </div>
 
     <div class="brand-block">
       <div class="label">Redemption</div>
+      <div class="tile-grid">
+        <article class="preview-tile" data-blast="blast-06-redemption-ecomm.html" data-title="Blast 06 preview">
+          <button type="button" class="tile-trigger" aria-expanded="false" aria-controls="panel-06" id="btn-06">
+            <span class="tile-num">06</span>
+            <span class="tile-main">
+              <span class="tile-title-row">
+                <span class="tile-title">Shop the Lineup</span>
+                <span class="badge">Ecomm</span>
+              </span>
+              <span class="tile-desc">2&times;2 product grid.</span>
+            </span>
+            <span class="tile-chevron" aria-hidden="true">▼</span>
+          </button>
+          <div class="tile-panel" id="panel-06" role="region" aria-labelledby="btn-06" hidden>
+            <a class="open-full" href="blast-06-redemption-ecomm.html?v=tiles20250325" target="_blank" rel="noopener">Open full tab</a>
+            <div class="preview-shell">
+              <div class="preview-viewport"><div class="preview-scale"><iframe data-src="blast-06-redemption-ecomm.html?v=tiles20250325" title="Blast 06 preview"></iframe></div></div>
+            </div>
+          </div>
+        </article>
 
-      <article class="email-row" data-preview="blast-06-redemption-ecomm.html">
-        <div class="meta">
-          <h2>06 &mdash; Shop the Lineup</h2>
-          <span class="badge">Ecomm</span>
-        </div>
-        <p class="desc">2&times;2 product grid.</p>
-        <a class="open" href="blast-06-redemption-ecomm.html?v=diverse20250325" target="_blank" rel="noopener">Open full tab</a>
-        <div class="preview-shell">
-          <div class="preview-viewport"><div class="preview-scale"><iframe src="blast-06-redemption-ecomm.html?v=diverse20250325" title="Blast 06 preview" loading="lazy"></iframe></div></div>
-        </div>
-      </article>
-
-      <article class="email-row" data-preview="blast-07-redemption-brand.html">
-        <div class="meta">
-          <h2>07 &mdash; The Rye Revival</h2>
-          <span class="badge brand">Brand</span>
-        </div>
-        <p class="desc">Manifesto, stats, cocktail.</p>
-        <a class="open" href="blast-07-redemption-brand.html?v=diverse20250325" target="_blank" rel="noopener">Open full tab</a>
-        <div class="preview-shell">
-          <div class="preview-viewport"><div class="preview-scale"><iframe src="blast-07-redemption-brand.html?v=diverse20250325" title="Blast 07 preview" loading="lazy"></iframe></div></div>
-        </div>
-      </article>
+        <article class="preview-tile" data-blast="blast-07-redemption-brand.html" data-title="Blast 07 preview">
+          <button type="button" class="tile-trigger" aria-expanded="false" aria-controls="panel-07" id="btn-07">
+            <span class="tile-num">07</span>
+            <span class="tile-main">
+              <span class="tile-title-row">
+                <span class="tile-title">The Rye Revival</span>
+                <span class="badge brand">Brand</span>
+              </span>
+              <span class="tile-desc">Manifesto, stats, cocktail.</span>
+            </span>
+            <span class="tile-chevron" aria-hidden="true">▼</span>
+          </button>
+          <div class="tile-panel" id="panel-07" role="region" aria-labelledby="btn-07" hidden>
+            <a class="open-full" href="blast-07-redemption-brand.html?v=tiles20250325" target="_blank" rel="noopener">Open full tab</a>
+            <div class="preview-shell">
+              <div class="preview-viewport"><div class="preview-scale"><iframe data-src="blast-07-redemption-brand.html?v=tiles20250325" title="Blast 07 preview"></iframe></div></div>
+            </div>
+          </div>
+        </article>
+      </div>
     </div>
   </div>
 
   <script>
     (function () {
       var IFRAME_H = 4800;
+      var CACHE = '?v=tiles20250325';
 
-      function layoutPreviews() {
-        document.querySelectorAll('.preview-viewport').forEach(function (vp) {
+      function layoutTile(tile) {
+        if (!tile || !tile.classList.contains('is-open')) return;
+        tile.querySelectorAll('.preview-viewport').forEach(function (vp) {
           var inner = vp.querySelector('.preview-scale');
           if (!inner) return;
           var w = vp.offsetWidth;
@@ -325,10 +467,53 @@
         });
       }
 
-      window.addEventListener('load', layoutPreviews);
-      window.addEventListener('resize', layoutPreviews);
+      function layoutAllOpen() {
+        document.querySelectorAll('.preview-tile.is-open').forEach(layoutTile);
+      }
+
+      function ensureIframe(tile) {
+        var iframe = tile.querySelector('iframe');
+        if (!iframe || iframe.getAttribute('src')) return;
+        var base = tile.getAttribute('data-blast');
+        if (base) iframe.src = base + CACHE;
+      }
+
+      document.querySelectorAll('.preview-tile').forEach(function (tile) {
+        var btn = tile.querySelector('.tile-trigger');
+        var panel = tile.querySelector('.tile-panel');
+        if (!btn || !panel) return;
+
+        btn.addEventListener('click', function () {
+          var isOpen = btn.getAttribute('aria-expanded') === 'true';
+
+          document.querySelectorAll('.preview-tile').forEach(function (t) {
+            if (t === tile) return;
+            var b = t.querySelector('.tile-trigger');
+            var p = t.querySelector('.tile-panel');
+            if (b) b.setAttribute('aria-expanded', 'false');
+            if (p) p.hidden = true;
+            t.classList.remove('is-open');
+          });
+
+          if (isOpen) {
+            btn.setAttribute('aria-expanded', 'false');
+            panel.hidden = true;
+            tile.classList.remove('is-open');
+          } else {
+            btn.setAttribute('aria-expanded', 'true');
+            panel.hidden = false;
+            tile.classList.add('is-open');
+            ensureIframe(tile);
+            requestAnimationFrame(function () {
+              requestAnimationFrame(layoutAllOpen);
+            });
+          }
+        });
+      });
+
+      window.addEventListener('resize', layoutAllOpen);
       if (document.fonts && document.fonts.ready) {
-        document.fonts.ready.then(layoutPreviews);
+        document.fonts.ready.then(layoutAllOpen);
       }
     })();
   </script>
