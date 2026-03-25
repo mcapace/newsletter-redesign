@@ -49,57 +49,13 @@
       font-size: 15px;
       color: rgba(245, 242, 236, 0.65);
       max-width: 560px;
-      margin: 0 auto 20px;
+      margin: 0 auto;
     }
-    .site-header .actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      justify-content: center;
-      align-items: center;
-    }
-    .site-header a.btn {
-      display: inline-block;
-      font-size: 11px;
-      font-weight: 700;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      text-decoration: none;
-      padding: 12px 22px;
-      border-radius: 999px;
-      border: 1px solid rgba(120, 116, 110, 0.5);
-      color: #1a1816;
-      background: linear-gradient(180deg, #f2f0ed 0%, #ddd8d2 100%);
-    }
-    .site-header a.btn-ghost {
-      background: transparent;
-      color: #e8dcc8;
-      border-color: rgba(245, 242, 236, 0.25);
-    }
-    .site-header a.btn:hover { filter: brightness(1.06); }
 
     .page-wrap {
       max-width: 1180px;
       margin: 0 auto;
       padding: 40px 20px 80px;
-    }
-
-    .note {
-      text-align: center;
-      font-size: 13px;
-      color: #5c564e;
-      margin-bottom: 36px;
-      padding: 20px 24px;
-      background: rgba(255, 255, 255, 0.55);
-      border: 1px solid #d4cec4;
-      border-radius: 8px;
-    }
-    .note code {
-      font-size: 12px;
-      background: rgba(106, 101, 96, 0.1);
-      padding: 2px 7px;
-      border-radius: 4px;
-      color: #4a4744;
     }
 
     .brand-block {
@@ -254,7 +210,7 @@
       max-width: 640px;
       margin: 0 auto;
       overflow: hidden;
-      background: #c9c2b8;
+      background: #f7f5f2;
     }
     .preview-scale {
       position: absolute;
@@ -270,7 +226,7 @@
       width: 640px;
       height: 4800px;
       border: 0;
-      background: #faf9f6;
+      background: #f7f5f2;
     }
 
     @media (max-width: 480px) {
@@ -286,19 +242,9 @@
     <p class="lockup">Whisky Advocate &times; Deutsch Family Wine &amp; Spirits</p>
     <h1>Email blast <em>previews</em></h1>
     <p class="sub">Click a tile to expand the live preview. One open at a time keeps the page light; open full tab anytime.</p>
-    <div class="actions">
-      <a class="btn" href="https://deutsch.whiskyadvocate.com/" target="_blank" rel="noopener">Deutsch spirits hub</a>
-      <a class="btn btn-ghost" href="https://store.whiskyadvocate.com/" target="_blank" rel="noopener">Whisky Advocate store</a>
-    </div>
   </header>
 
   <div class="page-wrap">
-    <div class="note">
-      Assets on Braze CDN. Links point to <code>deutsch.whiskyadvocate.com</code> &amp; <code>store.whiskyadvocate.com</code>.
-      Liquid: <code>{{current_year}}</code>, <code>{{${email_url}}}</code>, <code>{{ ${set_user_field} }}</code>.
-      <strong>Previews:</strong> iframes load when you first expand a tile. Braze CDN: <code>original.png?…</code> or <code>original.?…</code> (trailing dot). Hard-refresh (Cmd+Shift+R) if previews look stale.
-    </div>
-
     <div class="brand-block">
       <div class="label">Bib &amp; Tucker</div>
       <div class="tile-grid">
@@ -315,9 +261,9 @@
             <span class="tile-chevron" aria-hidden="true">▼</span>
           </button>
           <div class="tile-panel" id="panel-01" role="region" aria-labelledby="btn-01" hidden>
-            <a class="open-full" href="blast-01-bt-ecomm-collection.html?v=edits20250325" target="_blank" rel="noopener">Open full tab</a>
+            <a class="open-full" href="blast-01-bt-ecomm-collection.html?v=footerv20250325" target="_blank" rel="noopener">Open full tab</a>
             <div class="preview-shell">
-              <div class="preview-viewport"><div class="preview-scale"><iframe data-src="blast-01-bt-ecomm-collection.html?v=edits20250325" title="Blast 01 preview"></iframe></div></div>
+              <div class="preview-viewport"><div class="preview-scale"><iframe data-src="blast-01-bt-ecomm-collection.html?v=footerv20250325" title="Blast 01 preview"></iframe></div></div>
             </div>
           </div>
         </article>
@@ -335,9 +281,9 @@
             <span class="tile-chevron" aria-hidden="true">▼</span>
           </button>
           <div class="tile-panel" id="panel-02" role="region" aria-labelledby="btn-02" hidden>
-            <a class="open-full" href="blast-02-bt-ecomm-hero.html?v=edits20250325" target="_blank" rel="noopener">Open full tab</a>
+            <a class="open-full" href="blast-02-bt-ecomm-hero.html?v=footerv20250325" target="_blank" rel="noopener">Open full tab</a>
             <div class="preview-shell">
-              <div class="preview-viewport"><div class="preview-scale"><iframe data-src="blast-02-bt-ecomm-hero.html?v=edits20250325" title="Blast 02 preview"></iframe></div></div>
+              <div class="preview-viewport"><div class="preview-scale"><iframe data-src="blast-02-bt-ecomm-hero.html?v=footerv20250325" title="Blast 02 preview"></iframe></div></div>
             </div>
           </div>
         </article>
@@ -355,9 +301,9 @@
             <span class="tile-chevron" aria-hidden="true">▼</span>
           </button>
           <div class="tile-panel" id="panel-03" role="region" aria-labelledby="btn-03" hidden>
-            <a class="open-full" href="blast-03-bt-brand-craft.html?v=edits20250325" target="_blank" rel="noopener">Open full tab</a>
+            <a class="open-full" href="blast-03-bt-brand-craft.html?v=footerv20250325" target="_blank" rel="noopener">Open full tab</a>
             <div class="preview-shell">
-              <div class="preview-viewport"><div class="preview-scale"><iframe data-src="blast-03-bt-brand-craft.html?v=edits20250325" title="Blast 03 preview"></iframe></div></div>
+              <div class="preview-viewport"><div class="preview-scale"><iframe data-src="blast-03-bt-brand-craft.html?v=footerv20250325" title="Blast 03 preview"></iframe></div></div>
             </div>
           </div>
         </article>
@@ -375,9 +321,9 @@
             <span class="tile-chevron" aria-hidden="true">▼</span>
           </button>
           <div class="tile-panel" id="panel-04" role="region" aria-labelledby="btn-04" hidden>
-            <a class="open-full" href="blast-04-bt-brand-design.html?v=edits20250325" target="_blank" rel="noopener">Open full tab</a>
+            <a class="open-full" href="blast-04-bt-brand-design.html?v=footerv20250325" target="_blank" rel="noopener">Open full tab</a>
             <div class="preview-shell">
-              <div class="preview-viewport"><div class="preview-scale"><iframe data-src="blast-04-bt-brand-design.html?v=edits20250325" title="Blast 04 preview"></iframe></div></div>
+              <div class="preview-viewport"><div class="preview-scale"><iframe data-src="blast-04-bt-brand-design.html?v=footerv20250325" title="Blast 04 preview"></iframe></div></div>
             </div>
           </div>
         </article>
@@ -395,9 +341,9 @@
             <span class="tile-chevron" aria-hidden="true">▼</span>
           </button>
           <div class="tile-panel" id="panel-05" role="region" aria-labelledby="btn-05" hidden>
-            <a class="open-full" href="blast-05-bt-brand-ritual.html?v=edits20250325" target="_blank" rel="noopener">Open full tab</a>
+            <a class="open-full" href="blast-05-bt-brand-ritual.html?v=footerv20250325" target="_blank" rel="noopener">Open full tab</a>
             <div class="preview-shell">
-              <div class="preview-viewport"><div class="preview-scale"><iframe data-src="blast-05-bt-brand-ritual.html?v=edits20250325" title="Blast 05 preview"></iframe></div></div>
+              <div class="preview-viewport"><div class="preview-scale"><iframe data-src="blast-05-bt-brand-ritual.html?v=footerv20250325" title="Blast 05 preview"></iframe></div></div>
             </div>
           </div>
         </article>
@@ -420,9 +366,9 @@
             <span class="tile-chevron" aria-hidden="true">▼</span>
           </button>
           <div class="tile-panel" id="panel-06" role="region" aria-labelledby="btn-06" hidden>
-            <a class="open-full" href="blast-06-redemption-ecomm.html?v=edits20250325" target="_blank" rel="noopener">Open full tab</a>
+            <a class="open-full" href="blast-06-redemption-ecomm.html?v=footerv20250325" target="_blank" rel="noopener">Open full tab</a>
             <div class="preview-shell">
-              <div class="preview-viewport"><div class="preview-scale"><iframe data-src="blast-06-redemption-ecomm.html?v=edits20250325" title="Blast 06 preview"></iframe></div></div>
+              <div class="preview-viewport"><div class="preview-scale"><iframe data-src="blast-06-redemption-ecomm.html?v=footerv20250325" title="Blast 06 preview"></iframe></div></div>
             </div>
           </div>
         </article>
@@ -440,9 +386,9 @@
             <span class="tile-chevron" aria-hidden="true">▼</span>
           </button>
           <div class="tile-panel" id="panel-07" role="region" aria-labelledby="btn-07" hidden>
-            <a class="open-full" href="blast-07-redemption-brand.html?v=edits20250325" target="_blank" rel="noopener">Open full tab</a>
+            <a class="open-full" href="blast-07-redemption-brand.html?v=footerv20250325" target="_blank" rel="noopener">Open full tab</a>
             <div class="preview-shell">
-              <div class="preview-viewport"><div class="preview-scale"><iframe data-src="blast-07-redemption-brand.html?v=edits20250325" title="Blast 07 preview"></iframe></div></div>
+              <div class="preview-viewport"><div class="preview-scale"><iframe data-src="blast-07-redemption-brand.html?v=footerv20250325" title="Blast 07 preview"></iframe></div></div>
             </div>
           </div>
         </article>
@@ -453,7 +399,7 @@
   <script>
     (function () {
       var IFRAME_H = 4800;
-      var CACHE = '?v=edits20250325';
+      var CACHE = '?v=footerv20250325';
 
       function layoutTile(tile) {
         if (!tile || !tile.classList.contains('is-open')) return;
