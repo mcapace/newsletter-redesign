@@ -68,6 +68,17 @@
     }
     .header-logo { max-width: 145px; width: auto; height: auto; margin: 0 auto; }
 
+    .header--editorial {
+      text-align: left;
+      padding: 40px 44px 32px 40px;
+    }
+    .header--editorial .header-rule {
+      margin: 0 0 20px 0;
+    }
+    .header--editorial .header-logo {
+      margin: 0 0 0 0;
+    }
+
     .hero-bottle-wrap {
       padding: 32px 40px 28px;
       text-align: center;
@@ -197,6 +208,14 @@
     }
     .minimal-cta:hover { background: #2a2620; }
 
+    .minimal-cta-wrap--inline {
+      padding: 36px 40px 44px;
+      text-align: left;
+      background: #f0ebe3;
+      border-top: 1px solid rgba(26, 23, 20, 0.07);
+      border-bottom: 1px solid rgba(26, 23, 20, 0.07);
+    }
+
     .footer {
       padding: 36px 40px 40px;
       text-align: center;
@@ -215,12 +234,24 @@
     .footer a { color: #c9bfae; text-decoration: underline; text-underline-offset: 2px; }
     .footer-legal { color: rgba(230, 225, 218, 0.32) !important; font-size: 9px !important; }
 
+    .footer--framed {
+      border-top: 4px solid #1a1816;
+      padding-top: 44px;
+    }
+    .footer--framed p {
+      max-width: 22em;
+    }
+
     @media screen and (max-width: 640px) {
       .email-wrapper { padding: 24px 12px !important; }
       .email-container { width: 100% !important; }
       .dark-copy { padding: 36px 28px !important; }
       .dark-copy h1 { font-size: 28px !important; }
-      .header, .hero-bottle-wrap, .label-detail, .design-strip, .minimal-cta-wrap, .footer { padding-left: 28px !important; padding-right: 28px !important; }
+      .header, .hero-bottle-wrap, .label-detail, .design-strip, .minimal-cta-wrap, .minimal-cta-wrap--inline, .footer { padding-left: 28px !important; padding-right: 28px !important; }
+      .minimal-cta-wrap--inline { text-align: center !important; }
+      .header--editorial { text-align: center !important; }
+      .header--editorial .header-rule { margin-left: auto !important; margin-right: auto !important; }
+      .header--editorial .header-logo { margin-left: auto !important; margin-right: auto !important; }
       .design-cell { display: block !important; width: 100% !important; margin-bottom: 14px !important; }
       .design-gutter { display: none !important; }
       .hero-bottle, .label-img {
@@ -245,7 +276,7 @@
             <div class="mast-line" role="presentation"></div>
             <p class="co-brand">Whisky Advocate &middot; Deutsch Spirits</p>
 
-            <div class="header">
+            <div class="header header--editorial">
               <div class="header-rule" role="presentation"></div>
               <img src="https://braze-images.com/appboy/communication/assets/image_assets/images/69bc5675439b710060149528/original.png?1773950581" alt="Bib & Tucker" class="header-logo">
             </div>
@@ -308,11 +339,11 @@
 
             <div class="section-hairline" role="presentation"></div>
 
-            <div class="minimal-cta-wrap">
+            <div class="minimal-cta-wrap minimal-cta-wrap--inline">
               <a href="https://deutsch.whiskyadvocate.com/" class="minimal-cta">Explore the Collection &rarr;</a>
             </div>
 
-            <div class="footer">
+            <div class="footer footer--framed">
               <img src="https://braze-images.com/appboy/communication/assets/image_assets/images/69bc560bd22ab20060f266d4/original.png?1773950475" alt="Whisky Advocate" class="footer-logo">
               <p>
                 You're receiving this email because you opted in via our website.<br>

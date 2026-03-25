@@ -215,6 +215,16 @@
     }
     .explore-link:hover { background: #2a2620; }
 
+    .explore-link--outline {
+      background: transparent;
+      color: #14110d;
+      border: 1px solid rgba(26, 23, 20, 0.55);
+    }
+    .explore-link--outline:hover {
+      background: rgba(26, 23, 20, 0.06);
+      border-color: #14110d;
+    }
+
     .footer {
       padding: 36px 40px 40px;
       text-align: center;
@@ -233,12 +243,45 @@
     .footer a { color: #c9bfae; text-decoration: underline; text-underline-offset: 2px; }
     .footer-legal { color: rgba(230, 225, 218, 0.32) !important; font-size: 9px !important; }
 
+    .footer--ledger {
+      text-align: left;
+      padding: 36px 40px 40px;
+    }
+    .footer--ledger .footer-inner { width: 100%; }
+    .footer--ledger .footer-split-logo {
+      width: 36%;
+      vertical-align: top;
+      padding-right: 12px;
+    }
+    .footer--ledger .footer-split-copy {
+      vertical-align: top;
+      text-align: left;
+      padding-left: 8px;
+    }
+    .footer--ledger .footer-logo {
+      margin: 0 0 0 0;
+    }
+    .footer--ledger .footer-split-copy p {
+      margin-left: 0;
+      max-width: none;
+    }
+
     @media screen and (max-width: 640px) {
       .email-wrapper { padding: 24px 12px !important; }
       .email-container { width: 100% !important; }
       .story { padding: 36px 28px !important; }
       .story h1 { font-size: 28px !important; }
       .header, .texture-hero, .values, .soft-cta, .footer { padding-left: 28px !important; padding-right: 28px !important; }
+      .footer--ledger .footer-split-logo,
+      .footer--ledger .footer-split-copy {
+        display: block !important;
+        width: 100% !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+      }
+      .footer--ledger .footer-split-logo { text-align: center !important; padding-bottom: 10px !important; }
+      .footer--ledger .footer-split-copy { text-align: center !important; }
+      .footer--ledger .footer-logo { margin: 0 auto 14px !important; }
       .value-cell { display: block !important; width: 100% !important; margin-bottom: 14px !important; }
       .value-gutter { display: none !important; }
       .texture-hero img { max-width: 100% !important; width: auto !important; height: auto !important; }
@@ -324,18 +367,26 @@
 
             <div class="soft-cta">
               <p>Curious what six years of patience tastes like?</p>
-              <a href="https://deutsch.whiskyadvocate.com/" class="explore-link">Explore the Collection &rarr;</a>
+              <a href="https://deutsch.whiskyadvocate.com/" class="explore-link explore-link--outline">Explore the Collection &rarr;</a>
             </div>
 
-            <div class="footer">
-              <img src="https://braze-images.com/appboy/communication/assets/image_assets/images/69bc56089ce95e005fdc6f83/original.png?1773950471" alt="Whisky Advocate" class="footer-logo">
-              <p>
-                You're receiving this email because you opted in via our website.<br>
-                <a href="{{ ${set_user_field} }}">Update preferences</a> &middot; <a href="{{${email_url}}}">View in browser</a>
-              </p>
-              <p>&copy; {{current_year}} Deutsch Spirits. All rights reserved. Must be 21+. Please drink responsibly.</p>
-              <p><a href="{% abort_message('unsubscribed') %}">Unsubscribe</a> &middot; <a href="https://whiskyadvocate.com/about">Privacy Policy</a></p>
-              <p class="footer-legal" style="margin-top:14px;">M. Shanken Communications Inc. &middot; 825 Eighth Avenue, 33rd Floor &middot; New York, NY 10019</p>
+            <div class="footer footer--ledger">
+              <table role="presentation" class="footer-inner" cellpadding="0" cellspacing="0" width="100%">
+                <tr>
+                  <td class="footer-split-logo" width="36%">
+                    <img src="https://braze-images.com/appboy/communication/assets/image_assets/images/69bc56089ce95e005fdc6f83/original.png?1773950471" alt="Whisky Advocate" class="footer-logo">
+                  </td>
+                  <td class="footer-split-copy">
+                    <p>
+                      You're receiving this email because you opted in via our website.<br>
+                      <a href="{{ ${set_user_field} }}">Update preferences</a> &middot; <a href="{{${email_url}}}">View in browser</a>
+                    </p>
+                    <p>&copy; {{current_year}} Deutsch Spirits. All rights reserved. Must be 21+. Please drink responsibly.</p>
+                    <p><a href="{% abort_message('unsubscribed') %}">Unsubscribe</a> &middot; <a href="https://whiskyadvocate.com/about">Privacy Policy</a></p>
+                    <p class="footer-legal" style="margin-top:14px;">M. Shanken Communications Inc. &middot; 825 Eighth Avenue, 33rd Floor &middot; New York, NY 10019</p>
+                  </td>
+                </tr>
+              </table>
             </div>
 
           </div>

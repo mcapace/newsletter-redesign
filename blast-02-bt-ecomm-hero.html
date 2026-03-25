@@ -249,6 +249,26 @@
     .footer a { color: #c9bfae; text-decoration: underline; text-underline-offset: 2px; }
     .footer-legal { color: rgba(230, 225, 218, 0.32) !important; font-size: 9px !important; }
 
+    .footer--parchment {
+      background: #e3ded6;
+      border-top: 1px solid rgba(26, 23, 20, 0.12);
+      text-align: left;
+      padding: 34px 44px 38px;
+    }
+    .footer--parchment .footer-logo {
+      margin: 0 0 16px 0;
+      filter: none;
+      -webkit-filter: none;
+    }
+    .footer--parchment p {
+      color: #454039;
+      max-width: 38em;
+      margin-left: 0;
+      margin-right: auto;
+    }
+    .footer--parchment a { color: #5c4d32; }
+    .footer--parchment .footer-legal { color: rgba(69, 64, 57, 0.55) !important; }
+
     @media screen and (max-width: 640px) {
       .email-wrapper { padding: 24px 12px !important; }
       .email-container { width: 100% !important; }
@@ -256,6 +276,9 @@
       .hero h1 { font-size: 30px !important; }
       .occasion { padding: 36px 28px 40px !important; }
       .siblings, .footer { padding-left: 28px !important; padding-right: 28px !important; }
+      .footer--parchment { text-align: center !important; }
+      .footer--parchment p { margin-left: auto !important; margin-right: auto !important; }
+      .footer--parchment .footer-logo { margin-left: auto !important; margin-right: auto !important; }
       .sibling-cell { display: block !important; width: 100% !important; margin-bottom: 16px !important; }
       .sibling-gutter { display: none !important; }
       .hero-bottle, .sibling-img { max-width: 100% !important; width: auto !important; height: auto !important; }
@@ -325,7 +348,7 @@
               </table>
             </div>
 
-            <div class="footer">
+            <div class="footer footer--parchment">
               <img src="https://braze-images.com/appboy/communication/assets/image_assets/images/69bc56089ce95e005fdc6f83/original.png?1773950471" alt="Whisky Advocate" class="footer-logo">
               <p>
                 You're receiving this email because you opted in via our website.<br>
